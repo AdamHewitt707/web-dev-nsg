@@ -12,3 +12,15 @@ p {
 h1 {
     font-family: cabin-regular;
 }
+
+header {
+    background-color: white;
+    height: 100px;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    padding: 8px;
+}
