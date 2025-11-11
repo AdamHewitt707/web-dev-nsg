@@ -1,1 +1,14 @@
+/* Adding Custom font 'Cabin' as font-family type */
 
+@font-face {
+    font-family: cabin-regular;
+    src: url(assets/font/Cabin-Regular.woff);
+}
+
+p {
+    font-family: cabin-regular;
+}
+
+h1 {
+    font-family: cabin-regular;
+}
