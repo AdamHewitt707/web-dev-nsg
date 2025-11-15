@@ -24,3 +24,15 @@ nav ul li {
     display: inline;
     padding: 8px;
 }
+
+body {
+    background-color: #9FAD8A;
+    background-image:
+        url("/assets/images/nsg-icon.png"),
+        url("/assets/images/nsg-icon.png");
+    background-repeat: repeat;
+    background-position:
+    0 0,
+    225px 225px;
+    background-size: 150px;
+}
