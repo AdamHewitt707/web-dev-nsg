@@ -15,17 +15,33 @@ h1 {
 
 header {
     background-color: white;
-    height: 100px;
+    height: 80px;
     text-align: center;
+}
+nav {
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+}
+
+nav ul {
+    margin: auto;
 }
 
 nav ul li {
     list-style: none;
     display: inline;
-    padding: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: cabin-regular;
+    font-weight: 500;
+    font-size: 30px;
 }
 
 body {
+    margin: 0;
     background-color: #9FAD8A;
     background-image:
         url("/assets/images/nsg-icon.png"),
@@ -35,4 +51,14 @@ body {
     0 0,
     225px 225px;
     background-size: 150px;
+}
+
+main {
+    padding-top: auto;
+}
+
+section {
+    width: 1800px;
+    background-color: #EEEDE9;
+    margin: auto;
 }
