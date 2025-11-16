@@ -7,10 +7,16 @@
 
 p {
     font-family: cabin-regular;
+    margin: 20px;
+    position: relative;
+    top: 20px;
 }
 
 h1 {
     font-family: cabin-regular;
+    margin: 20px;
+    position: relative;
+    top: 20px;
 }
 
 header {
@@ -20,8 +26,7 @@ header {
 }
 nav {
     position: relative;
-    top: 50%;
-    bottom: 50%;
+    top: 20px;
 }
 
 nav ul {
@@ -54,11 +59,18 @@ body {
 }
 
 main {
-    padding-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: auto;
+    width: 1800px;
+    background-color: #EEEDE9;
 }
 
 section {
-    width: 1800px;
-    background-color: #EEEDE9;
-    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+    margin: 20px;
+    top: 20px;
 }
