@@ -7,16 +7,30 @@
 
 p {
     font-family: cabin-regular;
+    margin: 20px;
+    position: relative;
+    top: 20px;
 }
 
 h1 {
     font-family: cabin-regular;
+    margin: 20px;
+    position: relative;
+    top: 20px;
 }
 
 header {
     background-color: white;
-    height: 100px;
+    height: 80px;
     text-align: center;
+}
+nav {
+    position: relative;
+    top: 20px;
+}
+
+nav ul {
+    margin: auto;
 }
 
 nav ul li {
