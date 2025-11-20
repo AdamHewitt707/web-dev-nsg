@@ -39,11 +39,21 @@ nav ul li {
     padding: 8px;
 }
 
-/*---------------------------------------Chalak About us .CSS -------------------------------------------------------------*/
+/*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0; 
+}
+
+body {
+    font-family: Arial, helvetica, sans-serif;
+    background: #f4f4f4; /* adding random color cba to look at the sylesheet pretation*/ 
+    color: #111;
+}
 
 
 
 
 
-
-/*---------------------------------------Chalak About us .CSS -------------------------------------------------------------*/
+/*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
