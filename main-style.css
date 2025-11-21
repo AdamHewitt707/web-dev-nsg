@@ -36,7 +36,43 @@ nav ul {
 nav ul li {
     list-style: none;
     display: inline;
-    padding: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: cabin-regular;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+body {
+    margin: 0;
+    background-color: #9FAD8A;
+    background-image:
+        url("/assets/images/nsg-icon.png"),
+        url("/assets/images/nsg-icon.png");
+    background-repeat: repeat;
+    background-position:
+    0 0,
+    225px 225px;
+    background-size: 150px;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: auto;
+    width: 1800px;
+    background-color: #EEEDE9;
+}
+
+section {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+    margin: 20px;
+    top: 20px;
 }
 
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
@@ -45,15 +81,5 @@ nav ul li {
    margin: 0;
    padding: 0; 
 }
-
-body {
-    font-family: Arial, helvetica, sans-serif;
-    background: #f4f4f4; /* adding random color cba to look at the sylesheet pretation*/ 
-    color: #111;
-}
-
-
-
-
 
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
