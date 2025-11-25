@@ -33,6 +33,26 @@ nav {
     top: 20px;
 }
 
+.navbar {
+    overflow:hidden;
+    background-color: white;
+    font-family: cabin-regular;
+}
+
+.navbar a {
+    float: none;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #9FAD8A;
+}
+
+
 nav ul {
     margin: auto;
 }
@@ -105,6 +125,58 @@ a {
     background-color: #EEEDE9;
 }
 
+
+
+.dropdown {
+    float: none;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 20px 10px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 100;
+    margin: 77px 0 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #9FAD8A;
+}
+
+.show {
+    display: block;
+}
+
+
 /*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/
 
 .separator {
@@ -147,7 +219,12 @@ a {
 * {
    box-sizing: border-box;
    margin: 0;
-   padding: 0; 
+   padding: 0;
 }
 
+
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
+
+/*---------------------------------------Tyler sign-up .CSS ---------------------------------------------------------------*/
+
+/*---------------------------------------Tyler sign-up .CSS ---------------------------------------------------------------*/
