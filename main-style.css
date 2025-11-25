@@ -105,6 +105,44 @@ a {
     background-color: #EEEDE9;
 }
 
+/*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/
+
+.separator {
+    height: 20px;
+    width: 100%;
+    background-color: #728c72;
+}
+
+.container-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.container-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+}
+
+.column {
+    margin: auto;
+    height: 100%;
+}
+
+.row {
+    margin: auto;
+}
+
+.maingrid {
+    margin: 20px;
+    display: inline-block;
+}
+
+/*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/
+
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
 * {
    box-sizing: border-box;
