@@ -40,10 +40,7 @@ nav ul {
 nav ul li {
     list-style: none;
     display: inline;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     font-family: cabin-regular;
     font-weight: 500;
     font-size: 30px;
@@ -87,11 +84,27 @@ footer {
     margin: auto;
     text-align: center;
     top: auto;
-    a {
-        text-decoration: none;
-    }
-
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.navlink {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding-top: 100%;
+    padding-bottom: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.navlink:hover {
+    background-color: #EEEDE9;
+}
+
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
 * {
    box-sizing: border-box;
