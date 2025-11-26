@@ -4,7 +4,7 @@ function showGoalsMenu() {
 }
 
 window.onclick = function(e){
-    if (!e.target.matches('.dropbtn')){
+    if (!e.target.matches('.navBtn')){
         var myDropdown = document.getElementById('myDropdown');
         if (myDropdown.classList.contains('show')) {
             myDropdown.classList.remove('show');
