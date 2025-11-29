@@ -34,10 +34,15 @@ nav {
 }
 
 .navbar {
-    overflow:hidden;
+    overflow: hidden;
     background-color: white;
     font-family: cabin-regular;
     height: 80px;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
 }
 
 /* .navbar a {
@@ -96,23 +101,30 @@ footer {
 }
 
 .navBtn {
-    list-style: none;
-    display: inline-block;
-    margin: auto;
-    position: relative;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.navlink {
     color: black;
     text-decoration: none;
     font-family: cabin-regular;
     font-weight: 500;
     font-size: 30px;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+    cursor: pointer;
+    height: 80;
 }
+
+/* .navlink {
+    color: black;
+    text-decoration: none;
+    font-family: cabin-regular;
+    font-weight: 500;
+    font-size: 30px;
+} */
 
 .navlink:hover {
     background-color: #EEEDE9;
@@ -122,9 +134,6 @@ footer {
     float: none;
     overflow: hidden;
     display: inline-flex;
-}
-
-.dropdown {
     cursor: pointer;
     font-size: 30px;
     border: none;
@@ -133,14 +142,17 @@ footer {
     padding: auto;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+}
+
+.dropdown:hover {
+    background-color: #EEEDE9;
 }
 
 .dropbtn {
     border: none;
     background-color: #FFFFFF;
     display: inline-block;
-    padding-left: 5%;
+    margin: auto;
 }
 
 .dropdown-content {
@@ -171,6 +183,11 @@ footer {
     display: block;
 }
 
+.logo {
+    height: 60px;
+    display: inline-block;
+    margin: auto;
+}
 
 /*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/
 
