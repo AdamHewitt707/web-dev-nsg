@@ -95,11 +95,9 @@ article {
 }
 
 footer {
-    background-color: white;
-    height: calc(100vh - 100px);
+    background-color: #728C72;
+    height: 200px;
     margin: auto;
-    text-align: center;
-    top: auto;
 }
 
 .navBtn {
