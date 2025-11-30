@@ -7,6 +7,7 @@
 
 p {
     font-family: cabin-regular;
+    font-size: 18px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: auto;
@@ -47,11 +48,20 @@ nav {
     gap: 0;
 }
 
+.navbar-footer {
+    overflow: hidden;
+    font-family: cabin-regular;
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+}
+
 .dropdown:hover .dropbtn, .dropbtn:focus {
     background-color: #EEEDE9;
     display: inline-block;
 }
-
 
 body {
     margin: 0;
@@ -96,7 +106,7 @@ article {
 
 footer {
     background-color: #728C72;
-    height: 200px;
+    height: 150px;
     margin: auto;
 }
 
@@ -115,7 +125,16 @@ footer {
     padding-right: 30%;
     text-align: center;
     cursor: pointer;
-    height: 80;
+    height: 80px;
+}
+
+.footerBtn {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: cabin-regular;
+    text-align: center;
+    margin: 20px;
+    font-weight: 700;
 }
 
 .navBtn:hover {
@@ -252,6 +271,36 @@ footer {
     margin-bottom: auto;
     margin-top: 20px;
     display: inline-block;
+}
+
+.column-container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.display-image {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: auto;
+    border-radius: 10px;
+}
+
+.index-link {
+    font-family: cabin-regular;
+    background-color: #EEEDE9;
+    font-size: 20px;
+    font-weight: 700;
+    width: 35%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
 }
 
 /*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/
