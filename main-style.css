@@ -12,7 +12,8 @@ p {
     margin-top: auto;
     margin-bottom: 20px;
     position: relative;
-    display: inline-block
+    display: inline-block;
+    color: #796B59;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px;
     position: relative;
     display: inline-block;
+    color: #796B59;
 }
 
 header {
@@ -54,7 +56,7 @@ nav {
     padding: 14px 16px;
 } */
 
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+.dropdown:hover .dropbtn, .dropbtn:focus {
     background-color: #EEEDE9;
     display: inline-block;
 }
@@ -101,10 +103,10 @@ footer {
 }
 
 .navBtn {
-    color: black;
+    color: #796B59;
     text-decoration: none;
     font-family: cabin-regular;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 30px;
     display: inline-block;
     margin: auto;
@@ -118,6 +120,11 @@ footer {
     height: 80;
 }
 
+.navBtn:hover {
+    background-color: #EEEDE9;
+    display: inline-block;
+}
+
 /* .navlink {
     color: black;
     text-decoration: none;
@@ -126,9 +133,9 @@ footer {
     font-size: 30px;
 } */
 
-.navlink:hover {
+/* .navlink:hover {
     background-color: #EEEDE9;
-}
+} */
 
 .dropdown {
     float: none;
@@ -144,15 +151,33 @@ footer {
     font-family: inherit;
 }
 
-.dropdown:hover {
+/* .dropdown:hover {
     background-color: #EEEDE9;
-}
+} */
 
 .dropbtn {
     border: none;
     background-color: #FFFFFF;
     display: inline-block;
     margin: auto;
+    color: #796B59;
+    text-decoration: none;
+    font-family: cabin-regular;
+    font-weight: 700;
+    font-size: 30px;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 35%;
+    padding-right: 35%;
+    text-align: center;
+    cursor: pointer;
+    height: 80;
+}
+
+.dropbtn:hover {
+    background-color: #EEEDE9;
+    display: inline-block;
 }
 
 .dropdown-content {
@@ -167,7 +192,7 @@ footer {
 
 .dropdown-content a {
     float: none;
-    color: black;
+    color: #796B59;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
