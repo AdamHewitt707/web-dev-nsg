@@ -215,6 +215,12 @@ footer {
     margin: auto;
 }
 
+@media (max-width: 1500px) {
+    main {
+        width: 90%;
+    }
+}
+
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
 * {
    box-sizing: border-box;
