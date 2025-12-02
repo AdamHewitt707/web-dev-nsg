@@ -393,13 +393,26 @@ main.team.section{
 .team.card h2 {
     margin:10px 0;
 }
-
+/*job tile made a little grey seems nice*/
 .team.card .job{
     font: 16px;
     color: #999999;
 }
 
 /*little line under the name*/
+.team.card .title.underline {
+    width: 600px;
+    height: 4px;
+    background-color: #728C72;
+    margin: 0 auto 15px;
+    border-radius: 999px;
+}
+/*only pargraphs in the tteam cards just so the other pages are not changed*/
+.team.card p {
+    margin: 0 0 15px;
+    color: #796B59;
+}
+
 
 
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
