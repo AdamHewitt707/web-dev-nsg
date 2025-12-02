@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: cabin-regular;
-    src: url(app/public-files/assets/font/Cabin-Regular.woff);
+    src: url(assets/font/Cabin-Regular.woff);
 }
 
 p {
