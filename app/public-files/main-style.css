@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: cabin-regular;
-    src: url(assets/font/Cabin-Regular.woff);
+    src: url(app/public-files/assets/font/Cabin-Regular.woff);
 }
 
 p {
@@ -67,8 +67,8 @@ body {
     margin: 0;
     background-color: #9FAD8A;
     background-image:
-        url("/assets/images/nsg-icon.png"),
-        url("/assets/images/nsg-icon.png");
+        url("/app/public-files/assets/images/nsg-icon.png"),
+        url("/app/public-files/assets/images/nsg-icon.png");
     background-repeat: repeat;
     background-position:
     0 0,
@@ -151,7 +151,7 @@ footer {
     border: none;
     outline: none;
     color: black;
-    padding: auto;
+    padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
 }
@@ -173,7 +173,7 @@ footer {
     padding-right: 25%;
     text-align: center;
     cursor: pointer;
-    height: 80;
+    height: 80px;
 }
 
 .dropbtn:hover {
