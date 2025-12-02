@@ -366,6 +366,19 @@ div p {
    padding: 0;
 }
 
+main.team.section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*wraper that holds all the team cards*/
+.team.grid{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr)); /*2 cards per row*/
+    gap: 30px;
+    padding: 20px;
+}
+
 
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
 
