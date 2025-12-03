@@ -391,7 +391,7 @@ main.team.section{
 }
 /*job tile made a little grey seems nice*/
 .team.card .job{
-    font: 16px;
+    font-size: 16px;
     color: #999999;
 }
 
@@ -407,6 +407,41 @@ main.team.section{
 .team.card p {
     margin: 0 0 15px;
     color: #796B59;
+}
+/*the photo square */
+.team.card .photo.placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #9FAD8A;
+    border-radius: 15px;
+    margin-top: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*chalak*/
+.team.grid article.team.card:nth-child(1) .photo.placeholder{
+    background-image: url("");/*will add the link for photos*/
+}
+
+/*adam*/
+.team.grid article.team.card:nth-child(2) .photo.placeholder{
+    background-image: url("");/*will add the link for photos*/
+}
+/*martha*/
+.team.grid article.team.card:nth-child(3) .photo.placeholder{
+    background-image: url("");/*will add the link for photos*/
+}
+/*tyler*/
+.team.grid article.team.card:nth-child(4) .photo.placeholder{
+    background-image: url("");/*will add the link for photos*/
+}
+
+/*1 per row on smale screen*/
+@media (max-width:800px){
+    .team.grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 
