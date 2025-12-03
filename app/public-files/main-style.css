@@ -410,32 +410,53 @@ main.team.section{
 }
 /*the photo square */
 .team.card .photo.placeholder {
-    width: 100%;
+    width: 40%;
     aspect-ratio: 1 / 1;
     background-color: #9FAD8A;
     border-radius: 15px;
     margin-top: 15px;
     background-size: cover;
-    background-position: center;
+    background-position: center; 
+}
+/* image left + text right inside each card */
+.bio-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-/*chalak*/
-.team.grid article.team.card:nth-child(1) .photo.placeholder{
-    background-image: url("");/*will add the link for photos*/
+.bio-text {
+    flex: 1;          /* text takes remaining space */
+    text-align: left;
 }
 
-/*adam*/
-.team.grid article.team.card:nth-child(2) .photo.placeholder{
-    background-image: url("");/*will add the link for photos*/
+.bio-text p {
+    margin: 0;
 }
-/*martha*/
-.team.grid article.team.card:nth-child(3) .photo.placeholder{
-    background-image: url("");/*will add the link for photos*/
+
+
+/* Chalak */
+.team.grid article.team.card:nth-child(1) .photo.placeholder {
+    background-image: url("assets/images/chalak.JPG");
 }
-/*tyler*/
-.team.grid article.team.card:nth-child(4) .photo.placeholder{
-    background-image: url("");/*will add the link for photos*/
+
+/* Adam */
+.team.grid article.team.card:nth-child(2) .photo.placeholder {
+    background-image: url("assets/images/adam.PNG");
 }
+
+/* Martha */
+.team.grid article.team.card:nth-child(3) .photo.placeholder {
+    background-image: url("assets/images/martha.jpg");
+}
+
+/* Tyler */
+.team.grid article.team.card:nth-child(4) .photo.placeholder {
+    background-image: url("assets/images/tyler.PNG");
+}
+
 
 /*1 per row on smale screen*/
 @media (max-width:800px){
