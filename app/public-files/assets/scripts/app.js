@@ -14,3 +14,23 @@ window.onclick = function(e){
 }
 
 /* Navbar Dropdown function */
+
+/* Loading content with json */
+
+let headerElement = document.querySelector("#header");
+let localJsonFile = "content.json";
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetch(localJsonFile)
+    .then (response => response.json())
+    .then (responseData => {
+        for (item of responseData){
+
+            //stuff here
+            
+        }
+    })
+    .catch(error => console.error("Error fetching JSON data:", error));
+})
+
+/* Loading content with json */
