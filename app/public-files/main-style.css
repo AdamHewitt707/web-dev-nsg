@@ -41,7 +41,7 @@ nav {
     background-color: white;
     font-family: cabin-regular;
     height: 80px;
-    width: 1920px;
+    width: fit-content;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -81,7 +81,7 @@ main {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: auto;
-    width: 1920px;
+    width: fit-content;
     background-color: #EEEDE9;
     min-height: 100%;
 }
