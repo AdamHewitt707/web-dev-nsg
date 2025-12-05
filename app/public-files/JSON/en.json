@@ -1,0 +1,115 @@
+[
+    {
+        "navigation": {
+            "home": "Home",
+            "goals": "Our goals",
+            "cleanWater": "Clean Water",
+            "climateAction": "Climate Action",
+            "qualityEducation": "Quality Education",
+            "signUp": "Sign up",
+            "aboutUs": "About us"
+        }
+    },
+
+    {
+        "page": "index",
+        "content": {
+            "title": "Norwich Sustainability Group Home Page",
+            "welcome": {
+                "heading": "Welcome",
+                "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis. Cras fringilla nisl ut elit condimentum lobortis."
+            },
+            "sections": {
+                "ueaResearch": {
+                    "heading": "UEA's World-Leading Climate Change Research",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis.",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
+                    ],
+                    "link": "Learn more"
+                },
+                "norwichNetZero1": {
+                    "heading": "Norwich Pledges Net Zero by 2030",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
+                    ],
+                    "link": "Learn more"
+                },
+                "riversOfHope": {
+                    "heading": "The Norfolk 'Rivers of Hope' Programme",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
+                    ]
+                },
+                "co2Rates": {
+                    "heading": "CO2 Rates Continue to Accelerate",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
+                    ]
+                },
+                "transport": {
+                    "heading": "Transport Identified as UK's Largest Emitting Sector",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
+                    ]
+                },
+                "rivers": {
+                    "heading": "UK's Rivers and Coasts Teeming with Sewage",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis.",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
+                    ],
+                    "link": "Learn more"
+                },
+                "norwichStandUp": {
+                    "heading": "Norwich can Stand up",
+                    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
+                },
+                "signUpNow": {
+                    "heading": "Sign up Now",
+                    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
+                }
+            }
+        }
+    },
+
+    {
+        "page": "about-us",
+        "content": {
+            "title": "About us",
+            "team": [
+                {
+                    "name": "Chalak",
+                    "role": "About us page / Translation",
+                    "bio": "Chalak created and coded the About Us page for the Norwich Sustainability Group website and worked on the JSON translation so our content can be easily shown in different languages such as Welsh, Spanish and English. Making the website more accessible."
+                },
+                {
+                    "name": "Adam",
+                    "role": "Home page / Designer",
+                    "bio": "Adam designed and built the Home page, focusing on a nice clean layout that makes it easy to find information about our Sustainability goals. He enjoys experimenting with colors, shapes to make the layout as user friendly as possible."
+                },
+                {
+                    "name": "Martha",
+                    "role": "Sign up page",
+                    "bio": "Martha developed the Sign Up page, making sure the form is simple, clear and accessible for new members. She is interested in making online experiences smooth and helping more people get involved in sustainability projects."
+                },
+                {
+                    "name": "Tyler",
+                    "role": "Goals page",
+                    "bio": "Tyler worked on the Goals page, presenting our sustainability aims like Clean Water, Climate Action and Quality Education in a clear way. He enjoys organising information so visitors can quickly understand what we stand for and how they can help."
+                }
+            ]
+        }
+    },
+
+    {
+        "footer": {
+            "home": "Home",
+            "cleanWater": "Clean water & Sanitation",
+            "climateAction": "Climate Action",
+            "qualityEducation": "Quality Education",
+            "signUp": "Sign up",
+            "aboutUs": "About us"
+        }
+    }
+]

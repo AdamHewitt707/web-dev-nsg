@@ -5,10 +5,10 @@
     <!--unicode-->
     <meta charset="UTF-8">
     <title>About us</title>
-    <!--Link to exrenal css file-->
+    <!--Link to external css file-->
     <link rel="Stylesheet" href="main-style.css">
-    <!-- <link rel="Stylesheet" href="assets/about-us/about-style.css"> -->
-
+    <!-- translation + other scripts -->
+    <script src="assets/scripts/app.js" defer></script>
 </head>
 
 <body>
@@ -16,38 +16,45 @@
     <header class="top-nav">
         <div class="navbar">
             <img src="assets/images/nsg_logo.png" alt="Norwich Sustainability Group Logo" class="logo">
-            <a href="index.html" class="navBtn">Home</a>
+
+            <!-- NAVIGATION WITH TRANSLATION KEYS -->
+            <a href="index.html" class="navBtn" data-i18n="nav.Home">Home</a>
+
             <div class="dropdown">
-                <button class="dropbtn" onclick="showGoalsMenu()">Our goals</button>
+                <button class="dropbtn" onclick="showGoalsMenu()" data-i18n="nav.Goals">
+                    Our goals
+                </button>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Clean Water</a>
-                    <a href="#">Climate Action</a>
-                    <a href="education.html">Quality Education</a>
+                    <a href="#" data-i18n="nav.CleanWater">Clean Water</a>
+                    <a href="#" data-i18n="nav.ClimateAction">Climate Action</a>
+                    <a href="education.html" data-i18n="nav.QualityEducation">Quality Education</a>
                 </div>
             </div>
-            <a href="sign-up.html" class="navBtn">Sign up</a>
-            <a href="about-us.html" class="navBtn">About us</a>
+
+            <a href="sign-up.html" class="navBtn" data-i18n="nav.SignUp">Sign up</a>
+            <a href="about-us.html" class="navBtn" data-i18n="nav.AboutUs">About us</a>
         </div>
     </header>
+
     <!--green area-->
     <main class="team section">
         <div class="team grid">
             <!-- Chalak card -->
             <article class="team card">
-                <h2>Chalak<br><span class="job">Job title(added soon)</span></h2>
+                <h2>
+                    <span data-i18n="about.Chalak.Name">Chalak</span><br>
+                    <span class="job" data-i18n="about.Chalak.Role">About us page/translation</span>
+                </h2>
                 <div class="title underline"></div>
 
                 <div class="bio-row">
                     <div class="photo placeholder"></div>
 
                     <div class="bio-text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <p data-i18n="about.Chalak.Bio">
+                            Chalak created and coded the About Us page for the norwich Sustainability Group website and worked 
+                            on the json translation so our content can be easily shown in differnt languages such as 
+                            Welsh, Spanish and English. Making the website more accessible 
                         </p>
                     </div>
                 </div>
@@ -55,20 +62,20 @@
 
             <!-- Adam card -->
             <article class="team card">
-                <h2>Adam<br><span class="job">Job title(added soon)</span></h2>
+                <h2>
+                    <span data-i18n="about.Adam.Name">Adam</span><br>
+                    <span class="job" data-i18n="about.Adam.Role">Home page/Designer</span>
+                </h2>
                 <div class="title underline"></div>
 
                 <div class="bio-row">
                     <div class="photo placeholder"></div>
 
                     <div class="bio-text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <p data-i18n="about.Adam.Bio">
+                            Adam designed and built the Home page, focusing on a nice Clean layout that makes it easy to find
+                            information about our Sustainability goals.He enjoys experimenting with colors, shapes to make the
+                            layout as user friendly as possible.
                         </p>
                     </div>
                 </div>
@@ -76,20 +83,20 @@
 
             <!-- Martha card -->
             <article class="team card">
-                <h2>Martha<br><span class="job">Job title(added soon)</span></h2>
+                <h2>
+                    <span data-i18n="about.Martha.Name">Martha</span><br>
+                    <span class="job" data-i18n="about.Martha.Role">Sign up page</span>
+                </h2>
                 <div class="title underline"></div>
 
                 <div class="bio-row">
                     <div class="photo placeholder"></div>
 
                     <div class="bio-text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <p data-i18n="about.Martha.Bio">
+                            Martha developed the Sign Up page, making sure the form is simple, clear and accessible for new
+                            members. She interested in making online experiences smooth and helping more people get involved in
+                            sustainability projects  
                         </p>
                     </div>
                 </div>
@@ -97,20 +104,20 @@
 
             <!-- Tyler card -->
             <article class="team card">
-                <h2>Tyler<br><span class="job">Job title(added soon)</span></h2>
+                <h2>
+                    <span data-i18n="about.Tyler.Name">Tyler</span><br>
+                    <span class="job" data-i18n="about.Tyler.Role">Goals page</span>
+                </h2>
                 <div class="title underline"></div>
 
                 <div class="bio-row">
                     <div class="photo placeholder"></div>
 
                     <div class="bio-text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <p data-i18n="about.Tyler.Bio">
+                            Tyler worked on the Goals page, presentting our sustainability aims like Clean Water,Climate Action
+                            and Quality Education in a clear way. he enjoys organising information so vistors can quickly
+                            understand what we stand for and how they can help 
                         </p>
                     </div>
                 </div>
@@ -119,20 +126,24 @@
         </div>
     </main>
 
-
     <!--Footer-->
     <footer>
         <div class="navbar-footer">
-            <a href="index.html" class="footerBtn">Home</a>
-            <a href="index.html" class="footerBtn">Clean water & Sanitation</a>
-            <a href="index.html" class="footerBtn">Climate Action</a>
-            <a href="index.html" class="footerBtn">Quality Education</a>
-            <a href="index.html" class="footerBtn">Sign up</a>
-            <a href="index.html" class="footerBtn">About us</a>
+            <a href="index.html" class="footerBtn" data-i18n="footer.Home">Home</a>
+            <a href="index.html" class="footerBtn" data-i18n="footer.CleanWater">Clean water & Sanitation</a>
+            <a href="index.html" class="footerBtn" data-i18n="footer.ClimateAction">Climate Action</a>
+            <a href="index.html" class="footerBtn" data-i18n="footer.QualityEducation">Quality Education</a>
+            <a href="index.html" class="footerBtn" data-i18n="footer.SignUp">Sign up</a>
+            <a href="index.html" class="footerBtn" data-i18n="footer.AboutUs">About us</a>
+            <div class="lang-switcher">
+                
+    <button type="button" onclick="loadLanguage('en')">EN</button>
+    <button type="button" onclick="loadLanguage('es')">ES</button>
+    <button type="button" onclick="loadLanguage('cy')">CY</button>
+</div>
+
         </div>
     </footer>
 
-
 </body>
-
 </html>

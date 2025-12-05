@@ -1,0 +1,50 @@
+{
+  "lang": "en",
+
+  "nav.Home": "Home",
+  "nav.Goals": "Our goals",
+  "nav.CleanWater": "Clean Water",
+  "nav.ClimateAction": "Climate Action",
+  "nav.QualityEducation": "Quality Education",
+  "nav.SignUp": "Sign up",
+  "nav.AboutUs": "About us",
+
+  "footer.Home": "Home",
+  "footer.CleanWater": "Clean water & Sanitation",
+  "footer.ClimateAction": "Climate Action",
+  "footer.QualityEducation": "Quality Education",
+  "footer.SignUp": "Sign up",
+  "footer.AboutUs": "About us",
+
+  "index.Title": "Norwich Sustainability Group Home Page",
+  "index.WelcomeHeading": "Welcome",
+
+  "index.Section.UEAResearchHeading": "UEA's World-Leading Climate Change Research",
+  "index.Section.NorwichNetZero1Heading": "Norwich Pledges Net Zero by 2030",
+  "index.Section.NorwichNetZero2Heading": "Norwich Pledges Net Zero by 2030",
+  "index.Section.CO2Heading": "CO2 Rates Continue to Accelerate",
+  "index.Section.TransportHeading": "Transport Identified as UK's Largest Emitting Sector",
+  "index.Section.RiversHeading": "UK's Rivers and Coasts Teeming with Sewage",
+  "index.Section.NorwichStandUpHeading": "Norwich can Stand up",
+  "index.Section.SignUpNowHeading": "Sign up Now",
+
+  "index.LearnMore": "Learn more",
+
+  "about.Title": "About us",
+
+  "about.Chalak.Name": "Chalak",
+  "about.Chalak.Role": "About us page / Translation",
+  "about.Chalak.Bio": "Chalak created and coded the About Us page for the norwich Sustainability Group website and worked  on the json translation so our content can be easily shown in differnt languages such asWelsh, Spanish and English. Making the website more accessible",
+
+  "about.Adam.Name": "Adam",
+  "about.Adam.Role": "Home page / Designer",
+  "about.Adam.Bio": "Adam designed and built the Home page, focusing on a nice Clean layout that makes it easy to find information about our Sustainability goals.He enjoys experimenting with colors, shapes to make the layout as user friendly as possible.",
+
+  "about.Martha.Name": "Martha",
+  "about.Martha.Role": "Sign up page",
+  "about.Martha.Bio": "Martha developed the Sign Up page, making sure the form is simple, clear and accessible for new members. She is interested in making online experiences smooth and helping more people get involved in sustainability projects.",
+
+  "about.Tyler.Name": "Tyler",
+  "about.Tyler.Role": "Goals page",
+  "about.Tyler.Bio": "Tyler worked on the Goals page, presentting our sustainability aims like Clean Water,Climate Action and Quality Education in a clear way. he enjoys organising information so vistors can quickly understand what we stand for and how they can help "
+}

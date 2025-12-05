@@ -1,0 +1,48 @@
+{
+    "nav.Home": "Hafan",
+    "nav.Goals": "Ein nodau",
+    "nav.CleanWater": "Dŵr glân",
+    "nav.ClimateAction": "Gweithredu dros y clima",
+    "nav.QualityEducation": "Addysg o ansawdd",
+    "nav.SignUp": "Cofrestru",
+    "nav.AboutUs": "Amdanom ni",
+
+    "footer.Home": "Hafan",
+    "footer.CleanWater": "Dŵr glân a glanweithdra",
+    "footer.ClimateAction": "Gweithredu dros y clima",
+    "footer.QualityEducation": "Addysg o ansawdd",
+    "footer.SignUp": "Cofrestru",
+    "footer.AboutUs": "Amdanom ni",
+
+    "index.Title": "Tudalen gartref Grŵp Cynaliadwyedd Norwich",
+    "index.WelcomeHeading": "Croeso",
+
+    "index.Section.UEAResearchHeading": "Ymchwil flaenllaw’r UEA ar newid hinsawdd",
+    "index.Section.NorwichNetZero1Heading": "Norwich yn addo sero net erbyn 2030",
+    "index.Section.NorwichNetZero2Heading": "Norwich yn addo sero net erbyn 2030",
+    "index.Section.CO2Heading": "Cyfraddau CO₂ yn parhau i gynyddu",
+    "index.Section.TransportHeading": "Trafnidiaeth yw’r sector mwyaf llygru yn y DU",
+    "index.Section.RiversHeading": "Afonydd ac arfordiroedd y DU yn llawn carthffosiaeth",
+    "index.Section.NorwichStandUpHeading": "Gall Norwich sefyll i fyny",
+    "index.Section.SignUpNowHeading": "Cofrestrwch nawr",
+
+    "index.LearnMore": "Dysgu mwy",
+
+    "about.Title": "Amdanom ni",
+
+    "about.Chalak.Name": "Chalak",
+    "about.Chalak.Role": "Tudalen 'Amdanom ni' / Cyfieithu",
+    "about.Chalak.Bio": "Creodd a chododd Chalak y dudalen 'Amdanom ni' ar wefan Norwich Sustainability Group a bu’n gweithio ar gyfieithiad JSON fel y gellir dangos ein cynnwys yn hawdd mewn ieithoedd gwahanol fel Cymraeg, Sbaeneg a Saesneg, gan wneud y wefan yn fwy hygyrch.",
+
+    "about.Adam.Name": "Adam",
+    "about.Adam.Role": "Tudalen gartref / Dylunydd",
+    "about.Adam.Bio": "Dyluniodd ac adeiladodd Adam y dudalen gartref, gan ganolbwyntio ar gynllun glân a chlir sy’n ei gwneud hi’n hawdd dod o hyd i wybodaeth am ein nodau cynaliadwyedd.",
+
+    "about.Martha.Name": "Martha",
+    "about.Martha.Role": "Tudalen cofrestru",
+    "about.Martha.Bio": "Datblygodd Martha y dudalen gofrestru, gan sicrhau bod y ffurflen yn syml, yn glir ac yn hygyrch i aelodau newydd. Mae’n mwynhau gwneud profiadau ar-lein yn esmwyth ac annog mwy o bobl i gymryd rhan mewn prosiectau cynaliadwyedd.",
+
+    "about.Tyler.Name": "Tyler",
+    "about.Tyler.Role": "Tudalen nodau",
+    "about.Tyler.Bio": "Gweithiodd Tyler ar y dudalen nodau, gan gyflwyno ein hamcanion cynaliadwyedd fel Dŵr Glân, Gweithredu dros y Clima ac Addysg o Ansawdd mewn ffordd glir. Mae’n mwynhau trefnu gwybodaeth fel bod ymwelwyr yn gallu deall yn gyflym beth rydym yn sefyll drosto a sut y gallant helpu."
+}

@@ -1,0 +1,50 @@
+{
+  "lang": "es",
+
+  "nav.Home": "Inicio",
+  "nav.Goals": "Nuestros objetivos",
+  "nav.CleanWater": "Agua limpia",
+  "nav.ClimateAction": "Acción por el clima",
+  "nav.QualityEducation": "Educación de calidad",
+  "nav.SignUp": "Regístrate",
+  "nav.AboutUs": "Sobre nosotros",
+
+  "footer.Home": "Inicio",
+  "footer.CleanWater": "Agua limpia y saneamiento",
+  "footer.ClimateAction": "Acción por el clima",
+  "footer.QualityEducation": "Educación de calidad",
+  "footer.SignUp": "Regístrate",
+  "footer.AboutUs": "Sobre nosotros",
+
+  "index.Title": "Página de inicio del Norwich Sustainability Group",
+  "index.WelcomeHeading": "Bienvenido",
+
+  "index.Section.UEAResearchHeading": "Investigación de clase mundial de la UEA sobre el cambio climático",
+  "index.Section.NorwichNetZero1Heading": "Norwich promete cero emisiones netas para 2030",
+  "index.Section.NorwichNetZero2Heading": "Norwich promete cero emisiones netas para 2030",
+  "index.Section.CO2Heading": "Las tasas de CO₂ continúan aumentando",
+  "index.Section.TransportHeading": "El transporte es el mayor sector emisor del Reino Unido",
+  "index.Section.RiversHeading": "Ríos y costas del Reino Unido llenos de aguas residuales",
+  "index.Section.NorwichStandUpHeading": "Norwich puede levantarse",
+  "index.Section.SignUpNowHeading": "Regístrate ahora",
+
+  "index.LearnMore": "Más información",
+
+  "about.Title": "Sobre nosotros",
+
+  "about.Chalak.Name": "Chalak",
+  "about.Chalak.Role": "Página de 'Sobre nosotros' / Traducción",
+  "about.Chalak.Bio": "Chalak creó y programó la página 'Sobre nosotros' para el sitio web del Norwich Sustainability Group y trabajó en la traducción JSON para que nuestro contenido pueda mostrarse fácilmente en diferentes idiomas como galés, español e inglés, haciendo el sitio web más accesible.",
+
+  "about.Adam.Name": "Adam",
+  "about.Adam.Role": "Página de inicio / Diseñador",
+  "about.Adam.Bio": "Adam diseñó y creó la página de inicio, centrándose en un diseño limpio que facilita encontrar información sobre nuestros objetivos de sostenibilidad. Le gusta experimentar con colores y formas para hacer el diseño lo más fácil de usar posible.",
+
+  "about.Martha.Name": "Martha",
+  "about.Martha.Role": "Página de registro",
+  "about.Martha.Bio": "Martha desarrolló la página de registro, asegurándose de que el formulario sea simple, claro y accesible para los nuevos miembros. Está interesada en hacer que las experiencias en línea sean fluidas y en ayudar a que más personas se involucren en proyectos de sostenibilidad.",
+
+  "about.Tyler.Name": "Tyler",
+  "about.Tyler.Role": "Página de objetivos",
+  "about.Tyler.Bio": "Tyler trabajó en la página de objetivos, presentando nuestras metas de sostenibilidad como Agua Limpia, Acción por el Clima y Educación de Calidad de una manera clara. Le gusta organizar información para que los visitantes puedan entender rápidamente lo que representamos y cómo pueden ayudar."
+}
