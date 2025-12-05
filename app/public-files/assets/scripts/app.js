@@ -1,4 +1,4 @@
-/* Navbar Dropdown function */
+/* ---------- Navbar Dropdown function ---------- */
 
 function showGoalsMenu() {
     document.getElementById('myDropdown').classList.toggle('show');
@@ -13,27 +13,60 @@ window.onclick = function(e){
     }
 }
 
-/* Navbar Dropdown function */
+/* ---------- Navbar Dropdown function ---------- */
 
-/* Loading content with json */
 
-let headerElement = document.querySelector("#header");
-let localJsonFile = "content.json";
+
+
+
+
+/* ---------- Storing json content ---------- */
+
+// let headerElement = document.querySelector("#header"); tbh idk if this line is necessary or not
+let localJsonFile = "JSON/en.json";
+let jsonContent; // To store all the json stuff locally on javascript
 
 document.addEventListener("DOMContentLoaded", () => {
     fetch(localJsonFile)
     .then (response => response.json())
     .then (responseData => {
-        for (item of responseData){
+      jsonContent = responseData;
+      console.log("JSON loaded successfully: ", jsonContent);
 
-            //stuff here
-            
-        }
+      initPage(); // Gonna process the content in a separate function for better code structure
     })
+
     .catch(error => console.error("Error fetching JSON data:", error));
 })
 
-/* Loading content with json */
+/* ---------- Storing json content ---------- */
+
+
+
+
+
+
+/* ---------- Initialize page ---------- */
+
+function initPage() {
+  const path = window.location.pathname;
+  const page = path.split("/").pop().replace(".html", ""); // Get name of page via file path to find content within json
+
+  console.log("Current page: ", page);
+
+  initNav(); // Process header navbar
+
+  // initPageContent(page); // Process page content based on page name
+
+  // initFooter(); // Process footer content
+}
+
+/* ---------- Initialize page ---------- */
+
+
+
+
+
 
 /* 
    SIMPLE TRASLATION (No json file used because i am dying trying to figure it out)
