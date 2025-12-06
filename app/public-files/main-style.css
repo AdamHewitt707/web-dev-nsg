@@ -406,6 +406,7 @@ footer {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    background-color: #728C72;
 }
 
 .carousel-img {
@@ -453,9 +454,9 @@ footer {
 .carousel-text {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
-    height: 150px;
+    height: 180px;
     width: 100vw;
-    top: calc(100% - 150px);
+    top: calc(100% - 180px);
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -473,6 +474,10 @@ footer {
     margin-top: 0;
     margin-bottom: 20px;
     width: 1920px;
+}
+
+.carousel-img, .carousel-header, .carousel-p {
+  transition: opacity 0.3s ease-in-out;
 }
 
 /*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/

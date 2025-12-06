@@ -15,28 +15,25 @@
         "page": "index",
         "content": {
             "title": "Norwich Sustainability Group Home Page",
-            "carousel": [
+            "carousel": {
+                "slides": [
                 {
                     "image": "assets/images/cow.jpg",
-                    "title": "Welcome to Norwich Sustainability Group",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis. Cras fringilla nisl ut elit condimentum lobortis."
+                    "header": "Hello",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
                 },
                 {
-                    "image": "assets/images/image2.jpg",
-                    "title": "UEA's World-Leading Climate Change Research",
-                    "description": "UEA is at the forefront of climate research, contributing to global sustainability efforts through innovative studies and solutions."
+                    "image": "assets/images/uea-aerial.jpg",
+                    "header": "Welcome",
+                    "text": "Another example text for the second slide. Cras fringilla nisl ut elit condimentum lobortis."
                 },
                 {
-                    "image": "assets/images/image3.jpg",
-                    "title": "Norwich Pledges Net Zero by 2030",
-                    "description": "Our city is committed to becoming carbon neutral by 2030, leading the way in sustainable urban development."
-                },
-                {
-                    "image": "assets/images/image4.jpg",
-                    "title": "The Norfolk 'Rivers of Hope' Programme",
-                    "description": "Restoring and protecting Norfolk's rivers through community-led conservation initiatives."
+                    "image": "assets/images/nsg_logo.png",
+                    "header": "Join Us",
+                    "text": "Third slide content here. Pellentesque dapibus dui quis tellus porttitor lobortis."
                 }
-            ],
+                ]
+            },
             "welcome": {
                 "heading": "Welcome",
                 "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis. Cras fringilla nisl ut elit condimentum lobortis."

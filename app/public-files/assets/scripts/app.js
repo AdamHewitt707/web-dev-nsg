@@ -52,7 +52,7 @@ function initPage() {
   const path = window.location.pathname;
   const page = path.split("/").pop().replace(".html", ""); // Get name of page via file path to filter content within json
 
-  console.log("Current page: ", page);
+  // console.log("Current page: ", page); // not needed anymore but I'll keep this here for future debugging
 
   // initNav(); // Process header navbar is its own function because its universal for the entire website
 
@@ -75,7 +75,6 @@ function initPageContent(page) {
 
   const pageFunctions = {
     'index': () => {
-      console.log("Home page initialization");
       loadIndexContent();
     },
     'quality-education': () => {
@@ -103,7 +102,7 @@ function initPageContent(page) {
   const pageHandler = pageFunctions[page];
   
   if (pageHandler) {
-    pageHandler(); // This loads the function from a specific element in the pageFunctions array above
+    pageHandler(); // This loads the function from a specific element in the pageFunctions data above
   } 
   
   else {
@@ -122,7 +121,7 @@ function initPageContent(page) {
 function loadIndexContent () {
   console.log("Loading Index Content...");
 
-  // Build your page through javascript here
+  initCarousel();
 
 }
 
@@ -190,8 +189,6 @@ function loadSignupContent () {
 
 }
 
-
-
 /* ---------- Signup page ---------- */
 
 
@@ -205,11 +202,62 @@ function loadAboutusContent () {
   console.log("Loading About Us Content...")
 
   // Build your page through javascript here
-  
+
 }
 
 /* ---------- Aboutus page ---------- */
 
+
+
+
+
+/* ---------- Index carousel functionality ---------- */
+
+function initCarousel() {
+  const carouselContainer = document.querySelector('.carousel-container'); // Locate and identify carousel elements
+  const carouselImg = carouselContainer.querySelector('.carousel-img');
+  const prevBtn = carouselContainer.querySelector('.carousel-prev');
+  const nextBtn = carouselContainer.querySelector('.carousel-next');
+  const carouselHeader = carouselContainer.querySelector('.carousel-header');
+  const carouselP = carouselContainer.querySelector('.carousel-p');
+
+  let carouselData = [];
+  const indexData = jsonContent.find(item => item.page === "index"); // Extract only index data from json
+
+  carouselData = indexData.content.carousel.slides;
+  console.log("Carousel data loaded from JSON:", carouselData);
+
+  let currentSlide = 0;
+  const totalSlides = carouselData.length;
+
+  function updateCarousel() { // To update the carousel slide once called by button functions
+    const slide = carouselData[currentSlide];
+    
+    carouselImg.src = slide.image;
+    carouselImg.alt = slide.header;
+    carouselHeader.textContent = slide.header;
+    carouselP.textContent = slide.text;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides; // Math done like this so that it loops when you advance past all slides
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+
+  prevBtn.addEventListener('click', prevSlide);
+  nextBtn.addEventListener('click', nextSlide);
+
+  updateCarousel(); // This is just in case I change the way the carousel is loaded and it doesnt have content to start with
+
+  console.log("Carousel loaded with", totalSlides, "slides");
+}
+
+/* ---------- Index carousel functionality ---------- */
 
 
 
