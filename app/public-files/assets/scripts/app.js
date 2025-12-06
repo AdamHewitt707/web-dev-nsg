@@ -54,7 +54,7 @@ function initPage() {
 
   console.log("Current page: ", page);
 
-  // initNav(); // Process header navbar
+  // initNav(); // Process header navbar is its own function because its universal for the entire website
 
   initPageContent(page); // Process page content based on page name
 
@@ -132,8 +132,8 @@ function loadIndexContent () {
 
 /* ---------- Education page ---------- */
 
-function loadIndexContent () {
-  console.log("Loading Index Content...")
+function loadEducationContent () {
+  console.log("Loading Quality Education Content...")
 }
 
 /* ---------- Education page ---------- */
@@ -145,8 +145,8 @@ function loadIndexContent () {
 
 /* ---------- Climate page ---------- */
 
-function loadIndexContent () {
-  console.log("Loading Index Content...")
+function loadClimateContent () {
+  console.log("Loading Climate Action Content...")
 }
 
 /* ---------- Climate page ---------- */
@@ -158,8 +158,8 @@ function loadIndexContent () {
 
 /* ---------- Water page ---------- */
 
-function loadIndexContent () {
-  console.log("Loading Index Content...")
+function loadWaterContent () {
+  console.log("Loading Clean Water and Sanitation Content...")
 }
 
 /* ---------- Water page ---------- */
@@ -171,8 +171,8 @@ function loadIndexContent () {
 
 /* ---------- Signup page ---------- */
 
-function loadIndexContent () {
-  console.log("Loading Index Content...")
+function loadSignupContent () {
+  console.log("Loading Sign Up Content...")
 }
 
 /* ---------- Signup page ---------- */
@@ -184,8 +184,8 @@ function loadIndexContent () {
 
 /* ---------- Aboutus page ---------- */
 
-function loadIndexContent () {
-  console.log("Loading Index Content...")
+function loadAboutusContent () {
+  console.log("Loading About Us Content...")
 }
 
 /* ---------- Aboutus page ---------- */
