@@ -81,7 +81,9 @@ main {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: auto;
-    width: 1920px;
+    max-width: 1920px;
+    width: 80vw;
+    min-width: 1560px;
     background-color: #EEEDE9;
     min-height: 100%;
 }
@@ -414,8 +416,16 @@ footer {
     height: 100%;
 }
 
+.left-arrow:hover {
+    transform: scale(1.1);
+}
+
 .right-arrow {
     height: 100%;
+}
+
+.right-arrow:hover {
+    transform: scale(1.1);
 }
 
 .carousel-prev {
@@ -433,6 +443,31 @@ footer {
     left: 95%;
     cursor: pointer;
     transform: rotate(180deg);
+}
+
+.carousel-text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 150px;
+    width: 100vw;
+    top: calc(100% - 150px);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-header {
+    color: #FFFFFF;
+    width: 1920px;
+}
+
+.carousel-p {
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 1920px;
 }
 
 /*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/
