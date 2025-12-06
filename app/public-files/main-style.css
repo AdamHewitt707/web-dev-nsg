@@ -464,7 +464,9 @@ footer {
 
 .carousel-header {
     color: #FFFFFF;
-    width: 1920px;
+    min-width: 1560px;
+    width: 80vw;
+    max-width: 1920px;
 }
 
 .carousel-p {
@@ -473,11 +475,9 @@ footer {
     margin-right: 20px;
     margin-top: 0;
     margin-bottom: 20px;
-    width: 1920px;
-}
-
-.carousel-img, .carousel-header, .carousel-p {
-  transition: opacity 0.3s ease-in-out;
+    min-width: 1560px;
+    width: 80vw;
+    max-width: 1920px;
 }
 
 /*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/

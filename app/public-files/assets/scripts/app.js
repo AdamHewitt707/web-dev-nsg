@@ -121,8 +121,69 @@ function initPageContent(page) {
 function loadIndexContent () {
   console.log("Loading Index Content...");
 
+  const main = document.querySelector('main')
+
+  main.innerHTML = ''; // Wipe any existing html
+
+  const indexContent = jsonContent.find(item => item.page === "index"); // Find and store all index data
+
+  const content = indexContent.content; // Get all from content section of the index in json
+
+  buildCarousel(main, content.carousel); // Gonna build all the different parts in separate functions cuz it looks nicer and its good for code structure
+
   initCarousel();
 
+}
+
+function buildCarousel(parent, carouselContent) {
+
+  // Create carousel div container
+  const carouselContainer = document.createElement('div');
+  carouselContainer.className = 'carousel-container';
+  
+  // Image
+  const carouselImg = document.createElement('img');
+  carouselImg.className = 'carousel-img';
+  carouselImg.src = carouselContent.slides[0].image; // Initializing image from carousel json array
+  carouselImg.alt = carouselContent.slides[0].header; // Temporarily using header as image alt text, forgot to add it previously
+  carouselContainer.appendChild(carouselImg); // Making carouselImg the child of carouselContainer div
+  
+  // Prev button
+  const prevBtn = document.createElement('button'); // Prev button will be the parent container for left arrow
+  prevBtn.className = 'carousel-prev';
+  const leftArrow = document.createElement('img');
+  leftArrow.src = 'assets/images/arrow.png';
+  leftArrow.className = 'left-arrow';
+  prevBtn.appendChild(leftArrow);
+  carouselContainer.appendChild(prevBtn);
+  
+  // Next button
+  const nextBtn = document.createElement('button');
+  nextBtn.className = 'carousel-next';
+  const rightArrow = document.createElement('img');
+  rightArrow.src = 'assets/images/arrow.png';
+  rightArrow.className = 'right-arrow';
+  nextBtn.appendChild(rightArrow);
+  carouselContainer.appendChild(nextBtn);
+  
+  // Text container div
+  const carouselText = document.createElement('div');
+  carouselText.className = 'carousel-text';
+  
+  // Header
+  const carouselHeader = document.createElement('h1');
+  carouselHeader.className = 'carousel-header';
+  carouselHeader.textContent = carouselContent.slides[0].header;
+  carouselText.appendChild(carouselHeader);
+  
+  // Paragraph
+  const carouselP = document.createElement('p');
+  carouselP.className = 'carousel-p';
+  carouselP.textContent = `"${carouselContent.slides[0].text}"`;
+  carouselText.appendChild(carouselP);
+  
+  carouselContainer.appendChild(carouselText); // carouselText is a container that contains all written carousel content
+  parent.appendChild(carouselContainer); // Parent here is main
 }
 
 /* ---------- Index page ---------- */
@@ -221,18 +282,18 @@ function initCarousel() {
   const carouselHeader = carouselContainer.querySelector('.carousel-header');
   const carouselP = carouselContainer.querySelector('.carousel-p');
 
-  let carouselData = [];
+  let carouselContent = [];
   const indexData = jsonContent.find(item => item.page === "index"); // Extract only index data from json
 
-  carouselData = indexData.content.carousel.slides;
-  console.log("Carousel data loaded from JSON:", carouselData);
+  carouselContent = indexData.content.carousel.slides;
+  console.log("Carousel data loaded from JSON:", carouselContent);
 
   let currentSlide = 0;
-  const totalSlides = carouselData.length;
+  const totalSlides = carouselContent.length;
 
   function updateCarousel() { // To update the carousel slide once called by button functions
-    const slide = carouselData[currentSlide];
-    
+    const slide = carouselContent[currentSlide];
+
     carouselImg.src = slide.image;
     carouselImg.alt = slide.header;
     carouselHeader.textContent = slide.header;

@@ -45,6 +45,7 @@
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis.",
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
                     ],
+                    "image": "assets/images/cow.jpg",
                     "link": "Learn more"
                 },
                 "norwichNetZero1": {
@@ -52,25 +53,29 @@
                     "paragraphs": [
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
                     ],
+                    "image": "assets/images/cow.jpg",
                     "link": "Learn more"
                 },
                 "riversOfHope": {
                     "heading": "The Norfolk 'Rivers of Hope' Programme",
                     "paragraphs": [
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
-                    ]
+                    ],
+                    "image": "assets/images/cow.jpg"
                 },
                 "co2Rates": {
                     "heading": "CO2 Rates Continue to Accelerate",
                     "paragraphs": [
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
-                    ]
+                    ],
+                    "image": "assets/images/cow.jpg"
                 },
                 "transport": {
                     "heading": "Transport Identified as UK's Largest Emitting Sector",
                     "paragraphs": [
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
-                    ]
+                    ],
+                    "image": "assets/images/cow.jpg"
                 },
                 "rivers": {
                     "heading": "UK's Rivers and Coasts Teeming with Sewage",
@@ -78,15 +83,18 @@
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis.",
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
                     ],
+                    "image": "assets/images/cow.jpg",
                     "link": "Learn more"
                 },
                 "norwichStandUp": {
                     "heading": "Norwich can Stand up",
-                    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
+                    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis.",
+                    "image": "assets/images/cow.jpg"
                 },
                 "signUpNow": {
                     "heading": "Sign up Now",
-                    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
+                    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis.",
+                    "image": "assets/images/cow.jpg"
                 }
             }
         }
