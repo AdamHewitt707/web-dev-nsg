@@ -54,7 +54,7 @@ function initPage() {
 
   console.log("Current page: ", page);
 
-  // initNav(); // Process header navbar
+  // initNav(); // Process header navbar is its own function because its universal for the entire website
 
   initPageContent(page); // Process page content based on page name
 
@@ -121,6 +121,9 @@ function initPageContent(page) {
 
 function loadIndexContent () {
   console.log("Loading Index Content...");
+
+  // Build your page through javascript here
+
 }
 
 /* ---------- Index page ---------- */
@@ -132,8 +135,11 @@ function loadIndexContent () {
 
 /* ---------- Education page ---------- */
 
-function loadIndexContent () {
-  console.log("Loading Index Content...")
+function loadEducationContent () {
+  console.log("Loading Quality Education Content...")
+
+  // Build your page through javascript here
+
 }
 
 /* ---------- Education page ---------- */
@@ -145,8 +151,11 @@ function loadIndexContent () {
 
 /* ---------- Climate page ---------- */
 
-function loadIndexContent () {
-  console.log("Loading Index Content...")
+function loadClimateContent () {
+  console.log("Loading Climate Action Content...")
+
+  // Build your page through javascript here
+
 }
 
 /* ---------- Climate page ---------- */
@@ -158,8 +167,11 @@ function loadIndexContent () {
 
 /* ---------- Water page ---------- */
 
-function loadIndexContent () {
-  console.log("Loading Index Content...")
+function loadWaterContent () {
+  console.log("Loading Clean Water and Sanitation Content...")
+
+  // Build your page through javascript here
+
 }
 
 /* ---------- Water page ---------- */
@@ -171,8 +183,11 @@ function loadIndexContent () {
 
 /* ---------- Signup page ---------- */
 
-function loadIndexContent () {
-  console.log("Loading Index Content...")
+function loadSignupContent () {
+  console.log("Loading Sign Up Content...")
+
+  // Build your page through javascript here
+
 }
 
 /* ---------- Signup page ---------- */
@@ -184,8 +199,11 @@ function loadIndexContent () {
 
 /* ---------- Aboutus page ---------- */
 
-function loadIndexContent () {
-  console.log("Loading Index Content...")
+function loadAboutusContent () {
+  console.log("Loading About Us Content...")
+
+  // Build your page through javascript here
+  
 }
 
 /* ---------- Aboutus page ---------- */
