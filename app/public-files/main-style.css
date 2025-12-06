@@ -41,7 +41,7 @@ nav {
     background-color: white;
     font-family: cabin-regular;
     height: 80px;
-    width: 1920px;
+    width: fit-content;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -81,9 +81,7 @@ main {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: auto;
-    max-width: 1920px;
-    width: 80vw;
-    min-width: 1560px;
+    width: fit-content;
     background-color: #EEEDE9;
     min-height: 100%;
 }
@@ -394,84 +392,6 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-}
-
-.carousel-container {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.carousel-img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.left-arrow {
-    height: 100%;
-}
-
-.left-arrow:hover {
-    transform: scale(1.1);
-}
-
-.right-arrow {
-    height: 100%;
-}
-
-.right-arrow:hover {
-    transform: scale(1.1);
-}
-
-.carousel-prev {
-    position: absolute;
-    height: 100px;
-    top: 40%;
-    right: 95%;
-    cursor: pointer;
-    border: none;
-    background: none;
-}
-
-.carousel-next {
-    position: absolute;
-    height: 100px;
-    top: 40%;
-    left: 95%;
-    cursor: pointer;
-    transform: rotate(180deg);
-    border: none;
-    background: none;
-}
-
-.carousel-text {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-    height: 150px;
-    width: 100vw;
-    top: calc(100% - 150px);
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.carousel-header {
-    color: #FFFFFF;
-    width: 1920px;
-}
-
-.carousel-p {
-    color: #FFFFFF;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    width: 1920px;
 }
 
 /*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/
