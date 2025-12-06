@@ -56,12 +56,139 @@ function initPage() {
 
   // initNav(); // Process header navbar
 
-  // initPageContent(page); // Process page content based on page name
+  initPageContent(page); // Process page content based on page name
 
   // initFooter(); // Process footer content
 }
 
 /* ---------- Initialize page ---------- */
+
+
+
+
+
+
+/* ---------- Grab page function ---------- */
+
+function initPageContent(page) {
+  console.log("Loading page content for", page);
+
+  const pageFunctions = {
+    'index': () => {
+      console.log("Home page initialization");
+      loadIndexContent();
+    },
+    'quality-education': () => {
+      console.log("Quality eduction page initialization");
+      loadEducationContent();
+    },
+    'climate-action': () => {
+      console.log("Climate action page initialization");
+      loadClimateContent();
+    },
+    'clean-water': () => {
+      console.log("Clean water and sanitation page initialization");
+      loadWaterContent();
+    },
+    'sign-up': () => {
+      console.log("Sign up page initialization");
+      loadSignupContent();
+    },
+    'about-us': () => {
+      console.log("About us page initialization");
+      loadAboutusContent();
+    },
+  };
+
+  const pageHandler = pageFunctions[page];
+  
+  if (pageHandler) {
+    pageHandler(); // This loads the function from a specific element in the pageFunctions array above
+  } 
+  
+  else {
+    console.warn(`Can't find page: ${page}`);
+  }
+}
+
+/* ---------- Grab page function ---------- */
+
+
+
+
+
+/* ---------- Index page ---------- */
+
+function loadIndexContent () {
+  console.log("Loading Index Content...");
+}
+
+/* ---------- Index page ---------- */
+
+
+
+
+
+
+/* ---------- Education page ---------- */
+
+function loadIndexContent () {
+  console.log("Loading Index Content...")
+}
+
+/* ---------- Education page ---------- */
+
+
+
+
+
+
+/* ---------- Climate page ---------- */
+
+function loadIndexContent () {
+  console.log("Loading Index Content...")
+}
+
+/* ---------- Climate page ---------- */
+
+
+
+
+
+
+/* ---------- Water page ---------- */
+
+function loadIndexContent () {
+  console.log("Loading Index Content...")
+}
+
+/* ---------- Water page ---------- */
+
+
+
+
+
+
+/* ---------- Signup page ---------- */
+
+function loadIndexContent () {
+  console.log("Loading Index Content...")
+}
+
+/* ---------- Signup page ---------- */
+
+
+
+
+
+
+/* ---------- Aboutus page ---------- */
+
+function loadIndexContent () {
+  console.log("Loading Index Content...")
+}
+
+/* ---------- Aboutus page ---------- */
 
 
 
