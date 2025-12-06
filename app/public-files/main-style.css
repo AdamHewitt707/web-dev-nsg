@@ -594,26 +594,24 @@ main.team.section{
 /*---------------------------------------Tyler sign-up .CSS ---------------------------------------------------------------*/
 .formSection {
     flex-direction: column;
-    display: inline-flex;
+    display: inline-block;
     justify-content: center;
     font-family: cabin-regular;
+    font-size: 20px;
 }
 
 .signUpForm {
     display: flex;
     flex-direction: row;
-    width: 40vw;
+    width: 100%;
     padding: 20px;
 
 }
-legend {
-    width: 38vw;
 
-
-}
 
 input {
-    display: block;
+    display: inline-block;
+
 
 }
 
