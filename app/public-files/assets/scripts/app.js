@@ -121,6 +121,9 @@ function initPageContent(page) {
 
 function loadIndexContent () {
   console.log("Loading Index Content...");
+
+  // Build your page through javascript here
+
 }
 
 /* ---------- Index page ---------- */
@@ -134,6 +137,9 @@ function loadIndexContent () {
 
 function loadEducationContent () {
   console.log("Loading Quality Education Content...")
+
+  // Build your page through javascript here
+
 }
 
 /* ---------- Education page ---------- */
@@ -147,6 +153,9 @@ function loadEducationContent () {
 
 function loadClimateContent () {
   console.log("Loading Climate Action Content...")
+
+  // Build your page through javascript here
+
 }
 
 /* ---------- Climate page ---------- */
@@ -160,6 +169,9 @@ function loadClimateContent () {
 
 function loadWaterContent () {
   console.log("Loading Clean Water and Sanitation Content...")
+
+  // Build your page through javascript here
+
 }
 
 /* ---------- Water page ---------- */
@@ -173,6 +185,9 @@ function loadWaterContent () {
 
 function loadSignupContent () {
   console.log("Loading Sign Up Content...")
+
+  // Build your page through javascript here
+
 }
 
 /* ---------- Signup page ---------- */
@@ -186,6 +201,9 @@ function loadSignupContent () {
 
 function loadAboutusContent () {
   console.log("Loading About Us Content...")
+
+  // Build your page through javascript here
+  
 }
 
 /* ---------- Aboutus page ---------- */
