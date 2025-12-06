@@ -434,6 +434,8 @@ footer {
     top: 40%;
     right: 95%;
     cursor: pointer;
+    border: none;
+    background: none;
 }
 
 .carousel-next {
@@ -443,6 +445,8 @@ footer {
     left: 95%;
     cursor: pointer;
     transform: rotate(180deg);
+    border: none;
+    background: none;
 }
 
 .carousel-text {
