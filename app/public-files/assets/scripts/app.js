@@ -103,7 +103,7 @@ function initPageContent(page) {
   const pageHandler = pageFunctions[page];
   
   if (pageHandler) {
-    pageHandler(); // This loads the function from a specific element in the pageFunctions array
+    pageHandler(); // This loads the function from a specific element in the pageFunctions array above
   } 
   
   else {
