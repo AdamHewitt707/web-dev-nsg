@@ -410,6 +410,31 @@ footer {
     object-fit: cover;
 }
 
+.left-arrow {
+    height: 100%;
+}
+
+.right-arrow {
+    height: 100%;
+}
+
+.carousel-prev {
+    position: absolute;
+    height: 100px;
+    top: 40%;
+    right: 95%;
+    cursor: pointer;
+}
+
+.carousel-next {
+    position: absolute;
+    height: 100px;
+    top: 40%;
+    left: 95%;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
 /*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/
 
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
