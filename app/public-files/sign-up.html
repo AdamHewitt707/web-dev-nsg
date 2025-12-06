@@ -42,29 +42,23 @@
 
             <section class="formSection">
                 <form method="post" action="#" class="signUpForm">
-                    <fieldset>
-                        <legend>Sign Up For Updates</legend>
-                        <label>
+                    <div class="formController">
+                        <input type="text" name="firstName" required>
+                        <label>FirstName</label>
+                    </div>
+                    <div class="formController">
+                        <input type="text" name="lastName" required>
+                        <label>LastName</label>
+                    </div>
+                    <div class="formController">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
 
-                            <input type="text" name="FirstName" placeholder="First Name*" required>
-
-                        </label>
-                        <label>
-                            <input type="text" name="LastName" placeholder="Last Name*" required>
-
-                        </label>
-                        <label>
-                            <input type="email" name="Email" placeholder="Email Address*" required>
-
-                        </label>
-                        <label>
-                            <textarea name="Comments" placeholder="Comments"></textarea>
-
-                        </label>
-                        <input type="submit" value="Sign Up">
-
-                        <p class="confirmMessage">* Required Field</p>
-                    </fieldset>
+                    <div class="formController">
+                        <input type="text" name="comments">
+                        <label>Comments</label>
+                    </div>
 
                 </form>
             </section>

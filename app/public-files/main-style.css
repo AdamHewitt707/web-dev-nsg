@@ -598,6 +598,13 @@ main.team.section{
 .signUpForm {
     display: flex;
     flex-direction: row;
+    width: 40vw;
+    padding: 20px;
+
+}
+legend {
+    width: 38vw;
+
 
 }
 
@@ -609,6 +616,18 @@ input {
 label {
     display: block;
     margin-bottom: 5px;
-    padding: 5px;
+    padding: 10px;
 }
+
+
+input[type=submit] {
+    cursor: pointer;
+
+}
+
+.confirmMessage {
+    display: flex;
+    flex-direction: column;
+}
+
 /*---------------------------------------Tyler sign-up .CSS ---------------------------------------------------------------*/
