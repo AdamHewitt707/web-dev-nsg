@@ -50,11 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function initPage() {
   const path = window.location.pathname;
-  const page = path.split("/").pop().replace(".html", ""); // Get name of page via file path to find content within json
+  const page = path.split("/").pop().replace(".html", ""); // Get name of page via file path to filter content within json
 
   console.log("Current page: ", page);
 
-  initNav(); // Process header navbar
+  // initNav(); // Process header navbar
 
   // initPageContent(page); // Process page content based on page name
 
