@@ -511,5 +511,27 @@ main.team.section{
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
 
 /*---------------------------------------Tyler sign-up .CSS ---------------------------------------------------------------*/
+.formSection {
+    flex-direction: column;
+    display: inline-flex;
+    justify-content: center;
+    font-family: cabin-regular;
+}
 
+.signUpForm {
+    display: flex;
+    flex-direction: row;
+
+}
+
+input {
+    display: block;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px;
+}
 /*---------------------------------------Tyler sign-up .CSS ---------------------------------------------------------------*/
