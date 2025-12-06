@@ -394,6 +394,22 @@ footer {
     border-radius: 10px;
 }
 
+.carousel-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel-img {
+    width: 100%;
+    object-fit: cover;
+}
+
 /*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/
 
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
