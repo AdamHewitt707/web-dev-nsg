@@ -1,13 +1,39 @@
 [
     {
         "navigation": {
-            "home": "Home",
-            "goals": "Our goals",
-            "cleanWater": "Clean Water",
-            "climateAction": "Climate Action",
-            "qualityEducation": "Quality Education",
-            "signUp": "Sign up",
-            "aboutUs": "About us"
+            "logo": {
+                "src": "assets/images/nsg_logo.png",
+                "alt": "Norwich Sustainability Group Logo"
+            },
+            "home": {
+                "text": "Home",
+                "href": "index.html"
+            },
+            "goals": {
+                "text": "Our goals",
+                "dropdown": [
+                    {
+                        "text": "Clean Water & Sanitation",
+                        "href": "clean-water.html"
+                    },
+                    {
+                        "text": "Climate Action",
+                        "href": "climate-action.html"
+                    },
+                    {
+                        "text": "Quality Education",
+                        "href": "quality-education.html"
+                    }
+                ]
+            },
+            "signUp": {
+                "text": "Sign up",
+                "href": "sign-up.html"
+            },
+            "aboutUs": {
+                "text": "About us",
+                "href": "about-us.html"
+            }
         }
     },
 
