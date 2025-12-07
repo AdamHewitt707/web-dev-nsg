@@ -230,22 +230,37 @@
         "page": "education",
         "content": {
             "title": "Quality Education",
-            "info": {
+            "sections": {
                 "section1": {
                     "heading": "Challenges Within Education",
                     "pharagraph1": "Education is one of the most important factors affecting peoples' opportunities in life, and many children are still not in education. There remains a gender divide within education, as many women and girls cannot access education at all, or may have more limited options in terms of the subjects they are allowed to study.",
-                    "pharagraph2": "Additionally, there is a large digital divide within different parts of the world, which can prevent the same quality of education being available to everyone. Digital divide refers to the fact that not everyone has the same access to technology and the internet. This can prevent students from being able to learn as effectively, and deny them opportunities. A lack of funding can also have an impact on the resources that schools are able to use, and create or prevent opportunities for students. It is important that students from all financial backgrounds are able to have equal access to education."
+                    "pharagraph2": "Additionally, there is a large digital divide within different parts of the world, which can prevent the same quality of education being available to everyone. Digital divide refers to the fact that not everyone has the same access to technology and the internet. This can prevent students from being able to learn as effectively, and deny them opportunities. A lack of funding can also have an impact on the resources that schools are able to use, and create or prevent opportunities for students. It is important that students from all financial backgrounds are able to have equal access to education.",
+                    "image": {
+                        "src": "",
+                        "alt": "",
+                        "class": ""
+                    }
                 },
                 "section2": {
                     "heading": "How This Impacts Norwich",
                     "pharagraph1": "In order to improve equality within education for Norwich, a focus needs to be given to creating financial equality, so that students are not disadvantaged based on their household income. ",
-                    "pharagraph2": "Additionally, statistics show that the number of women taking Computer Science degrees is roughly 21%. In order to increase the number of female students taking this degree, attention needs to be given to ensuring girls are offered and taking part in STEM based activities in primary and secondary school in order to help make this statistic more equal. "
+                    "pharagraph2": "Additionally, statistics show that the number of women taking Computer Science degrees is roughly 21%. In order to increase the number of female students taking this degree, attention needs to be given to ensuring girls are offered and taking part in STEM based activities in primary and secondary school in order to help make this statistic more equal. ",
+                    "image": {
+                        "src": "",
+                        "alt": "",
+                        "class": ""
+                    }
                 },
                 "section3": {
                     "heading": "Further Reading",
                     "pharagraph1": "Here are some useful links relating to the issues of education:",
                     "pharagraph2": "https://www.un.org/sustainabledevelopment/education/",
-                    "pharagraph3": "https://researchbriefings.files.parliament.uk/documents/CBP-7857/CBP-7857.pdf"
+                    "pharagraph3": "https://researchbriefings.files.parliament.uk/documents/CBP-7857/CBP-7857.pdf",
+                    "image": {
+                        "src": "",
+                        "alt": "",
+                        "class": ""
+                    }
                 }
             }
             
