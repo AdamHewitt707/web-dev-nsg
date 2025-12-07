@@ -137,6 +137,8 @@ function loadIndexContent () {
 
   buildSecondGrid(main, content.sections);
 
+  buildNorwichStandUp(main, content.sections.norwichStandUp);
+
   initCarousel();
 
 }
@@ -221,7 +223,7 @@ function buildWelcomeArticle(parent, welcomeContent) {
 
 
 
-function buildFirstGrid(parent, sectionsData) {
+function buildFirstGrid(parent, sectionContent) {
 
   // Maingrid is the container for the grids
   const mainGrid = document.createElement('div');
@@ -237,7 +239,7 @@ function buildFirstGrid(parent, sectionsData) {
   
   // Header
   const columnHeading = document.createElement('h1');
-  columnHeading.textContent = sectionsData.ueaResearch.heading;
+  columnHeading.textContent = sectionContent.ueaResearch.heading;
   columnArticle.appendChild(columnHeading);
   
   // Div
@@ -246,26 +248,26 @@ function buildFirstGrid(parent, sectionsData) {
   
   // First paragraph
   const para1 = document.createElement('p');
-  para1.textContent = sectionsData.ueaResearch.paragraph1;
+  para1.textContent = sectionContent.ueaResearch.paragraph1;
   columnContainer.appendChild(para1);
   
   // Image
   const image1 = document.createElement('img');
-  image1.src = sectionsData.ueaResearch.image.src;
-  image1.alt = sectionsData.ueaResearch.image.alt;
-  image1.className = sectionsData.ueaResearch.image.class;
+  image1.src = sectionContent.ueaResearch.image.src;
+  image1.alt = sectionContent.ueaResearch.image.alt;
+  image1.className = sectionContent.ueaResearch.image.class;
   columnContainer.appendChild(image1);
   
   // Second paragraph
   const para2 = document.createElement('p');
-  para2.textContent = sectionsData.ueaResearch.paragraph2;
+  para2.textContent = sectionContent.ueaResearch.paragraph2;
   columnContainer.appendChild(para2);
   
   // Goal link
   const link1 = document.createElement('a');
-  link1.href = sectionsData.ueaResearch.link.href;
+  link1.href = sectionContent.ueaResearch.link.href;
   link1.className = 'index-link';
-  link1.textContent = sectionsData.ueaResearch.link.text;
+  link1.textContent = sectionContent.ueaResearch.link.text;
   columnContainer.appendChild(link1);
   
   columnArticle.appendChild(columnContainer);
@@ -284,12 +286,12 @@ function buildFirstGrid(parent, sectionsData) {
   
   // Header
   const rowHeading1 = document.createElement('h1');
-  rowHeading1.textContent = sectionsData.norwichNetZero.heading;
+  rowHeading1.textContent = sectionContent.norwichNetZero.heading;
   rowDiv1.appendChild(rowHeading1);
   
   // First paragraph
   const rowPara1 = document.createElement('p');
-  rowPara1.textContent = sectionsData.norwichNetZero.paragraph1;
+  rowPara1.textContent = sectionContent.norwichNetZero.paragraph1;
   rowDiv1.appendChild(rowPara1);
   
   // Div
@@ -298,9 +300,9 @@ function buildFirstGrid(parent, sectionsData) {
   
   // Image
   const rowImage1 = document.createElement('img');
-  rowImage1.src = sectionsData.norwichNetZero.image.src;
-  rowImage1.alt = sectionsData.norwichNetZero.image.alt;
-  rowImage1.className = sectionsData.norwichNetZero.image.class;
+  rowImage1.src = sectionContent.norwichNetZero.image.src;
+  rowImage1.alt = sectionContent.norwichNetZero.image.alt;
+  rowImage1.className = sectionContent.norwichNetZero.image.class;
   innerRowDiv1.appendChild(rowImage1);
   
   // Div
@@ -309,14 +311,14 @@ function buildFirstGrid(parent, sectionsData) {
   // Second paragpragh
   const rowText1 = document.createElement('p');
   rowText1.className = 'row-text';
-  rowText1.textContent = sectionsData.norwichNetZero.paragraph2;
+  rowText1.textContent = sectionContent.norwichNetZero.paragraph2;
   textDiv1.appendChild(rowText1);
   
   // Goal link
   const link2 = document.createElement('a');
-  link2.href = sectionsData.norwichNetZero.link.href;
+  link2.href = sectionContent.norwichNetZero.link.href;
   link2.className = 'index-link';
-  link2.textContent = sectionsData.norwichNetZero.link.text;
+  link2.textContent = sectionContent.norwichNetZero.link.text;
   textDiv1.appendChild(link2);
   
   innerRowDiv1.appendChild(textDiv1);
@@ -333,12 +335,12 @@ function buildFirstGrid(parent, sectionsData) {
   
   // Header
   const rowHeading2 = document.createElement('h1');
-  rowHeading2.textContent = sectionsData.riversOfHope.heading;
+  rowHeading2.textContent = sectionContent.riversOfHope.heading;
   rowDiv2.appendChild(rowHeading2);
   
   // First Paragraph
   const rowPara2 = document.createElement('p');
-  rowPara2.textContent = sectionsData.riversOfHope.paragraph1;
+  rowPara2.textContent = sectionContent.riversOfHope.paragraph1;
   rowDiv2.appendChild(rowPara2);
   
   // Div
@@ -351,23 +353,23 @@ function buildFirstGrid(parent, sectionsData) {
   // Second Paragraph
   const rowText2 = document.createElement('p');
   rowText2.className = 'row-text';
-  rowText2.textContent = sectionsData.riversOfHope.paragraph2;
+  rowText2.textContent = sectionContent.riversOfHope.paragraph2;
   textDiv2.appendChild(rowText2);
   
   // Goal link
   const link3 = document.createElement('a');
-  link3.href = sectionsData.riversOfHope.link.href;
+  link3.href = sectionContent.riversOfHope.link.href;
   link3.className = 'index-link';
-  link3.textContent = sectionsData.riversOfHope.link.text;
+  link3.textContent = sectionContent.riversOfHope.link.text;
   textDiv2.appendChild(link3);
   
   innerRowDiv2.appendChild(textDiv2);
   
   // Image
   const rowImage2 = document.createElement('img');
-  rowImage2.src = sectionsData.riversOfHope.image.src;
-  rowImage2.alt = sectionsData.riversOfHope.image.alt;
-  rowImage2.className = sectionsData.riversOfHope.image.class;
+  rowImage2.src = sectionContent.riversOfHope.image.src;
+  rowImage2.alt = sectionContent.riversOfHope.image.alt;
+  rowImage2.className = sectionContent.riversOfHope.image.class;
   innerRowDiv2.appendChild(rowImage2);
   
   rowDiv2.appendChild(innerRowDiv2);
@@ -381,7 +383,7 @@ function buildFirstGrid(parent, sectionsData) {
 
 
 
-function buildSecondGrid(parent, sectionsData) {
+function buildSecondGrid(parent, sectionContent) {
 
   // Maingrid
   const mainGrid = document.createElement('div');
@@ -404,12 +406,12 @@ function buildSecondGrid(parent, sectionsData) {
   
   // Header
   const rowHeading1 = document.createElement('h1');
-  rowHeading1.textContent = sectionsData.co2Rates.heading;
+  rowHeading1.textContent = sectionContent.co2Rates.heading;
   rowDiv1.appendChild(rowHeading1);
   
   // First Paragraph
   const rowPara1 = document.createElement('p');
-  rowPara1.textContent = sectionsData.co2Rates.paragraph1;
+  rowPara1.textContent = sectionContent.co2Rates.paragraph1;
   rowDiv1.appendChild(rowPara1);
   
   // Div
@@ -418,9 +420,9 @@ function buildSecondGrid(parent, sectionsData) {
   
   // Image
   const rowImage1 = document.createElement('img');
-  rowImage1.src = sectionsData.co2Rates.image.src;
-  rowImage1.alt = sectionsData.co2Rates.image.alt;
-  rowImage1.className = sectionsData.co2Rates.image.class;
+  rowImage1.src = sectionContent.co2Rates.image.src;
+  rowImage1.alt = sectionContent.co2Rates.image.alt;
+  rowImage1.className = sectionContent.co2Rates.image.class;
   innerRowDiv1.appendChild(rowImage1);
   
   // Div
@@ -429,14 +431,14 @@ function buildSecondGrid(parent, sectionsData) {
   // Second paragraph
   const rowText1 = document.createElement('p');
   rowText1.className = 'row-text';
-  rowText1.textContent = sectionsData.co2Rates.paragraph2;
+  rowText1.textContent = sectionContent.co2Rates.paragraph2;
   textDiv1.appendChild(rowText1);
   
   // Goal link
   const link1 = document.createElement('a');
-  link1.href = sectionsData.co2Rates.link.href;
+  link1.href = sectionContent.co2Rates.link.href;
   link1.className = 'index-link';
-  link1.textContent = sectionsData.co2Rates.link.text;
+  link1.textContent = sectionContent.co2Rates.link.text;
   textDiv1.appendChild(link1);
   
   innerRowDiv1.appendChild(textDiv1);
@@ -453,12 +455,12 @@ function buildSecondGrid(parent, sectionsData) {
   
   // Header
   const rowHeading2 = document.createElement('h1');
-  rowHeading2.textContent = sectionsData.transport.heading;
+  rowHeading2.textContent = sectionContent.transport.heading;
   rowDiv2.appendChild(rowHeading2);
   
   // First Paragraph
   const rowPara2 = document.createElement('p');
-  rowPara2.textContent = sectionsData.transport.paragraph1;
+  rowPara2.textContent = sectionContent.transport.paragraph1;
   rowDiv2.appendChild(rowPara2);
   
   // Div
@@ -471,23 +473,23 @@ function buildSecondGrid(parent, sectionsData) {
   // Second Paragraph
   const rowText2 = document.createElement('p');
   rowText2.className = 'row-text';
-  rowText2.textContent = sectionsData.transport.paragraph2;
+  rowText2.textContent = sectionContent.transport.paragraph2;
   textDiv2.appendChild(rowText2);
   
   // Goal link
   const link2 = document.createElement('a');
-  link2.href = sectionsData.transport.link.href;
+  link2.href = sectionContent.transport.link.href;
   link2.className = 'index-link';
-  link2.textContent = sectionsData.transport.link.text;
+  link2.textContent = sectionContent.transport.link.text;
   textDiv2.appendChild(link2);
   
   innerRowDiv2.appendChild(textDiv2);
   
   // Image
   const rowImage2 = document.createElement('img');
-  rowImage2.src = sectionsData.transport.image.src;
-  rowImage2.alt = sectionsData.transport.image.alt;
-  rowImage2.className = sectionsData.transport.image.class;
+  rowImage2.src = sectionContent.transport.image.src;
+  rowImage2.alt = sectionContent.transport.image.alt;
+  rowImage2.className = sectionContent.transport.image.class;
   innerRowDiv2.appendChild(rowImage2);
   
   rowDiv2.appendChild(innerRowDiv2);
@@ -502,7 +504,7 @@ function buildSecondGrid(parent, sectionsData) {
   
   // Header
   const columnHeading = document.createElement('h1');
-  columnHeading.textContent = sectionsData.rivers.heading;
+  columnHeading.textContent = sectionContent.rivers.heading;
   columnArticle.appendChild(columnHeading);
   
   // Div
@@ -511,26 +513,26 @@ function buildSecondGrid(parent, sectionsData) {
   
   // First paragraph
   const para1 = document.createElement('p');
-  para1.textContent = sectionsData.rivers.paragraph1;
+  para1.textContent = sectionContent.rivers.paragraph1;
   columnContainer.appendChild(para1);
   
   // Image
   const image1 = document.createElement('img');
-  image1.src = sectionsData.rivers.image.src;
-  image1.alt = sectionsData.rivers.image.alt;
-  image1.className = sectionsData.rivers.image.class;
+  image1.src = sectionContent.rivers.image.src;
+  image1.alt = sectionContent.rivers.image.alt;
+  image1.className = sectionContent.rivers.image.class;
   columnContainer.appendChild(image1);
   
   // Second paragraph
   const para2 = document.createElement('p');
-  para2.textContent = sectionsData.rivers.paragraph2;
+  para2.textContent = sectionContent.rivers.paragraph2;
   columnContainer.appendChild(para2);
   
   // Goal link
   const link3 = document.createElement('a');
-  link3.href = sectionsData.rivers.link.href;
+  link3.href = sectionContent.rivers.link.href;
   link3.className = 'index-link';
-  link3.textContent = sectionsData.rivers.link.text;
+  link3.textContent = sectionContent.rivers.link.text;
   columnContainer.appendChild(link3);
   
   columnArticle.appendChild(columnContainer);
@@ -538,6 +540,43 @@ function buildSecondGrid(parent, sectionsData) {
   
   mainGrid.appendChild(containerColumnTwo);
   parent.appendChild(mainGrid);
+}
+
+function buildNorwichStandUp(parent, sectionContent) {
+
+  // Article
+  const article = document.createElement('article');
+  
+  // Header
+  const heading = document.createElement('h1');
+  heading.textContent = sectionContent.heading;
+  article.appendChild(heading);
+  
+  // First Paragraph
+  const paragraph1 = document.createElement('p');
+  paragraph1.textContent = sectionContent.paragraph1;
+  article.appendChild(paragraph1);
+  
+  // Second paragraph
+  const paragraph2 = document.createElement('p');
+  paragraph2.textContent = sectionContent.paragraph2;
+  article.appendChild(paragraph2);
+  
+  // Goal link
+  const link = document.createElement('a');
+  link.href = sectionContent.link.href;
+  link.className = 'index-link';
+  link.textContent = sectionContent.link.text;
+  article.appendChild(link);
+  
+  // Image
+  const image = document.createElement('img');
+  image.src = sectionContent.image.src;
+  image.alt = sectionContent.image.alt;
+  image.className = sectionContent.image.class;
+  article.appendChild(image);
+  
+  parent.appendChild(article);
 }
 
 /* ---------- Index page ---------- */
