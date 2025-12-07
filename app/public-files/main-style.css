@@ -608,17 +608,22 @@ main.team.section{
 
 .signUpForm {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     padding: 20px;
 
 }
-
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 input {
-    display: inline-block;
+    display: block;
+}
 
-
+textarea {
+    display: block;
 }
 
 label {
@@ -634,7 +639,7 @@ input[type=submit] {
 }
 
 .confirmMessage {
-    display: flex;
+    display: block;
     flex-direction: column;
 }
 
