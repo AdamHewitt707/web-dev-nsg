@@ -35,66 +35,121 @@
                 ]
             },
             "welcome": {
-                "heading": "Welcome",
-                "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis. Cras fringilla nisl ut elit condimentum lobortis."
+                "heading": "Welcome to our Site!",
+                "paragraph": "This is the website for the Norwich Sustainability Group. At the heart of our mission lies a profound commitment to fostering sustainable practices within the Norwich community and beyond. Through collaborative research, public engagement, and actionable initiatives, we strive to address pressing environmental challenges while promoting education and awareness about sustainable living. Our work bridges academic expertise from UEA with grassroots community action, creating a powerful force for positive environmental change. Together, we're building a more resilient, equitable, and sustainable future for generations to come."
             },
             "sections": {
                 "ueaResearch": {
                     "heading": "UEA's World-Leading Climate Change Research",
-                    "paragraphs": [
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis.",
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
-                    ],
-                    "image": "assets/images/cow.jpg",
-                    "link": "Learn more"
+                    "paragraph1": "The University of East Anglia is a global climate science leader through its renowned Climatic Research Unit and Tyndall Centre. Their pioneering work has shaped our understanding of climate change for decades, producing critical data on temperature patterns, atmospheric modeling, and policy analysis that informs international agreements. As a UEA student organization, we access this expertise through campus resources and academic networks, anchoring our community sustainability work in evidence-based science while maintaining our grassroots identity. We translate complex research into practical local action for Norwich, bridging academic excellence with community needs through education and engagement initiatives",
+                    "paragraph2": "Our educational programs use UEA's authoritative research to highlight UN Sustainable Development Goal 13: Climate Action urgency. We create materials based on UEA's climate data and organize presentations making science accessible to diverse Norwich audiences. These initiatives help residents understand how global research connects to East Anglia's specific challenges like coastal erosion and agricultural vulnerability. UEA's scientific credibility strengthens our community workshops and advocacy for meaningful climate action across Norfolk. We demonstrate how local initiatives can address global challenges through evidence-based approaches grounded in world-class research.",
+                    "link": {
+                        "text": "Learn more",
+                        "href": "climate.html"
+                    },
+                    "image": {
+                        "src": "assets/images/uea-aerial.jpg",
+                        "alt": "UEA campus with environmental science building and research facilities",
+                        "class": "display-image-column"
+                    }
                 },
-                "norwichNetZero1": {
+                "norwichNetZero": {
                     "heading": "Norwich Pledges Net Zero by 2030",
-                    "paragraphs": [
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
-                    ],
-                    "image": "assets/images/cow.jpg",
-                    "link": "Learn more"
+                    "paragraph1": "Norwich City Council's 2030 carbon neutrality commitment represents ambitious municipal climate leadership. The comprehensive strategy includes energy transitions for buildings, efficiency standards for developments, transport transformations emphasizing active travel, circular economy waste reduction, and green space preservation. This presents both infrastructure challenges and opportunities for creating a sustainable, equitable urban model that could inspire other UK cities. The plan addresses environmental, social, and economic dimensions of sustainability while improving residents' quality of life and public health outcomes across Norwich's diverse communities.",
+                    "paragraph2": "We support this initiative through education about UN Sustainable Development Goal 13: Climate Action. Our workshops show how household decisions collectively contribute to city goals, providing practical carbon reduction steps for different living situations. By connecting personal responsibility with municipal objectives, we're building a sustainability culture that extends beyond policy to daily life. This fosters behavioral change supporting both local environmental improvements and global climate efforts. Our approach emphasizes that urban sustainability requires coordinated action across government, businesses, and residents.",
+                    "link": {
+                        "text": "Learn more",
+                        "href": "climate.html"
+                    },
+                    "image": {
+                        "src": "assets/images/uea-aerial.jpg",
+                        "alt": "Norwich cityscape showing sustainable urban development and green infrastructure",
+                        "class": "display-image-row"
+                    }
                 },
                 "riversOfHope": {
                     "heading": "The Norfolk 'Rivers of Hope' Programme",
-                    "paragraphs": [
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
-                    ],
-                    "image": "assets/images/cow.jpg"
+                    "paragraph1": "Norfolk's waterways face multiple threats including agricultural runoff, sewage overflows, plastic pollution, habitat loss, and climate impacts. The 'Rivers of Hope' program coordinates scientists, authorities, businesses, and volunteers for comprehensive restoration. We conduct scientific water monitoring, targeted cleanups at pollution sites, habitat projects for native species, and educational outreach about watershed health. This collaborative approach addresses both immediate pollution and long-term water management challenges throughout Norfolk's unique aquatic environments and wetland ecosystems.",
+                    "paragraph2": "This initiative advances UN Sustainable Development Goal 6: Clean Water and Sanitation by engaging communities in hands-on water protection. We teach watershed management principles, pollution prevention strategies, and ecosystem importance for environmental and human wellbeing. Combining science with action creates informed water stewards who understand local-to-global water connections. Our work achieves measurable improvements to Norfolk's rivers for wildlife conservation, responsible recreation, and community enjoyment while building capacity for long-term water stewardship across generations.",
+                    "link": {
+                        "text": "Learn more",
+                        "href": "water.html"
+                    },
+                    "image": {
+                        "src": "assets/images/uea-aerial.jpg",
+                        "alt": "Clean river in Norfolk with volunteers conducting scientific water testing and monitoring",
+                        "class": "display-image-row"
+                    }
                 },
                 "co2Rates": {
-                    "heading": "CO2 Rates Continue to Accelerate",
-                    "paragraphs": [
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
-                    ],
-                    "image": "assets/images/cow.jpg"
+                    "heading": "Global CO2 Rates Continue to Accelerate",
+                    "paragraph1": "Despite climate agreements, atmospheric CO2 has surpassed 421 parts per million - levels unprecedented in human history. Current emission paths exceed Paris Agreement targets with serious global consequences for ecosystems, food security, and communities. In East Anglia, we see climate impacts through changing weather patterns, sea level rise affecting our coastline, and threats to agriculture and biodiversity. This acceleration reveals gaps between commitments and action, highlighting decarbonization challenges across economies and sectors.",
+                    "paragraph2": "We use this data to emphasize UN Sustainable Development Goal 13: Climate Action urgency. We make global trends locally relevant, showing Norwich residents how choices connect to worldwide patterns through concrete examples. Through carbon footprint workshops and policy advocacy, we bridge climate science with local responsibility. Our approach emphasizes that while climate change is global, effective action begins at community level, with coordinated local efforts contributing to international response needed for planetary stability.",
+                    "link": {
+                        "text": "Learn more",
+                        "href": "climate.html"
+                    },
+                    "image": {
+                        "src": "assets/images/uea-aerial.jpg",
+                        "alt": "Scientific climate data visualization showing dramatically rising global CO2 levels and temperature trends",
+                        "class": "display-image-row"
+                    }
                 },
                 "transport": {
-                    "heading": "Transport Identified as UK's Largest Emitting Sector",
-                    "paragraphs": [
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
-                    ],
-                    "image": "assets/images/cow.jpg"
+                    "heading": "Transport: UK's Largest Greenhouse Gas Emitting Sector",
+                    "paragraph1": "Transport produces 27% of UK emissions, mostly from road vehicles creating urban air quality issues. Norwich's growth increases traffic, pollution, and transport emissions requiring integrated solutions. Sustainable mobility must serve all residents equitably while reducing environmental impact. We address these complex challenges through education, infrastructure advocacy, and community partnerships that reimagine how people move through our city efficiently and sustainably.",
+                    "paragraph2": "Our transport work supports UN Sustainable Development Goals 13 and 11 through EV adoption workshops, cycling courses, transit navigation help, and infrastructure advocacy. We promote better cycling networks, expanded EV charging, and frequent public transport to shift Norwich toward people-focused mobility. By connecting transport choices to climate and health benefits, we help residents understand how sustainable travel improves both local air quality and global climate outcomes through cumulative individual and community actions.",
+                    "link": {
+                        "text": "Learn more",
+                        "href": "climate.html"
+                    },
+                    "image": {
+                        "src": "assets/images/uea-aerial.jpg",
+                        "alt": "Cyclists, pedestrians, and electric buses sharing sustainable transportation infrastructure in Norwich city center",
+                        "class": "display-image-row"
+                    }
                 },
                 "rivers": {
-                    "heading": "UK's Rivers and Coasts Teeming with Sewage",
-                    "paragraphs": [
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis.",
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
-                    ],
-                    "image": "assets/images/cow.jpg",
-                    "link": "Learn more"
+                    "heading": "UK's Rivers and Coasts: The Sewage Crisis",
+                    "paragraph1": "UK water companies discharge sewage hundreds of thousands of times yearly, with Norfolk's waterways particularly affected by contamination and ecosystem damage. This represents infrastructure, regulatory, and corporate responsibility failures with environmental, health, and economic consequences. Beyond immediate pollution, the crisis threatens tourism, fishing, and community enjoyment of natural spaces essential for wellbeing and Norfolk's distinctive character.",
+                    "paragraph2": "We address this crisis through UN Sustainable Development Goal 6: Clean Water and Sanitation via water monitoring training, cleanup events, policy forums, and conservation education. We teach practical pollution prevention for households and advocacy for stronger protections. Combining scientific monitoring with community action builds pressure for systemic change while achieving immediate water quality improvements. Our approach demonstrates how community initiatives can complement regulatory solutions for complex environmental challenges.",
+                    "link": {
+                        "text": "Learn more",
+                        "href": "water.html"
+                    },
+                    "image": {
+                        "src": "assets/images/uea-aerial.jpg",
+                        "alt": "Diverse community volunteers actively cleaning riverbank pollution and restoring habitat in Norfolk waterway",
+                        "class": "display-image-column"
+                    }
                 },
                 "norwichStandUp": {
-                    "heading": "Norwich can Stand up",
-                    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis.",
-                    "image": "assets/images/cow.jpg"
+                    "heading": "Norwich Can Stand Up for Sustainability",
+                    "paragraph1": "Norwich possesses distinctive advantages and unique characteristics that position our city exceptionally well to become a national leader in urban sustainability innovation, community environmental action, and climate-resilient development. These advantages include world-class research institutions like UEA, an engaged and environmentally conscious citizenry, progressive local government leadership, a strong tradition of civic action and community organizing, compact urban form supporting sustainable mobility, abundant accessible green spaces, and innovative local businesses embracing circular economy principles. From pioneering renewable energy projects to innovative waste reduction programs and community-led conservation efforts, Norwich has demonstrated repeatedly throughout its history that it possesses the creativity, collective determination, and collaborative spirit necessary to address complex environmental challenges through innovative, locally appropriate solutions.",
+                    "paragraph2": "Our student-led organization specifically focuses on advancing UN Sustainable Development Goals 4 (Quality Education), 6 (Clean Water), and 13 (Climate Action) through integrated, interdisciplinary programming that demonstrates practically how these sustainability goals interconnect and reinforce each other in community contexts. Our educational initiatives teach not merely about individual environmental issues in isolation, but about the systems thinking, critical analysis, and collaborative problem-solving approaches needed to address sustainability challenges holistically and effectively. We demonstrate through concrete examples how water conservation practices directly support urban climate resilience, how comprehensive environmental education enables informed community climate action, and how strategic collaboration across different sustainability domains creates synergistic benefits greater than individual efforts alone. This integrated, holistic approach reflects our fundamental belief that the most effective, lasting sustainability work authentically addresses multiple interconnected goals simultaneously.",
+                    "link": {
+                        "text": "Learn more",
+                        "href": "education.html"
+                    },
+                    "image": {
+                        "src": "assets/images/uea-aerial.jpg",
+                        "alt": "Vibrant community garden in Norwich with diverse volunteers of all ages engaged in sustainable urban agriculture",
+                        "class": "img-filler"
+                    }
                 },
                 "signUpNow": {
-                    "heading": "Sign up Now",
-                    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis.",
-                    "image": "assets/images/cow.jpg"
+                    "heading": "Join Norwich Sustainability Group Today",
+                    "paragraph1": "Becoming an active member of Norwich Sustainability Group means joining a diverse, welcoming community of individuals united by shared commitment to environmental stewardship, social responsibility, and collective action for positive change in our city. Our membership includes UEA students, local professionals, engaged retirees, families with children, and community members from all backgrounds - each contributing their unique skills, valuable perspectives, creative energy, and available time to our shared sustainability mission. Membership provides meaningful access to educational workshops, hands-on volunteer opportunities, community networking events, skill-building sessions, and direct connection to a supportive network of like-minded individuals working collaboratively toward tangible environmental improvements and sustainability advancements throughout Norwich.",
+                    "paragraph2": "Through our membership program and community activities, we're actively building the essential partnerships emphasized in UN Sustainable Development Goal 17: Partnerships for the Goals, recognizing that complex sustainability challenges require collaborative approaches across sectors and communities. We work strategically with educational institutions to support Goal 4 (Quality Education), environmental organizations to advance Goal 6 (Clean Water), climate action groups to promote Goal 13 (Climate Action), and community partners across Norwich. Your participation and membership directly strengthen these crucial partnerships by adding authentic community voice, volunteer capacity, local knowledge, and collective energy to our shared efforts. Together through coordinated action, we're creating a powerful multiplier effect where individual contributions combine into meaningful community transformation.",
+                    "link": {
+                        "text": "Sign up",
+                        "href": "sign-up.html"
+                    },
+                    "image": {
+                        "src": "assets/images/uea-aerial.jpg",
+                        "alt": "Diverse group of Norwich residents engaging in community sustainability event with educational displays and activities",
+                        "class": "img-signup"
+                    }
                 }
             }
         }

@@ -131,9 +131,17 @@ function loadIndexContent () {
 
   buildCarousel(main, content.carousel); // Gonna build all the different parts in separate functions cuz it looks nicer and its good for code structure
 
+  buildWelcomeArticle(main, content.welcome);
+
+  buildFirstGrid(main, content.sections);
+
+  buildSecondGrid(main, content.sections);
+
   initCarousel();
 
 }
+
+
 
 function buildCarousel(parent, carouselContent) {
 
@@ -184,6 +192,352 @@ function buildCarousel(parent, carouselContent) {
   
   carouselContainer.appendChild(carouselText); // carouselText is a container that contains all written carousel content
   parent.appendChild(carouselContainer); // Parent here is main
+}
+
+
+
+function buildWelcomeArticle(parent, welcomeContent) {
+
+  // Article element
+  const article = document.createElement('article');
+  
+  // Header
+  const heading = document.createElement('h1');
+  heading.textContent = welcomeContent.heading;
+  article.appendChild(heading);
+  
+  // Paragraph
+  const paragraph = document.createElement('p');
+  paragraph.textContent = welcomeContent.paragraph;
+  article.appendChild(paragraph);
+  
+  parent.appendChild(article);
+
+  // Separator div
+  const separator = document.createElement('div');
+  separator.className = 'separator';
+  parent.appendChild(separator);
+}
+
+
+
+function buildFirstGrid(parent, sectionsData) {
+
+  // Maingrid is the container for the grids
+  const mainGrid = document.createElement('div');
+  mainGrid.className = 'maingrid';
+  
+  // This is the actual column grid
+  const containerColumn = document.createElement('div');
+  containerColumn.className = 'container-column';
+  
+  // Column article
+  const columnArticle = document.createElement('article');
+  columnArticle.className = 'column';
+  
+  // Header
+  const columnHeading = document.createElement('h1');
+  columnHeading.textContent = sectionsData.ueaResearch.heading;
+  columnArticle.appendChild(columnHeading);
+  
+  // Div
+  const columnContainer = document.createElement('div');
+  columnContainer.className = 'column-container';
+  
+  // First paragraph
+  const para1 = document.createElement('p');
+  para1.textContent = sectionsData.ueaResearch.paragraph1;
+  columnContainer.appendChild(para1);
+  
+  // Image
+  const image1 = document.createElement('img');
+  image1.src = sectionsData.ueaResearch.image.src;
+  image1.alt = sectionsData.ueaResearch.image.alt;
+  image1.className = sectionsData.ueaResearch.image.class;
+  columnContainer.appendChild(image1);
+  
+  // Second paragraph
+  const para2 = document.createElement('p');
+  para2.textContent = sectionsData.ueaResearch.paragraph2;
+  columnContainer.appendChild(para2);
+  
+  // Goal link
+  const link1 = document.createElement('a');
+  link1.href = sectionsData.ueaResearch.link.href;
+  link1.className = 'index-link';
+  link1.textContent = sectionsData.ueaResearch.link.text;
+  columnContainer.appendChild(link1);
+  
+  columnArticle.appendChild(columnContainer);
+  containerColumn.appendChild(columnArticle);
+  
+  // Row container for the row articles
+  const containerRow = document.createElement('div');
+  containerRow.className = 'container-row';
+  
+  // Row article #1
+  const rowArticle1 = document.createElement('article');
+  rowArticle1.className = 'row';
+  
+  // Div
+  const rowDiv1 = document.createElement('div');
+  
+  // Header
+  const rowHeading1 = document.createElement('h1');
+  rowHeading1.textContent = sectionsData.norwichNetZero.heading;
+  rowDiv1.appendChild(rowHeading1);
+  
+  // First paragraph
+  const rowPara1 = document.createElement('p');
+  rowPara1.textContent = sectionsData.norwichNetZero.paragraph1;
+  rowDiv1.appendChild(rowPara1);
+  
+  // Div
+  const innerRowDiv1 = document.createElement('div');
+  innerRowDiv1.className = 'row-div';
+  
+  // Image
+  const rowImage1 = document.createElement('img');
+  rowImage1.src = sectionsData.norwichNetZero.image.src;
+  rowImage1.alt = sectionsData.norwichNetZero.image.alt;
+  rowImage1.className = sectionsData.norwichNetZero.image.class;
+  innerRowDiv1.appendChild(rowImage1);
+  
+  // Div
+  const textDiv1 = document.createElement('div');
+  
+  // Second paragpragh
+  const rowText1 = document.createElement('p');
+  rowText1.className = 'row-text';
+  rowText1.textContent = sectionsData.norwichNetZero.paragraph2;
+  textDiv1.appendChild(rowText1);
+  
+  // Goal link
+  const link2 = document.createElement('a');
+  link2.href = sectionsData.norwichNetZero.link.href;
+  link2.className = 'index-link';
+  link2.textContent = sectionsData.norwichNetZero.link.text;
+  textDiv1.appendChild(link2);
+  
+  innerRowDiv1.appendChild(textDiv1);
+  rowDiv1.appendChild(innerRowDiv1);
+  rowArticle1.appendChild(rowDiv1);
+  containerRow.appendChild(rowArticle1);
+  
+  // Row article #2
+  const rowArticle2 = document.createElement('article');
+  rowArticle2.className = 'row';
+  
+  // Div
+  const rowDiv2 = document.createElement('div');
+  
+  // Header
+  const rowHeading2 = document.createElement('h1');
+  rowHeading2.textContent = sectionsData.riversOfHope.heading;
+  rowDiv2.appendChild(rowHeading2);
+  
+  // First Paragraph
+  const rowPara2 = document.createElement('p');
+  rowPara2.textContent = sectionsData.riversOfHope.paragraph1;
+  rowDiv2.appendChild(rowPara2);
+  
+  // Div
+  const innerRowDiv2 = document.createElement('div');
+  innerRowDiv2.className = 'row-div';
+  
+  // Div
+  const textDiv2 = document.createElement('div');
+  
+  // Second Paragraph
+  const rowText2 = document.createElement('p');
+  rowText2.className = 'row-text';
+  rowText2.textContent = sectionsData.riversOfHope.paragraph2;
+  textDiv2.appendChild(rowText2);
+  
+  // Goal link
+  const link3 = document.createElement('a');
+  link3.href = sectionsData.riversOfHope.link.href;
+  link3.className = 'index-link';
+  link3.textContent = sectionsData.riversOfHope.link.text;
+  textDiv2.appendChild(link3);
+  
+  innerRowDiv2.appendChild(textDiv2);
+  
+  // Image
+  const rowImage2 = document.createElement('img');
+  rowImage2.src = sectionsData.riversOfHope.image.src;
+  rowImage2.alt = sectionsData.riversOfHope.image.alt;
+  rowImage2.className = sectionsData.riversOfHope.image.class;
+  innerRowDiv2.appendChild(rowImage2);
+  
+  rowDiv2.appendChild(innerRowDiv2);
+  rowArticle2.appendChild(rowDiv2);
+  containerRow.appendChild(rowArticle2);
+  
+  containerColumn.appendChild(containerRow);
+  mainGrid.appendChild(containerColumn);
+  parent.appendChild(mainGrid);
+}
+
+
+
+function buildSecondGrid(parent, sectionsData) {
+
+  // Maingrid
+  const mainGrid = document.createElement('div');
+  mainGrid.className = 'maingrid';
+  
+  // Div
+  const containerColumnTwo = document.createElement('div');
+  containerColumnTwo.className = 'container-column-two';
+  
+  // Div
+  const containerRow = document.createElement('div');
+  containerRow.className = 'container-row';
+  
+  // Row article #3
+  const rowArticle1 = document.createElement('article');
+  rowArticle1.className = 'row-two';
+  
+  // Div
+  const rowDiv1 = document.createElement('div');
+  
+  // Header
+  const rowHeading1 = document.createElement('h1');
+  rowHeading1.textContent = sectionsData.co2Rates.heading;
+  rowDiv1.appendChild(rowHeading1);
+  
+  // First Paragraph
+  const rowPara1 = document.createElement('p');
+  rowPara1.textContent = sectionsData.co2Rates.paragraph1;
+  rowDiv1.appendChild(rowPara1);
+  
+  // Div
+  const innerRowDiv1 = document.createElement('div');
+  innerRowDiv1.className = 'row-div';
+  
+  // Image
+  const rowImage1 = document.createElement('img');
+  rowImage1.src = sectionsData.co2Rates.image.src;
+  rowImage1.alt = sectionsData.co2Rates.image.alt;
+  rowImage1.className = sectionsData.co2Rates.image.class;
+  innerRowDiv1.appendChild(rowImage1);
+  
+  // Div
+  const textDiv1 = document.createElement('div');
+  
+  // Second paragraph
+  const rowText1 = document.createElement('p');
+  rowText1.className = 'row-text';
+  rowText1.textContent = sectionsData.co2Rates.paragraph2;
+  textDiv1.appendChild(rowText1);
+  
+  // Goal link
+  const link1 = document.createElement('a');
+  link1.href = sectionsData.co2Rates.link.href;
+  link1.className = 'index-link';
+  link1.textContent = sectionsData.co2Rates.link.text;
+  textDiv1.appendChild(link1);
+  
+  innerRowDiv1.appendChild(textDiv1);
+  rowDiv1.appendChild(innerRowDiv1);
+  rowArticle1.appendChild(rowDiv1);
+  containerRow.appendChild(rowArticle1);
+  
+  // Row article #4
+  const rowArticle2 = document.createElement('article');
+  rowArticle2.className = 'row-two';
+  
+  // Div
+  const rowDiv2 = document.createElement('div');
+  
+  // Header
+  const rowHeading2 = document.createElement('h1');
+  rowHeading2.textContent = sectionsData.transport.heading;
+  rowDiv2.appendChild(rowHeading2);
+  
+  // First Paragraph
+  const rowPara2 = document.createElement('p');
+  rowPara2.textContent = sectionsData.transport.paragraph1;
+  rowDiv2.appendChild(rowPara2);
+  
+  // Div
+  const innerRowDiv2 = document.createElement('div');
+  innerRowDiv2.className = 'row-div';
+  
+  // Div
+  const textDiv2 = document.createElement('div');
+  
+  // Second Paragraph
+  const rowText2 = document.createElement('p');
+  rowText2.className = 'row-text';
+  rowText2.textContent = sectionsData.transport.paragraph2;
+  textDiv2.appendChild(rowText2);
+  
+  // Goal link
+  const link2 = document.createElement('a');
+  link2.href = sectionsData.transport.link.href;
+  link2.className = 'index-link';
+  link2.textContent = sectionsData.transport.link.text;
+  textDiv2.appendChild(link2);
+  
+  innerRowDiv2.appendChild(textDiv2);
+  
+  // Image
+  const rowImage2 = document.createElement('img');
+  rowImage2.src = sectionsData.transport.image.src;
+  rowImage2.alt = sectionsData.transport.image.alt;
+  rowImage2.className = sectionsData.transport.image.class;
+  innerRowDiv2.appendChild(rowImage2);
+  
+  rowDiv2.appendChild(innerRowDiv2);
+  rowArticle2.appendChild(rowDiv2);
+  containerRow.appendChild(rowArticle2);
+  
+  containerColumnTwo.appendChild(containerRow);
+  
+  // Column article #2
+  const columnArticle = document.createElement('article');
+  columnArticle.className = 'column-two';
+  
+  // Header
+  const columnHeading = document.createElement('h1');
+  columnHeading.textContent = sectionsData.rivers.heading;
+  columnArticle.appendChild(columnHeading);
+  
+  // Div
+  const columnContainer = document.createElement('div');
+  columnContainer.className = 'column-container';
+  
+  // First paragraph
+  const para1 = document.createElement('p');
+  para1.textContent = sectionsData.rivers.paragraph1;
+  columnContainer.appendChild(para1);
+  
+  // Image
+  const image1 = document.createElement('img');
+  image1.src = sectionsData.rivers.image.src;
+  image1.alt = sectionsData.rivers.image.alt;
+  image1.className = sectionsData.rivers.image.class;
+  columnContainer.appendChild(image1);
+  
+  // Second paragraph
+  const para2 = document.createElement('p');
+  para2.textContent = sectionsData.rivers.paragraph2;
+  columnContainer.appendChild(para2);
+  
+  // Goal link
+  const link3 = document.createElement('a');
+  link3.href = sectionsData.rivers.link.href;
+  link3.className = 'index-link';
+  link3.textContent = sectionsData.rivers.link.text;
+  columnContainer.appendChild(link3);
+  
+  columnArticle.appendChild(columnContainer);
+  containerColumnTwo.appendChild(columnArticle);
+  
+  mainGrid.appendChild(containerColumnTwo);
+  parent.appendChild(mainGrid);
 }
 
 /* ---------- Index page ---------- */
@@ -350,8 +704,7 @@ const translations = {
     "index.WelcomeHeading": "Welcome",
 
     "index.Section.UEAResearchHeading": "UEA's World-Leading Climate Change Research",
-    "index.Section.NorwichNetZero1Heading": "Norwich Pledges Net Zero by 2030",
-    "index.Section.NorwichNetZero2Heading": "Norwich Pledges Net Zero by 2030",
+    "index.Section.NorwichNetZeroHeading": "Norwich Pledges Net Zero by 2030",
     "index.Section.CO2Heading": "CO2 Rates Continue to Accelerate",
     "index.Section.TransportHeading": "Transport Identified as UK's Largest Emitting Sector",
     "index.Section.RiversHeading": "UK's Rivers and Coasts Teeming with Sewage",
@@ -399,8 +752,7 @@ const translations = {
     "index.WelcomeHeading": "Bienvenido",
 
     "index.Section.UEAResearchHeading": "Investigación de clase mundial de la UEA sobre el cambio climático",
-    "index.Section.NorwichNetZero1Heading": "Norwich promete cero emisiones netas para 2030",
-    "index.Section.NorwichNetZero2Heading": "Norwich promete cero emisiones netas para 2030",
+    "index.Section.NorwichNetZeroHeading": "Norwich promete cero emisiones netas para 2030",
     "index.Section.CO2Heading": "Las tasas de CO₂ continúan aumentando",
     "index.Section.TransportHeading": "El transporte es el mayor sector emisor del Reino Unido",
     "index.Section.RiversHeading": "Ríos y costas del Reino Unido llenos de aguas residuales",
@@ -448,8 +800,7 @@ const translations = {
     "index.WelcomeHeading": "Croeso",
 
     "index.Section.UEAResearchHeading": "Ymchwil flaenllaw’r UEA ar newid hinsawdd",
-    "index.Section.NorwichNetZero1Heading": "Norwich yn addo sero net erbyn 2030",
-    "index.Section.NorwichNetZero2Heading": "Norwich yn addo sero net erbyn 2030",
+    "index.Section.NorwichNetZeroHeading": "Norwich yn addo sero net erbyn 2030",
     "index.Section.CO2Heading": "Cyfraddau CO₂ yn parhau i gynyddu",
     "index.Section.TransportHeading": "Trafnidiaeth yw’r sector mwyaf llygru yn y DU",
     "index.Section.RiversHeading": "Afonydd ac arfordiroedd y DU yn llawn carthffosiaeth",
