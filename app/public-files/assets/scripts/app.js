@@ -23,7 +23,7 @@ window.onclick = function(e){
 /* ---------- Storing json content ---------- */
 
 // let headerElement = document.querySelector("#header"); tbh idk if this line is necessary or not
-let localJsonFile = "JSON/en.json";
+let localJsonFile = "/JSON/en.json";
 let jsonContent; // To store all the json stuff locally on javascript
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -795,7 +795,7 @@ if (signUpForm) {
             firstName: firstNameInput.value,
             lastName: lastNameInput.value,
             email: emailInput.value,
-            comment: commentInput.value
+            comments: commentInput.value
         };
         const requestHeaders = {
             'Content-Type': 'application/json',
@@ -806,9 +806,7 @@ if (signUpForm) {
             headers: requestHeaders,
             body: JSON.stringify(formBody)
         })
-            .then((response) => {
-                return response.json();
-            })
+            .then((response) => response.json())
             .then((responsedata) => {
                 console.log(responsedata);
                 confirmMessage.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
