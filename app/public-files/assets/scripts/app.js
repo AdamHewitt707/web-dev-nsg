@@ -123,7 +123,7 @@ function loadIndexContent () {
 
   const main = document.querySelector('main')
 
-  main.innerHTML = ''; // Wipe any existing html
+  main.innerHTML = ''; // Wipe any existing html within main
 
   const indexContent = jsonContent.find(item => item.page === "index"); // Find and store all index data
 
@@ -138,6 +138,8 @@ function loadIndexContent () {
   buildSecondGrid(main, content.sections);
 
   buildNorwichStandUp(main, content.sections.norwichStandUp);
+
+  buildSignUpSection(main, content.sections.signUpNow)
 
   initCarousel();
 
@@ -542,6 +544,8 @@ function buildSecondGrid(parent, sectionContent) {
   parent.appendChild(mainGrid);
 }
 
+
+
 function buildNorwichStandUp(parent, sectionContent) {
 
   // Article
@@ -576,6 +580,57 @@ function buildNorwichStandUp(parent, sectionContent) {
   image.className = sectionContent.image.class;
   article.appendChild(image);
   
+  parent.appendChild(article);
+
+  // Separator div
+  const separator = document.createElement('div');
+  separator.className = 'separator';
+  parent.appendChild(separator);
+}
+
+
+
+function buildSignUpSection(parent, sectionData) {
+
+  // Article
+  const article = document.createElement('article');
+  const signupDiv = document.createElement('div');
+  signupDiv.className = 'signup';
+  
+  // Image
+  const image = document.createElement('img');
+  image.src = sectionData.image.src;
+  image.alt = sectionData.image.alt;
+  image.className = sectionData.image.class;
+  signupDiv.appendChild(image);
+  
+  // Div
+  const textDiv = document.createElement('div');
+  
+  // Header
+  const heading = document.createElement('h1');
+  heading.textContent = sectionData.heading;
+  textDiv.appendChild(heading);
+  
+  // First paragraph
+  const paragraph1 = document.createElement('p');
+  paragraph1.textContent = sectionData.paragraph1;
+  textDiv.appendChild(paragraph1);
+  
+  // Second Paragraph
+  const paragraph2 = document.createElement('p');
+  paragraph2.textContent = sectionData.paragraph2;
+  textDiv.appendChild(paragraph2);
+  
+  // Goal link
+  const link = document.createElement('a');
+  link.href = sectionData.link.href;
+  link.className = 'index-link';
+  link.textContent = sectionData.link.text;
+  textDiv.appendChild(link);
+  
+  signupDiv.appendChild(textDiv);
+  article.appendChild(signupDiv);
   parent.appendChild(article);
 }
 
