@@ -1,0 +1,28 @@
+{
+  "name": "web-dev-nsg",
+  "version": "1.0.0",
+  "description": "node.js for web dev assignment",
+  "homepage": "https://github.com/AdamHewitt707/web-dev-nsg#readme",
+  "bugs": {
+    "url": "https://github.com/AdamHewitt707/web-dev-nsg/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamHewitt707/web-dev-nsg.git"
+  },
+  "license": "ISC",
+  "author": "Adam Hewitt",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server-app.js",
+    "dev": "nodemon server-app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
