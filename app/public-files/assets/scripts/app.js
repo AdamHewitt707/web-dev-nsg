@@ -704,10 +704,12 @@ let emailInput = document.querySelector('#email');
 let commentInput = document.querySelector('#comments');
 let confirmMessage = document.querySelector('#confirmMessage');
 
+
+
 if (signUpForm) {
     signUpForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        confirmMessage.textContent = signUpForm.submitText;
+
 
         const formBody = {
             firstName: firstNameInput.value,
@@ -724,15 +726,14 @@ if (signUpForm) {
             headers: requestHeaders,
             body: JSON.stringify(formBody)
         })
-            .then((response) => {
-                return response.json();
-            })
+            .then((response) =>
+                response.json())
             .then((responsedata) => {
                 console.log(responsedata);
                 confirmMessage.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
                 received and we will contact you at ${responsedata.email} shortly`;
-            });
-    })
+            })
+    });
 
 }
 
