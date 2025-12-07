@@ -72,12 +72,12 @@ body {
     margin: 0;
     background-color: #9FAD8A;
     background-image:
-        url("/app/public-files/assets/images/nsg-icon.png"),
-        url("/app/public-files/assets/images/nsg-icon.png");
+            url("/app/public-files/assets/images/nsg-icon.png"),
+            url("/app/public-files/assets/images/nsg-icon.png");
     background-repeat: repeat;
     background-position:
-    0 0,
-    225px 225px;
+            0 0,
+            225px 225px;
     background-size: 150px;
     display: flex;
     flex-direction: column;
@@ -364,7 +364,7 @@ footer {
     font-size: 20px;
     text-decoration: none;
     font-weight: 700;
-    width: 200px; 
+    width: 200px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -496,9 +496,9 @@ footer {
 
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
 * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 main.team.section{
@@ -561,9 +561,9 @@ main.team.section{
 .team.card .team-photo {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    object-position: center; 
-    display: block; 
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 /* image left + text right inside each card */
