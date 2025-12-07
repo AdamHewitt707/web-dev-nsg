@@ -773,51 +773,51 @@ function loadWaterContent () {
 
 /* ---------- Signup page ---------- */
 
-function loadSignupContent () {
-    console.log("Loading Sign Up Content...")
+function loadSignupContent() {
+    console.log("Loading Sign Up Content...");
 
     // Build your page through javascript here
+    
+    setTimeout(setupFormHandler, 0);
 }
 
-let signUpForm = document.querySelector('form');
-let firstNameInput = document.querySelector('#firstName');
-let lastNameInput = document.querySelector('#lastName');
-let emailInput = document.querySelector('#email');
-let commentInput = document.querySelector('#comments');
-let confirmMessage = document.querySelector('#confirmMessage');
+function setupFormHandler() {
+    let signUpForm = document.querySelector('form');
+    let firstNameInput = document.querySelector('#firstName');
+    let lastNameInput = document.querySelector('#lastName');
+    let emailInput = document.querySelector('#email');
+    let commentInput = document.querySelector('#comments');
+    let confirmMessage = document.querySelector('#confirmMessage');
 
+    if (signUpForm) {
+        signUpForm.addEventListener('submit', (e) => {
+            e.preventDefault();
 
+            const formBody = {
+                firstName: firstNameInput.value,
+                lastName: lastNameInput.value,
+                email: emailInput.value,
+                comments: commentInput.value
+            };
+            const requestHeaders = {
+                'Content-Type': 'application/json',
+            };
 
-if (signUpForm) {
-    signUpForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-
-        const formBody = {
-            firstName: firstNameInput.value,
-            lastName: lastNameInput.value,
-            email: emailInput.value,
-            comments: commentInput.value
-        };
-        const requestHeaders = {
-            'Content-Type': 'application/json',
-        };
-
-        fetch('/sign-up', {
-            method: 'post',
-            headers: requestHeaders,
-            body: JSON.stringify(formBody)
-        })
-            .then((response) => response.json())
-            .then((responsedata) => {
-                console.log(responsedata);
-                confirmMessage.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
-                received and we will contact you at ${responsedata.email} shortly`;
+            fetch('/sign-up', {
+                method: 'post',
+                headers: requestHeaders,
+                body: JSON.stringify(formBody)
             })
-    });
+                .then((response) => response.json())
+                .then((responsedata) => {
+                    console.log(responsedata);
+                    confirmMessage.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
+                received and we will contact you at ${responsedata.email} shortly`;
+                })
 
-}
-
+        });
+    }
+  }
 
 /* ---------- Signup page ---------- */
 
@@ -825,8 +825,6 @@ if (signUpForm) {
 
 
 
-
-/* ---------- Aboutus page ---------- */
 
 /* ---------- Aboutus page ---------- */
 
@@ -1048,8 +1046,6 @@ function loadAboutusContent() {
   teamSection.appendChild(teamGrid);
   main.appendChild(teamSection);
 }
-
-/* ---------- Aboutus page ---------- */
 
 /* ---------- Aboutus page ---------- */
 
