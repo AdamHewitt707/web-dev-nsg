@@ -14,15 +14,15 @@
                 "dropdown": [
                     {
                         "text": "Clean Water & Sanitation",
-                        "href": "clean-water.html"
+                        "href": "water.html"
                     },
                     {
                         "text": "Climate Action",
-                        "href": "climate-action.html"
+                        "href": "climate.html"
                     },
                     {
                         "text": "Quality Education",
-                        "href": "quality-education.html"
+                        "href": "education.html"
                     }
                 ]
             },
