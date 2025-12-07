@@ -8,7 +8,7 @@
         <!-- stylesheets -->
         <link rel="stylesheet" href ="main-style.css">
         <!-- scripting -->
-        <script src="/app/public-files/assets/scripts/app.js"></script>
+        <script src="assets/scripts/app.js"></script>
     </head>
 
     <body>
@@ -41,29 +41,33 @@
             </section>
 
             <section class="formSection">
-                <form method="post" action="#" class="signUpForm">
+                <form method="post" action="/sign-up" class="signUpForm">
                     <fieldset>
                         <legend>Sign Up</legend>
 
                         <label>
-                            <input type="text" name="firstName" placeholder="First Name*" required>
+                            <input type="text" name="firstName" placeholder="First Name*" id="firstName" required>
                         </label>
 
                         <label>
-                            <input type="text" name="lastName" placeholder="Last Name*" required>
+                            <input type="text" name="lastName" placeholder="Last Name*" id="lastName" required>
                         </label>
 
                         <label>
-                            <input type="email" name="email" placeholder="Email Address*" required>
+                            <input type="email" name="email" placeholder="Email Address*" id="email" required>
                         </label>
 
 
                         <label>
-                            <textarea name="comments" placeholder="Comments"></textarea>
+                            <textarea name="comments" placeholder="Comments" id="comments"></textarea>
+                        </label>
+
+                        <label>
+                            <input type="submit" value="Sign Up">
                         </label>
 
 
-                        <p class = confirmMessage> * Required</p>
+                        <p class ="confirmMessage" id ="confirmMessage"> * Required</p>
 
                     </fieldset>
 
