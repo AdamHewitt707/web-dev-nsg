@@ -777,7 +777,7 @@ function loadSignupContent() {
     console.log("Loading Sign Up Content...");
 
     // Build your page through javascript here
-
+    
     setTimeout(setupFormHandler, 0);
 }
 
@@ -817,7 +817,7 @@ function setupFormHandler() {
 
         });
     }
-}
+  }
 
 /* ---------- Signup page ---------- */
 
