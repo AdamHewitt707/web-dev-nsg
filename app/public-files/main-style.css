@@ -72,8 +72,8 @@ body {
     margin: 0;
     background-color: #9FAD8A;
     background-image:
-            url("/app/public-files/assets/images/nsg-icon.png"),
-            url("/app/public-files/assets/images/nsg-icon.png");
+            url("assets/images/nsg-icon.png"),
+            url("assets/images/nsg-icon.png");
     background-repeat: repeat;
     background-position:
             0 0,
