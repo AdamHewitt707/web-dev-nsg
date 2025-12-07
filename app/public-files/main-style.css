@@ -607,6 +607,7 @@ main.team.section{
 /*---------------------------------------Chalak about-us .CSS -------------------------------------------------------------*/
 
 /*---------------------------------------Tyler sign-up .CSS ---------------------------------------------------------------*/
+
 .formSection {
     flex-direction: column;
     display: inline-block;
@@ -623,7 +624,7 @@ main.team.section{
 
 }
 fieldset {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
 }
 
