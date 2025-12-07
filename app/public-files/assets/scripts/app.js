@@ -54,7 +54,7 @@ function initPage() {
 
   // console.log("Current page: ", page); // not needed anymore but I'll keep this here for future debugging
 
-  // initNav(); // Process header navbar is its own function because its universal for the entire website
+  initNav(); // Process header navbar is its own function because its universal for the entire website
 
   initPageContent(page); // Process page content based on page name
 
@@ -62,6 +62,88 @@ function initPage() {
 }
 
 /* ---------- Initialize page ---------- */
+
+
+
+
+
+
+/* ---------- Build navbar ---------- */
+
+function initNav() {
+
+    console.log("Initializing navigation..."); // For debugging purposes
+    
+    // Find navigation data within the json
+    const navData = jsonContent.find(item => item.navigation);
+    
+    const nav = navData.navigation; // Store navigation data only
+    const header = document.querySelector('header'); // Store header element as variable
+    
+    // Navbar container
+    const navbar = document.createElement('div');
+    navbar.className = 'navbar';
+    
+    // Logo
+    const logo = document.createElement('img');
+    logo.src = nav.logo.src;
+    logo.alt = nav.logo.alt;
+    logo.className = 'logo';
+    navbar.appendChild(logo);
+    
+    // Home link
+    const homeLink = document.createElement('a');
+    homeLink.href = nav.home.href;
+    homeLink.className = 'navBtn';
+    homeLink.textContent = nav.home.text;
+    navbar.appendChild(homeLink);
+    
+    // Goals dropdown container
+    const dropdownContainer = document.createElement('div');
+    
+    // Dropdown button
+    const dropBtn = document.createElement('button');
+    dropBtn.className = 'dropbtn';
+    dropBtn.textContent = nav.goals.text;
+    dropBtn.addEventListener('click', showGoalsMenu);
+    dropdownContainer.appendChild(dropBtn);
+    
+    // Dropdown content
+    const dropdownContent = document.createElement('div');
+    dropdownContent.id = 'myDropdown';
+    dropdownContent.className = 'dropdown-content';
+    
+    // Dropdown items
+    nav.goals.dropdown.forEach(item => {
+        const dropdownLink = document.createElement('a');
+        dropdownLink.href = item.href;
+        dropdownLink.textContent = item.text;
+        dropdownContent.appendChild(dropdownLink);
+    });
+    
+    dropdownContainer.appendChild(dropdownContent);
+    navbar.appendChild(dropdownContainer);
+    
+    // Sign Up link
+    const signUpLink = document.createElement('a');
+    signUpLink.href = nav.signUp.href;
+    signUpLink.className = 'navBtn';
+    signUpLink.textContent = nav.signUp.text;
+    navbar.appendChild(signUpLink);
+    
+    // About Us link
+    const aboutUsLink = document.createElement('a');
+    aboutUsLink.href = nav.aboutUs.href;
+    aboutUsLink.className = 'navBtn';
+    aboutUsLink.textContent = nav.aboutUs.text;
+    navbar.appendChild(aboutUsLink);
+    
+    header.appendChild(navbar);
+    
+    console.log("Navigation initialized successfully");
+}
+
+/* ---------- Build navbar ---------- */
 
 
 
@@ -747,12 +829,228 @@ if (signUpForm) {
 
 /* ---------- Aboutus page ---------- */
 
-function loadAboutusContent () {
-  console.log("Loading About Us Content...")
+/* ---------- Aboutus page ---------- */
 
-  // Build your page through javascript here
+function loadAboutusContent() {
+  console.log("Loading About Us Content...");
 
+  const main = document.querySelector('main');
+  main.innerHTML = ''; // Clear existing content
+
+  const aboutusContent = jsonContent.find(item => item.page === "about-us");
+
+  if (!aboutusContent) {
+    console.error("About Us content not found in JSON");
+    return;
+  }
+
+  const content = aboutusContent.content;
+
+  // Section container
+  const teamSection = document.createElement('div');
+  teamSection.className = 'team section';
+
+  // Grid container
+  const teamGrid = document.createElement('div');
+  teamGrid.className = 'team grid';
+
+  // CHALAK CARD
+  const chalakCard = document.createElement('article');
+  chalakCard.className = 'team card';
+
+  // Header / Name
+  const chalakHeading = document.createElement('h2');
+  const chalakName = document.createElement('span');
+  chalakName.textContent = content.team[0].name;
+  chalakHeading.appendChild(chalakName);
+  chalakHeading.appendChild(document.createElement('br'));
+
+  // Job / Role
+  const chalakRole = document.createElement('span');
+  chalakRole.className = 'job';
+  chalakRole.textContent = content.team[0].role;
+  chalakHeading.appendChild(chalakRole);
+  chalakCard.appendChild(chalakHeading);
+
+  // Div
+  const chalakUnderline = document.createElement('div');
+  chalakUnderline.className = 'title underline';
+  chalakCard.appendChild(chalakUnderline);
+
+  // Div
+  const chalakBioRow = document.createElement('div');
+  chalakBioRow.className = 'bio-row';
+
+  // Image
+  const chalakPhotoContainer = document.createElement('div');
+  chalakPhotoContainer.className = 'photo placeholder';
+  const chalakPhoto = document.createElement('img');
+  chalakPhoto.src = content.team[0].image.src;
+  chalakPhoto.alt = content.team[0].image.alt;
+  chalakPhoto.className = 'team-photo';
+  chalakPhotoContainer.appendChild(chalakPhoto);
+  chalakBioRow.appendChild(chalakPhotoContainer);
+
+  // Div
+  const chalakBioText = document.createElement('div');
+  chalakBioText.className = 'bio-text';
+  const chalakBio = document.createElement('p');
+  chalakBio.textContent = content.team[0].bio;
+  chalakBioText.appendChild(chalakBio);
+  chalakBioRow.appendChild(chalakBioText);
+
+  chalakCard.appendChild(chalakBioRow);
+  teamGrid.appendChild(chalakCard);
+
+  // ADAM CARD
+  const adamCard = document.createElement('article');
+  adamCard.className = 'team card';
+
+  // Header / Name
+  const adamHeading = document.createElement('h2');
+  const adamName = document.createElement('span');
+  adamName.textContent = content.team[1].name;
+  adamHeading.appendChild(adamName);
+  adamHeading.appendChild(document.createElement('br'));
+
+  // Job / Role
+  const adamRole = document.createElement('span');
+  adamRole.className = 'job';
+  adamRole.textContent = content.team[1].role;
+  adamHeading.appendChild(adamRole);
+  adamCard.appendChild(adamHeading);
+
+  // Div
+  const adamUnderline = document.createElement('div');
+  adamUnderline.className = 'title underline';
+  adamCard.appendChild(adamUnderline);
+
+  // Div
+  const adamBioRow = document.createElement('div');
+  adamBioRow.className = 'bio-row';
+
+  // Image
+  const adamPhotoContainer = document.createElement('div');
+  adamPhotoContainer.className = 'photo placeholder';
+  const adamPhoto = document.createElement('img');
+  adamPhoto.src = content.team[1].image.src;
+  adamPhoto.alt = content.team[1].image.alt;
+  adamPhoto.className = 'team-photo';
+  adamPhotoContainer.appendChild(adamPhoto);
+  adamBioRow.appendChild(adamPhotoContainer);
+
+  // Div
+  const adamBioText = document.createElement('div');
+  adamBioText.className = 'bio-text';
+  const adamBio = document.createElement('p');
+  adamBio.textContent = content.team[1].bio;
+  adamBioText.appendChild(adamBio);
+  adamBioRow.appendChild(adamBioText);
+
+  adamCard.appendChild(adamBioRow);
+  teamGrid.appendChild(adamCard);
+
+  // MARTHA CARD
+  const marthaCard = document.createElement('article');
+  marthaCard.className = 'team card';
+
+  // Header / Name
+  const marthaHeading = document.createElement('h2');
+  const marthaName = document.createElement('span');
+  marthaName.textContent = content.team[2].name;
+  marthaHeading.appendChild(marthaName);
+  marthaHeading.appendChild(document.createElement('br'));
+
+  // Job / Role
+  const marthaRole = document.createElement('span');
+  marthaRole.className = 'job';
+  marthaRole.textContent = content.team[2].role;
+  marthaHeading.appendChild(marthaRole);
+  marthaCard.appendChild(marthaHeading);
+
+  // Div
+  const marthaUnderline = document.createElement('div');
+  marthaUnderline.className = 'title underline';
+  marthaCard.appendChild(marthaUnderline);
+
+  // Div
+  const marthaBioRow = document.createElement('div');
+  marthaBioRow.className = 'bio-row';
+
+  // Image
+  const marthaPhotoContainer = document.createElement('div');
+  marthaPhotoContainer.className = 'photo placeholder';
+  const marthaPhoto = document.createElement('img');
+  marthaPhoto.src = content.team[2].image.src;
+  marthaPhoto.alt = content.team[2].image.alt;
+  marthaPhoto.className = 'team-photo';
+  marthaPhotoContainer.appendChild(marthaPhoto);
+  marthaBioRow.appendChild(marthaPhotoContainer);
+
+  // Div
+  const marthaBioText = document.createElement('div');
+  marthaBioText.className = 'bio-text';
+  const marthaBio = document.createElement('p');
+  marthaBio.textContent = content.team[2].bio;
+  marthaBioText.appendChild(marthaBio);
+  marthaBioRow.appendChild(marthaBioText);
+
+  marthaCard.appendChild(marthaBioRow);
+  teamGrid.appendChild(marthaCard);
+
+  // TYLER CARD
+  const tylerCard = document.createElement('article');
+  tylerCard.className = 'team card';
+
+  // Header / Name
+  const tylerHeading = document.createElement('h2');
+  const tylerName = document.createElement('span');
+  tylerName.textContent = content.team[3].name;
+  tylerHeading.appendChild(tylerName);
+  tylerHeading.appendChild(document.createElement('br'));
+
+  // Job / Role
+  const tylerRole = document.createElement('span');
+  tylerRole.className = 'job';
+  tylerRole.textContent = content.team[3].role;
+  tylerHeading.appendChild(tylerRole);
+  tylerCard.appendChild(tylerHeading);
+
+  // Div
+  const tylerUnderline = document.createElement('div');
+  tylerUnderline.className = 'title underline';
+  tylerCard.appendChild(tylerUnderline);
+
+  // Div
+  const tylerBioRow = document.createElement('div');
+  tylerBioRow.className = 'bio-row';
+
+  // Image
+  const tylerPhotoContainer = document.createElement('div');
+  tylerPhotoContainer.className = 'photo placeholder';
+  const tylerPhoto = document.createElement('img');
+  tylerPhoto.src = content.team[3].image.src;
+  tylerPhoto.alt = content.team[3].image.alt;
+  tylerPhoto.className = 'team-photo';
+  tylerPhotoContainer.appendChild(tylerPhoto);
+  tylerBioRow.appendChild(tylerPhotoContainer);
+
+  // Div
+  const tylerBioText = document.createElement('div');
+  tylerBioText.className = 'bio-text';
+  const tylerBio = document.createElement('p');
+  tylerBio.textContent = content.team[3].bio;
+  tylerBioText.appendChild(tylerBio);
+  tylerBioRow.appendChild(tylerBioText);
+
+  tylerCard.appendChild(tylerBioRow);
+  teamGrid.appendChild(tylerCard);
+
+  teamSection.appendChild(teamGrid);
+  main.appendChild(teamSection);
 }
+
+/* ---------- Aboutus page ---------- */
 
 /* ---------- Aboutus page ---------- */
 
