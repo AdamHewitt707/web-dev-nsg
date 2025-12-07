@@ -54,7 +54,7 @@ function initPage() {
 
   // console.log("Current page: ", page); // not needed anymore but I'll keep this here for future debugging
 
-  // initNav(); // Process header navbar is its own function because its universal for the entire website
+  initNav(); // Process header navbar is its own function because its universal for the entire website
 
   initPageContent(page); // Process page content based on page name
 
@@ -62,6 +62,88 @@ function initPage() {
 }
 
 /* ---------- Initialize page ---------- */
+
+
+
+
+
+
+/* ---------- Build navbar ---------- */
+
+function initNav() {
+
+    console.log("Initializing navigation..."); // For debugging purposes
+    
+    // Find navigation data within the json
+    const navData = jsonContent.find(item => item.navigation);
+    
+    const nav = navData.navigation; // Store navigation data only
+    const header = document.querySelector('header'); // Store header element as variable
+    
+    // Navbar container
+    const navbar = document.createElement('div');
+    navbar.className = 'navbar';
+    
+    // Logo
+    const logo = document.createElement('img');
+    logo.src = nav.logo.src;
+    logo.alt = nav.logo.alt;
+    logo.className = 'logo';
+    navbar.appendChild(logo);
+    
+    // Home link
+    const homeLink = document.createElement('a');
+    homeLink.href = nav.home.href;
+    homeLink.className = 'navBtn';
+    homeLink.textContent = nav.home.text;
+    navbar.appendChild(homeLink);
+    
+    // Goals dropdown container
+    const dropdownContainer = document.createElement('div');
+    
+    // Dropdown button
+    const dropBtn = document.createElement('button');
+    dropBtn.className = 'dropbtn';
+    dropBtn.textContent = nav.goals.text;
+    dropBtn.addEventListener('click', showGoalsMenu);
+    dropdownContainer.appendChild(dropBtn);
+    
+    // Dropdown content
+    const dropdownContent = document.createElement('div');
+    dropdownContent.id = 'myDropdown';
+    dropdownContent.className = 'dropdown-content';
+    
+    // Dropdown items
+    nav.goals.dropdown.forEach(item => {
+        const dropdownLink = document.createElement('a');
+        dropdownLink.href = item.href;
+        dropdownLink.textContent = item.text;
+        dropdownContent.appendChild(dropdownLink);
+    });
+    
+    dropdownContainer.appendChild(dropdownContent);
+    navbar.appendChild(dropdownContainer);
+    
+    // Sign Up link
+    const signUpLink = document.createElement('a');
+    signUpLink.href = nav.signUp.href;
+    signUpLink.className = 'navBtn';
+    signUpLink.textContent = nav.signUp.text;
+    navbar.appendChild(signUpLink);
+    
+    // About Us link
+    const aboutUsLink = document.createElement('a');
+    aboutUsLink.href = nav.aboutUs.href;
+    aboutUsLink.className = 'navBtn';
+    aboutUsLink.textContent = nav.aboutUs.text;
+    navbar.appendChild(aboutUsLink);
+    
+    header.appendChild(navbar);
+    
+    console.log("Navigation initialized successfully");
+}
+
+/* ---------- Build navbar ---------- */
 
 
 
