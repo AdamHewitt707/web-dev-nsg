@@ -108,7 +108,7 @@ article {
 }
 
 footer {
-    background-color: #728C72;
+    background-color: #657B65;
     height: 150px;
     margin: auto;
 }
@@ -222,7 +222,7 @@ footer {
 .separator {
     height: 20px;
     width: 100%;
-    background-color: #728c72;
+    background-color: #657B65;
 }
 
 .container-column {
@@ -526,7 +526,7 @@ main.team.section{
 .team.card .title.underline {
     width: 600px;
     height: 4px;
-    background-color: #728C72;
+    background-color: #657B65;
     margin: 0 auto 15px;
     border-radius: 999px;
 }
