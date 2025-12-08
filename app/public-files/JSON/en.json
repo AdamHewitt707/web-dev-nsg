@@ -206,17 +206,17 @@
                 },
                 {
                     "name": "Martha",
-                    "role": "Sign up page",
-                    "bio": "Martha developed the Sign Up page, making sure the form is simple, clear and accessible for new members. She is interested in making online experiences smooth and helping more people get involved in sustainability projects.",
+                    "role": "Goals page",
+                    "bio": "Martha worked on the Goals page, presenting our sustainability aims like Clean Water, Climate Action and Quality Education in a clear way. He enjoys organising information so visitors can quickly understand what we stand for and how they can help.",
                     "image": {
                         "src": "assets/images/martha.jpg",
                         "alt": "Photo of Martha"
                     }
                 },
                 {
-                    "name": "Tyler",
-                    "role": "Goals page",
-                    "bio": "Tyler worked on the Goals page, presenting our sustainability aims like Clean Water, Climate Action and Quality Education in a clear way. He enjoys organising information so visitors can quickly understand what we stand for and how they can help.",
+                    "name": "Tyler ",
+                    "role": "Sign up page",
+                    "bio": "Tyler developed the Sign Up page, making sure the form is simple, clear and accessible for new members.he is interested in making online experiences smooth and helping more people get involved in sustainability projects.",
                     "image": {
                         "src": "assets/images/tyler.PNG",
                         "alt": "Photo of Tyler"
