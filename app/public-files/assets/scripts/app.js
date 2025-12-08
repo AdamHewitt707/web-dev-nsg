@@ -737,7 +737,6 @@ function loadEducationContent () {
 
   //main grid to store articles 2 + 3 in
   const mainGrid = document.createElement('div');
-  //mainGrid.className = 'maingrid';
   mainGrid.className = 'container-half-column';
 
   // ----- article 1 -----
@@ -769,15 +768,8 @@ function loadEducationContent () {
   // ----- end of article1 -----
   
 
-  //column grid for article2
-  //    const containerColumn2 = document.createElement('div');
-  //    conainerColumn2.className = 'container-half-column';
-
-
   // ----- article 2 -----
   const article2 = document.createElement('article');
-  //    article2.className = 'container-half-column';
-  //    article2.className = 'column';
 
   //image
   const image2 = document.createElement('img');
@@ -800,19 +792,12 @@ function loadEducationContent () {
   paragraph4.textContent = content.sections.section2.paragraph2;
   article2.appendChild(paragraph4);
 
-  //    containerColumn2.appendChild(article2);
-  //    main.appendChild(containerColumn2);
   mainGrid.appendChild(article2);
   // ----- end of article2 -----
 
-  //column grid for article3
-  //    const containerColumn3 = document.createElement('div');
-  //    conainerColumn3.className = 'container-half-column';
 
   // ----- article 3 -----
   const article3 = document.createElement('article');
-  //    article3.className = 'container-half-column';
-  //    article3.className = 'column';
 
   //header
   const heading3 = document.createElement('h1');
@@ -840,8 +825,6 @@ function loadEducationContent () {
   image3.alt = content.sections.section3.image.alt;
   article3.appendChild(image3);
 
-  //    containerColumn3.appendChild(article3);
-  //    main.appendChild(containerColumn3);
   mainGrid.appendChild(article3);
 
   main.appendChild(mainGrid);
