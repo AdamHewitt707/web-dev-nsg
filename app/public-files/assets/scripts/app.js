@@ -888,6 +888,7 @@ function loadSignupContent() {
     document.getElementById('confirmMessage').innerHTML =content.sections[1].confirmationMessage;
     document.getElementById('benefitHead').innerHTML = content.sections[2].heading;
     document.getElementById('benefitPara').innerHTML = content.sections[2].para1;
+    document.getElementById('benefitPara2').innerHTML = content.sections[2].para2;
     document.getElementById('thanksHead').innerHTML = content.sections[3].heading;
 
    const img1 = document.createElement('img');
@@ -941,7 +942,7 @@ function setupFormHandler() {
                     setTimeout(function() {
                         console.log(responsedata);
                         tellThem.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
-                received and we will contact you at ${responsedata.email} shortly`;
+                received and we will contact you at ${responsedata.email} shortly.`;
                     },0);})
             signUpForm.style.display = 'none';
             benefitP.style.display = 'none';

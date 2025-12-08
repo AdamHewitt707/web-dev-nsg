@@ -700,20 +700,27 @@ input[type=submit] {
 .thanksImage {
     display: flex;
     padding: 20px;
+    width: calc(100% - 40px);
     h1 {
         text-align: center;
         display: block;
+        margin: 0;
     }
     img {
         width: 50%;
+        float: right;
         padding: 7px;
         border-radius: 15px;
         display: block;
 
     }
     p{
+        width: 50%;
         text-align: left;
-        display: flex;
+        float: left;
+        display: inline-flex;
+        margin-top: 3vh;
+
     }
 
 }
