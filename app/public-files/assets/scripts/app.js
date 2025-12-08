@@ -741,28 +741,34 @@ function loadEducationContent () {
 
   // ----- article 1 -----
   const article1 = document.createElement('article');
+  smallGrid.className = 'container-half-column';
 
-  //header
+  //small grid to store header1 and paragraphs 1 + 2
+  const smallGrid = document.createElement('div');
+
+   //header
   const heading1 = document.createElement('h1');
   heading1.textContent = content.sections.section1.heading;
-  article1.appendChild(heading1);
+  smallGrid.appendChild(heading1);
 
   //paragraph1
   const paragraph1 = document.createElement('p');
   paragraph1.textContent = content.sections.section1.paragraph1;
-  article1.appendChild(paragraph1);
+  smallGrid.appendChild(paragraph1);
+
+ //paragraph2
+  const paragraph2 = document.createElement('p');
+  paragraph2.textContent = content.sections.section1.paragraph2;
+  smallGrid.appendChild(paragraph2);
+
+  main.appendChild(smallGrid);
 
   //image
   const image1 = document.createElement('img');
   image1.src = content.sections.section1.image.src;
   image1.alt = content.sections.section1.image.alt;
-  image1.class = content.sections.section1.image.class;
+  //    image1.class = content.sections.section1.image.class;
   article1.appendChild(image1);
-
-  //paragraph2
-  const paragraph2 = document.createElement('p');
-  paragraph2.textContent = content.sections.section1.paragraph2;
-  article1.appendChild(paragraph2);
 
   main.appendChild(article1);
   // ----- end of article1 -----
