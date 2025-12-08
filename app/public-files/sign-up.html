@@ -31,14 +31,14 @@
 
 
 <main>
-    <section id="mainHeading">
+    <section class="mainHeading" id="mainHeading">
         <h1 id="title"></h1>
 
         <p id="headerP"></p>
 
     </section>
-
-    <section class="formSection">
+    <div class ="inlineLeft" id="inlineLeft">
+        <section class="formSection">
         <form method="post" action="/sign-up" class="signUpForm" id="signUpForm">
             <fieldset>
                 <legend id="legendary"></legend>
@@ -70,12 +70,16 @@
             </fieldset>
 
         </form>
-    </section>
 
+    </section>
+    </div>
+
+    <div class ="inlineRight" id="inlineRight">
     <section class="benefits" id ="benefits">
         <h1 id = "benefitHead"></h1>
         <p id = "benefitPara"></p>
     </section>
+    </div>
 
     <section class="thanksImage" id ="thanksImage">
         <h1 id="thanksHead"></h1>

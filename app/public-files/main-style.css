@@ -629,6 +629,11 @@ main.team.section{
 
 /*---------------------------------------Tyler sign-up .CSS ---------------------------------------------------------------*/
 
+.mainHeading {
+    width: calc(100% - 40px);
+}
+
+
 .formSection {
     flex-direction: column;
     display: inline-block;
@@ -673,6 +678,18 @@ input[type=submit] {
     display: block;
     flex-direction: column;
 }
+
+.inlineLeft {
+    width: 20%;
+    float: left;
+}
+
+.inlineRight {
+    width: 80%;
+    float: right;
+
+}
+
 
 .benefits{
     display: inline-block;
