@@ -649,11 +649,11 @@ function buildNorwichStandUp(parent, sectionContent) {
     article.appendChild(paragraph2);
 
     // Goal link
-    const link = document.createElement('a');
-    link.href = sectionContent.link.href;
-    link.className = 'index-link';
-    link.textContent = sectionContent.link.text;
-    article.appendChild(link);
+    // const link = document.createElement('a');
+    // link.href = sectionContent.link.href;
+    // link.className = 'index-link';
+    // link.textContent = sectionContent.link.text;
+    // article.appendChild(link);
 
     // Image
     const image = document.createElement('img');

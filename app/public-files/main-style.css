@@ -12,7 +12,8 @@ html, body {
 
 p {
     font-family: cabin-regular;
-    font-size: 22px;
+    font-size: 30px;
+    line-height: 38px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: auto;
@@ -24,6 +25,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: cabin-regular;
+    font-size: 34px;
     margin: 20px;
     position: relative;
     display: inline-block;
