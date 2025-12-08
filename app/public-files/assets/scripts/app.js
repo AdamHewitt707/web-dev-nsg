@@ -770,7 +770,7 @@ function loadEducationContent () {
 
   //column grid for article2
   const containerColumn2 = document.createElement('div');
-  conainerColumn2.className = 'container-column';
+  conainerColumn2.className = 'container-half-column';
 
 
   // ----- article 2 -----
@@ -805,7 +805,7 @@ function loadEducationContent () {
 
   //column grid for article3
   const containerColumn3 = document.createElement('div');
-  conainerColumn3.className = 'container-column';
+  conainerColumn3.className = 'container-half-column';
 
   // ----- article 3 -----
   const article3 = document.createElement('article');
