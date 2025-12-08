@@ -756,6 +756,7 @@ function loadEducationContent () {
   const image = document.createElement('img');
   image.src = content.sections.section1.image.src;
   image.alt = content.sections.section1.image.alt;
+  image.class = content.sections.section1.image.class;
   article1.appendChild(image);
 
   //paragraph2

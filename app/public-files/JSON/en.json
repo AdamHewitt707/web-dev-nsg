@@ -236,7 +236,8 @@
                     "pharagraph1": "Climate change is currently one of the world's biggest challenges. Climate change is responsible for changes in heather, and more examples of extreme whether events around the world. This includes wildfires, glaciers melting, and more extreme temperatures being recorded all over the world.",
                     "image": {
                         "src": "assets/images/rainforest.jpg",
-                        "alt": "A photo showing a dense rainforest in Ghana. Trees fill the bottom of the picture, and the top fades into a white sky."
+                        "alt": "A photo showing a dense rainforest in Ghana. Trees fill the bottom of the picture, and the top fades into a white sky.",
+                        "class": "display-image-row"
                     },
                     "pharagraph2": "Generative AI is known for using a vast amount of energy to run its data centres, which is often gained from unsustainable sources. It also produces a huge amount of CO2 every year, which is a major contributor to the greenhouse effect and climate change. Using more renewable energy would decrease the amount of CO2 emitted, and reduce climate change, however most of the world is still reliant on fossil fuels, due to them being cheap and easy to access in large quantities, despite the large cost for the planet. "
                 },
@@ -274,7 +275,8 @@
                     "pharagraph1": "Water is the most important resource needed for people to live, and access to water is a human right. Despite this, many people around the world don't have access to clean water.Without access to clean water, people cannot have access to proper sanitation, which greatly increases the spread of diseases, and decreases quality of life drastically. ",
                     "image": {
                         "src": "assets/images/beach.jpg",
-                        "alt": "A photo showing a beach in England, which is covered in various pieces of rubbish, such as plastic bags."
+                        "alt": "A photo showing a beach in England, which is covered in various pieces of rubbish, such as plastic bags.",
+                        "class": "display-image-row"
                     },
                     "pharagraph2": "Generative AI is known for using a huge amount of fresh water in order to cool its data centres. This has already been seen to have a huge effect on communities, by causing water shortages, and its predicted to cause even more on a much larger scale in the very near future. Additionally, climate change is the cause of many droughts worldwide, which have large negative impacts on people, and local wildlife"
                 },
@@ -312,7 +314,8 @@
                     "pharagraph1": "Education is one of the most important factors affecting peoples' opportunities in life, and many children are still not in education. There remains a gender divide within education, as many women and girls cannot access education at all, or may have more limited options in terms of the subjects they are allowed to study.",
                     "image": {
                         "src": "assets/images/uea.jpg",
-                        "alt": "A photo showing UEA's campus accomodation, which is a collection of white concrete buildings, shaped like pyrimids with steps carved into them."
+                        "alt": "A photo showing UEA's campus accomodation, which is a collection of white concrete buildings, shaped like pyrimids with steps carved into them.",
+                        "class": "display-image-row"
                     },
                     "pharagraph2": "Additionally, there is a large digital divide within different parts of the world, which can prevent the same quality of education being available to everyone. Digital divide refers to the fact that not everyone has the same access to technology and the internet. This can prevent students from being able to learn as effectively, and deny them opportunities. A lack of funding can also have an impact on the resources that schools are able to use, and create or prevent opportunities for students. It is important that students from all financial backgrounds are able to have equal access to education."
                 },
