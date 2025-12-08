@@ -735,9 +735,10 @@ function loadEducationContent () {
 
   const content = educationContent.content //gets content from content section of json file
 
-  //main grid to store all articles in
-  //    const mainGrid = document.createElement('div');
-  //    mainGrid.className = 'maingrid';
+  //main grid to store articles 2 + 3 in
+  const mainGrid = document.createElement('div');
+  //mainGrid.className = 'maingrid';
+  mainGrid.className = 'container-half-column';
 
   // ----- article 1 -----
   const article1 = document.createElement('article');
@@ -775,7 +776,7 @@ function loadEducationContent () {
 
   // ----- article 2 -----
   const article2 = document.createElement('article');
-  article2.className = 'container-half-column';
+  //    article2.className = 'container-half-column';
   //    article2.className = 'column';
 
   //image
@@ -801,7 +802,7 @@ function loadEducationContent () {
 
   //    containerColumn2.appendChild(article2);
   //    main.appendChild(containerColumn2);
-  main.appendChild(article2);
+  mainGrid.appendChild(article2);
   // ----- end of article2 -----
 
   //column grid for article3
@@ -810,7 +811,7 @@ function loadEducationContent () {
 
   // ----- article 3 -----
   const article3 = document.createElement('article');
-  article3.className = 'container-half-column';
+  //    article3.className = 'container-half-column';
   //    article3.className = 'column';
 
   //header
@@ -841,7 +842,9 @@ function loadEducationContent () {
 
   //    containerColumn3.appendChild(article3);
   //    main.appendChild(containerColumn3);
-  main.appendChild(article3);
+  mainGrid.appendChild(article3);
+
+  main.appendChild(mainGrid);
   // ----- end of article 3 -----
 
 }
