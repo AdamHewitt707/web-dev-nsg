@@ -674,6 +674,12 @@ input[type=submit] {
     flex-direction: column;
 }
 
+.benefits{
+    display: inline-block;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
 .thanksImage {
     display: flex;
     padding: 20px;
@@ -689,7 +695,8 @@ input[type=submit] {
 
     }
     p{
-
+        text-align: left;
+        display: flex;
     }
 
 }

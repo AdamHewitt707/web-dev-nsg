@@ -862,7 +862,7 @@ function loadWaterContent () {
 
     // Build your page through javascript here
 
-}
+
 
 /* ---------- Water page ---------- */
 
@@ -872,6 +872,9 @@ function loadWaterContent () {
 
 
 /* ---------- Signup page ---------- */
+
+}
+
 
 function loadSignupContent() {
     console.log("Loading Sign Up Content...");
@@ -886,11 +889,17 @@ function loadSignupContent() {
     document.getElementById('benefitHead').innerHTML = content.sections[2].heading;
     document.getElementById('benefitPara').innerHTML = content.sections[2].para1;
     document.getElementById('thanksHead').innerHTML = content.sections[3].heading;
-    document.getElementById('heyPerson').innerHTML = content.sections[3].response;
+
+   const img1 = document.createElement('img');
+   img1.src = content.sections[3].image.src;
+   img1.alt = content.sections[3].image.alt;
+   document.getElementById('thanksImage').appendChild(img1);
+   document.getElementById('heyPerson').innerHTML = content.sections[3].response;
 
 
 
-    
+
+
     setTimeout(setupFormHandler, 0);
 }
 
