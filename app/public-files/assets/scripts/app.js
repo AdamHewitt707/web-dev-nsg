@@ -743,9 +743,9 @@ function loadEducationContent () {
   const article1 = document.createElement('article');
 
   //header
-  const heading = document.createElement('h1');
-  heading.textContent = content.sections.section1.heading;
-  article1.appendChild(heading);
+  const heading1 = document.createElement('h1');
+  heading1.textContent = content.sections.section1.heading;
+  article1.appendChild(heading1);
 
   //paragraph1
   const paragraph1 = document.createElement('p');
@@ -753,11 +753,11 @@ function loadEducationContent () {
   article1.appendChild(paragraph1);
 
   //image
-  const image = document.createElement('img');
-  image.src = content.sections.section1.image.src;
-  image.alt = content.sections.section1.image.alt;
-  image.class = content.sections.section1.image.class;
-  article1.appendChild(image);
+  const image1 = document.createElement('img');
+  image1.src = content.sections.section1.image.src;
+  image1.alt = content.sections.section1.image.alt;
+  image1.class = content.sections.section1.image.class;
+  article1.appendChild(image1);
 
   //paragraph2
   const paragraph2 = document.createElement('p');
@@ -769,76 +769,77 @@ function loadEducationContent () {
   
 
   //column grid for article2
-  const containerColumn = document.createElement('div');
-  conainerColumn.className = 'container-column';
+  const containerColumn2 = document.createElement('div');
+  conainerColumn2.className = 'container-column';
 
 
   // ----- article 2 -----
   const article2 = document.createElement('article');
-  columnArticle.className = 'column';
+  article2.className = 'column';
 
   //image
-  const image = document.createElement('img');
-  image.src = content.sections.section2.image.src;
-  image.alt = content.sections.section2.image.alt;
-  article.appendChild(image);
+  const image2 = document.createElement('img');
+  image2.src = content.sections.section2.image.src;
+  image2.alt = content.sections.section2.image.alt;
+  article.appendChild(image2);
 
   //header
-  const heading = document.createElement('h1');
-  heading.textContent = content.sections.section2.heading;
-  article.appendChild(heading);
-
-  //paragraph1
-  const paragraph1 = document.createElement('p');
-  paragraph1.textContent = content.sections.section2.paragraph1;
-  article.appendChild(paragraph1);
-
-  //paragraph2
-  const paragraph2 = document.createElement('p');
-  paragraph2.textContent = content.sections.section2.paragraph2;
-  article.appendChild(paragraph2);
-
-  article2.appendChild(columnContainer);
-  containerColumn.appendChild(article2);
-  main.appendChild(containerColumn);
-  // ----- end of article2 -----
-
-  //column grid for article3
-  const containerColumn = document.createElement('div');
-  conainerColumn.className = 'container-column';
-
-  // ----- article 3 -----
-  const article3 = document.createElement('article');
-
-  //header
-  const heading = document.createElement('h1');
-  heading.textContent = content.sections.section3.heading;
-  article.appendChild(heading);
-
-  //paragraph1
-  const paragraph1 = document.createElement('p');
-  paragraph1.textContent = content.sections.section3.paragraph1;
-  article.appendChild(paragraph1);
-
-  //paragraph2
-  const paragraph2 = document.createElement('p');
-  paragraph2.textContent = content.sections.section3.paragraph2;
-  article.appendChild(paragraph2);
+  const heading2 = document.createElement('h1');
+  heading2.textContent = content.sections.section2.heading;
+  article.appendChild(heading2);
 
   //paragraph3
   const paragraph3 = document.createElement('p');
-  paragraph3.textContent = content.sections.section3.paragraph3;
+  paragraph3.textContent = content.sections.section2.paragraph1;
   article.appendChild(paragraph3);
+
+  //paragraph4
+  const paragraph4 = document.createElement('p');
+  paragraph4.textContent = content.sections.section2.paragraph2;
+  article.appendChild(paragraph4);
+
+  article2.appendChild(columnContainer2);
+  containerColumn2.appendChild(article2);
+  main.appendChild(containerColumn2);
+  // ----- end of article2 -----
+
+  //column grid for article3
+  const containerColumn3 = document.createElement('div');
+  conainerColumn3.className = 'container-column';
+
+  // ----- article 3 -----
+  const article3 = document.createElement('article');
+  article3.className = 'column';
+
+  //header
+  const heading3 = document.createElement('h1');
+  heading3.textContent = content.sections.section3.heading;
+  article.appendChild(heading3);
+
+  //paragraph5
+  const paragraph5 = document.createElement('p');
+  paragraph5.textContent = content.sections.section3.paragraph1;
+  article.appendChild(paragraph5);
+
+  //paragraph6
+  const paragraph6 = document.createElement('p');
+  paragraph6.textContent = content.sections.section3.paragraph2;
+  article.appendChild(paragraph6);
+
+  //paragraph7
+  const paragraph7 = document.createElement('p');
+  paragraph7.textContent = content.sections.section3.paragraph3;
+  article.appendChild(paragraph7);
   
   //image
-  const image = document.createElement('img');
-  image.src = content.sections.section3.image.src;
-  image.alt = content.sections.section3.image.alt;
-  article.appendChild(image);
+  const image3 = document.createElement('img');
+  image3.src = content.sections.section3.image.src;
+  image3.alt = content.sections.section3.image.alt;
+  article.appendChild(image3);
 
-  article2.appendChild(columnContainer);
-  containerColumn.appendChild(article2);
-  main.appendChild(containerColumn);
+  article3.appendChild(columnContainer3);
+  containerColumn3.appendChild(article3);
+  main.appendChild(containerColumn3);
   // ----- end of article 3 -----
 
 }
