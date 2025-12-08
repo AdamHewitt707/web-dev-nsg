@@ -726,9 +726,14 @@ function buildSignUpSection(parent, sectionData) {
 /* ---------- Education page ---------- */
 
 function loadEducationContent () {
-    console.log("Loading Quality Education Content...")
+  console.log("Loading Quality Education Content...")
 
-    // Build your page through javascript here
+  const main = document.querySelector("main");
+  main.innerHTML = ""; //clears the existing HTML
+
+  const educationContent = jsonContent.find(item => item.page === "education"); //gets and stores data
+
+  const content = educationContent.content //gets content from content section of json file
 
 }
 
