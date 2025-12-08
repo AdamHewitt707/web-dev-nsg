@@ -735,6 +735,92 @@ function loadEducationContent () {
 
   const content = educationContent.content //gets content from content section of json file
 
+
+  // ----- article 1 -----
+  const article1 = document.createElement('article');
+
+  //header
+  const heading = document.createElement('h1');
+  heading.textContent = content.sections.section1.heading;
+  article.appendChild(heading);
+
+  //paragraph1
+  const paragraph1 = document.createElement('p');
+  paragraph1.textContent = content.sections.section1.paragraph1;
+  article.appendChild(paragraph1);
+
+  //image
+  const image = document.createElement('img');
+  image.src = content.sections.section1.image.src;
+  image.alt = content.sections.section1.image.alt;
+  article.appendChild(image);
+
+  //paragraph2
+  const paragraph2 = document.createElement('p');
+  paragraph2.textContent = content.sections.section1.paragraph2;
+  article.appendChild(paragraph2);
+
+  main.appendChild(article1);
+
+
+  // ----- article 2 -----
+  const article2 = document.createElement('article');
+
+  //image
+  const image = document.createElement('img');
+  image.src = content.sections.section2.image.src;
+  image.alt = content.sections.section2.image.alt;
+  article.appendChild(image);
+
+  //header
+  const heading = document.createElement('h1');
+  heading.textContent = content.sections.section2.heading;
+  article.appendChild(heading);
+
+  //paragraph1
+  const paragraph1 = document.createElement('p');
+  paragraph1.textContent = content.sections.section2.paragraph1;
+  article.appendChild(paragraph1);
+
+  //paragraph2
+  const paragraph2 = document.createElement('p');
+  paragraph2.textContent = content.sections.section2.paragraph2;
+  article.appendChild(paragraph2);
+
+  main.appendChild(article2);
+
+
+  // ----- article 3 -----
+  const article3 = document.createElement('article');
+
+  //header
+  const heading = document.createElement('h1');
+  heading.textContent = content.sections.section3.heading;
+  article.appendChild(heading);
+
+  //paragraph1
+  const paragraph1 = document.createElement('p');
+  paragraph1.textContent = content.sections.section3.paragraph1;
+  article.appendChild(paragraph1);
+
+  //paragraph2
+  const paragraph2 = document.createElement('p');
+  paragraph2.textContent = content.sections.section3.paragraph2;
+  article.appendChild(paragraph2);
+
+  //paragraph3
+  const paragraph3 = document.createElement('p');
+  paragraph3.textContent = content.sections.section3.paragraph3;
+  article.appendChild(paragraph3);
+  
+  //image
+  const image = document.createElement('img');
+  image.src = content.sections.section3.image.src;
+  image.alt = content.sections.section3.image.alt;
+  article.appendChild(image);
+
+  main.appendChild(article3);
+
 }
 
 /* ---------- Education page ---------- */
