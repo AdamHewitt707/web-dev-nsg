@@ -233,13 +233,13 @@
             "sections": {
                 "section1": {
                     "heading": "Challenges the Climate is Facing",
-                    "pharagraph1": "Climate change is currently one of the world's biggest challenges. Climate change is responsible for changes in heather, and more examples of extreme whether events around the world. This includes wildfires, glaciers melting, and more extreme temperatures being recorded all over the world.",
+                    "paragraph1": "Climate change is currently one of the world's biggest challenges. Climate change is responsible for changes in heather, and more examples of extreme whether events around the world. This includes wildfires, glaciers melting, and more extreme temperatures being recorded all over the world.",
                     "image": {
                         "src": "assets/images/rainforest.jpg",
                         "alt": "A photo showing a dense rainforest in Ghana. Trees fill the bottom of the picture, and the top fades into a white sky.",
                         "class": "display-image-row"
                     },
-                    "pharagraph2": "Generative AI is known for using a vast amount of energy to run its data centres, which is often gained from unsustainable sources. It also produces a huge amount of CO2 every year, which is a major contributor to the greenhouse effect and climate change. Using more renewable energy would decrease the amount of CO2 emitted, and reduce climate change, however most of the world is still reliant on fossil fuels, due to them being cheap and easy to access in large quantities, despite the large cost for the planet. "
+                    "paragraph2": "Generative AI is known for using a vast amount of energy to run its data centres, which is often gained from unsustainable sources. It also produces a huge amount of CO2 every year, which is a major contributor to the greenhouse effect and climate change. Using more renewable energy would decrease the amount of CO2 emitted, and reduce climate change, however most of the world is still reliant on fossil fuels, due to them being cheap and easy to access in large quantities, despite the large cost for the planet. "
                 },
                 "section2": {
                     "image": {
@@ -247,14 +247,14 @@
                         "alt": "A photo showing a dense rainforest in Ghana. Trees fill the bottom of the picture, and the top fades into a white sky."
                     },
                     "heading": "How This Impacts Norwich",
-                    "pharagraph1": "There are many ways that individuals and organisations living in Norwich can help to reduce the growth of climate change. One way is to cut use of generative AI tools from personal and work use. If generative AI stopped being used, and the data centres shut down, it would greatly decrease the amount of CO2 emitted each year. ",
-                    "pharagraph2": "Additionally, reducing waste, and use of single-use plastic can help to prevent climate change. This is beneficial, as recycling plastic releases microplastics into the water supply, which could have a negative impact on peoples' health."
+                    "paragraph1": "There are many ways that individuals and organisations living in Norwich can help to reduce the growth of climate change. One way is to cut use of generative AI tools from personal and work use. If generative AI stopped being used, and the data centres shut down, it would greatly decrease the amount of CO2 emitted each year. ",
+                    "paragraph2": "Additionally, reducing waste, and use of single-use plastic can help to prevent climate change. This is beneficial, as recycling plastic releases microplastics into the water supply, which could have a negative impact on peoples' health."
                 },
                 "section3": {
                     "heading": "Further Reading",
-                    "pharagraph1": "Here are some useful links relating to climate change:",
-                    "pharagraph2": "https://www.un.org/sustainabledevelopment/climate-change/",
-                    "pharagraph3": "https://earth.org/environmental-impact-chatgpt/",
+                    "paragraph1": "Here are some useful links relating to climate change:",
+                    "paragraph2": "https://www.un.org/sustainabledevelopment/climate-change/",
+                    "paragraph3": "https://earth.org/environmental-impact-chatgpt/",
                     "image": {
                         "src": "assets/images/rainforest.jpg",
                         "alt": "A photo showing a dense rainforest in Ghana. Trees fill the bottom of the picture, and the top fades into a white sky."
@@ -272,13 +272,13 @@
             "sections": {
                 "section1": {
                     "heading": "Challenges Regarding Clean Water and Sanitation",
-                    "pharagraph1": "Water is the most important resource needed for people to live, and access to water is a human right. Despite this, many people around the world don't have access to clean water.Without access to clean water, people cannot have access to proper sanitation, which greatly increases the spread of diseases, and decreases quality of life drastically. ",
+                    "paragraph1": "Water is the most important resource needed for people to live, and access to water is a human right. Despite this, many people around the world don't have access to clean water.Without access to clean water, people cannot have access to proper sanitation, which greatly increases the spread of diseases, and decreases quality of life drastically. ",
                     "image": {
                         "src": "assets/images/beach.jpg",
                         "alt": "A photo showing a beach in England, which is covered in various pieces of rubbish, such as plastic bags.",
                         "class": "display-image-row"
                     },
-                    "pharagraph2": "Generative AI is known for using a huge amount of fresh water in order to cool its data centres. This has already been seen to have a huge effect on communities, by causing water shortages, and its predicted to cause even more on a much larger scale in the very near future. Additionally, climate change is the cause of many droughts worldwide, which have large negative impacts on people, and local wildlife"
+                    "paragraph2": "Generative AI is known for using a huge amount of fresh water in order to cool its data centres. This has already been seen to have a huge effect on communities, by causing water shortages, and its predicted to cause even more on a much larger scale in the very near future. Additionally, climate change is the cause of many droughts worldwide, which have large negative impacts on people, and local wildlife"
                 },
                 "section2": {
                     "image": {
@@ -286,14 +286,14 @@
                         "alt": "A photo showing a beach in England, which is covered in various pieces of rubbish, such as plastic bags."
                     },
                     "heading": "How This Impacts Norwich",
-                    "pharagraph1": "There are many ways that individuals and organisations living in Norwich can help to improve the lack of fresh water available worldwide.",
-                    "pharagraph2": "One way is to cut use of generative AI tools from personal and work use. If generative AI stopped being used, and the data centres shut down, a vast amount of water would stop being wasted. Additionally, people can reduce the waste of water in other ways, such as taking shorter showers of possible, and not washing clothes more frequently than necessary. "
+                    "paragraph1": "There are many ways that individuals and organisations living in Norwich can help to improve the lack of fresh water available worldwide.",
+                    "paragraph2": "One way is to cut use of generative AI tools from personal and work use. If generative AI stopped being used, and the data centres shut down, a vast amount of water would stop being wasted. Additionally, people can reduce the waste of water in other ways, such as taking shorter showers of possible, and not washing clothes more frequently than necessary. "
                 },
                 "section3": {
                     "heading": "Further Reading",
-                    "pharagraph1": "Here are some useful links relating to the issues of clean water and sanitation:",
-                    "pharagraph2": "https://www.un.org/sustainabledevelopment/water-and-sanitation/",
-                    "pharagraph3": "https://earth.org/environmental-impact-chatgpt/",
+                    "paragraph1": "Here are some useful links relating to the issues of clean water and sanitation:",
+                    "paragraph2": "https://www.un.org/sustainabledevelopment/water-and-sanitation/",
+                    "paragraph3": "https://earth.org/environmental-impact-chatgpt/",
                     "image": {
                         "src": "assets/images/beach.jpg",
                         "alt": "A photo showing a beach in England, which is covered in various pieces of rubbish, such as plastic bags."
@@ -311,13 +311,13 @@
             "sections": {
                 "section1": {
                     "heading": "Challenges Within Education",
-                    "pharagraph1": "Education is one of the most important factors affecting peoples' opportunities in life, and many children are still not in education. There remains a gender divide within education, as many women and girls cannot access education at all, or may have more limited options in terms of the subjects they are allowed to study.",
+                    "paragraph1": "Education is one of the most important factors affecting peoples' opportunities in life, and many children are still not in education. There remains a gender divide within education, as many women and girls cannot access education at all, or may have more limited options in terms of the subjects they are allowed to study.",
                     "image": {
                         "src": "assets/images/uea.jpg",
                         "alt": "A photo showing UEA's campus accomodation, which is a collection of white concrete buildings, shaped like pyrimids with steps carved into them.",
                         "class": "display-image-row"
                     },
-                    "pharagraph2": "Additionally, there is a large digital divide within different parts of the world, which can prevent the same quality of education being available to everyone. Digital divide refers to the fact that not everyone has the same access to technology and the internet. This can prevent students from being able to learn as effectively, and deny them opportunities. A lack of funding can also have an impact on the resources that schools are able to use, and create or prevent opportunities for students. It is important that students from all financial backgrounds are able to have equal access to education."
+                    "paragraph2": "Additionally, there is a large digital divide within different parts of the world, which can prevent the same quality of education being available to everyone. Digital divide refers to the fact that not everyone has the same access to technology and the internet. This can prevent students from being able to learn as effectively, and deny them opportunities. A lack of funding can also have an impact on the resources that schools are able to use, and create or prevent opportunities for students. It is important that students from all financial backgrounds are able to have equal access to education."
                 },
                 "section2": {
                     "image": {
@@ -325,14 +325,14 @@
                         "alt": "A photo showing UEA's campus accomodation, which is a collection of white concrete buildings, shaped like pyrimids with steps carved into them."
                     },
                     "heading": "How This Impacts Norwich",
-                    "pharagraph1": "In order to improve equality within education for Norwich, a focus needs to be given to creating financial equality, so that students are not disadvantaged based on their household income. ",
-                    "pharagraph2": "Additionally, statistics show that the number of women taking Computer Science degrees is roughly 21%. In order to increase the number of female students taking this degree, attention needs to be given to ensuring girls are offered and taking part in STEM based activities in primary and secondary school in order to help make this statistic more equal. "
+                    "paragraph1": "In order to improve equality within education for Norwich, a focus needs to be given to creating financial equality, so that students are not disadvantaged based on their household income. ",
+                    "paragraph2": "Additionally, statistics show that the number of women taking Computer Science degrees is roughly 21%. In order to increase the number of female students taking this degree, attention needs to be given to ensuring girls are offered and taking part in STEM based activities in primary and secondary school in order to help make this statistic more equal. "
                 },
                 "section3": {
                     "heading": "Further Reading",
-                    "pharagraph1": "Here are some useful links relating to the issues of education:",
-                    "pharagraph2": "https://www.un.org/sustainabledevelopment/education/",
-                    "pharagraph3": "https://researchbriefings.files.parliament.uk/documents/CBP-7857/CBP-7857.pdf",
+                    "paragraph1": "Here are some useful links relating to the issues of education:",
+                    "paragraph2": "https://www.un.org/sustainabledevelopment/education/",
+                    "paragraph3": "https://researchbriefings.files.parliament.uk/documents/CBP-7857/CBP-7857.pdf",
                     "image": {
                         "src": "assets/images/uea.jpg",
                         "alt": "A photo showing UEA's campus accomodation, which is a collection of white concrete buildings, shaped like pyrimids with steps carved into them."
