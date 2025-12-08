@@ -781,22 +781,22 @@ function loadEducationContent () {
   const image2 = document.createElement('img');
   image2.src = content.sections.section2.image.src;
   image2.alt = content.sections.section2.image.alt;
-  article.appendChild(image2);
+  article2.appendChild(image2);
 
   //header
   const heading2 = document.createElement('h1');
   heading2.textContent = content.sections.section2.heading;
-  article.appendChild(heading2);
+  article2.appendChild(heading2);
 
   //paragraph3
   const paragraph3 = document.createElement('p');
   paragraph3.textContent = content.sections.section2.paragraph1;
-  article.appendChild(paragraph3);
+  article2.appendChild(paragraph3);
 
   //paragraph4
   const paragraph4 = document.createElement('p');
   paragraph4.textContent = content.sections.section2.paragraph2;
-  article.appendChild(paragraph4);
+  article2.appendChild(paragraph4);
 
   //    containerColumn2.appendChild(article2);
   //    main.appendChild(containerColumn2);
@@ -814,28 +814,28 @@ function loadEducationContent () {
   //header
   const heading3 = document.createElement('h1');
   heading3.textContent = content.sections.section3.heading;
-  article.appendChild(heading3);
+  article3.appendChild(heading3);
 
   //paragraph5
   const paragraph5 = document.createElement('p');
   paragraph5.textContent = content.sections.section3.paragraph1;
-  article.appendChild(paragraph5);
+  article3.appendChild(paragraph5);
 
   //paragraph6
   const paragraph6 = document.createElement('p');
   paragraph6.textContent = content.sections.section3.paragraph2;
-  article.appendChild(paragraph6);
+  article3.appendChild(paragraph6);
 
   //paragraph7
   const paragraph7 = document.createElement('p');
   paragraph7.textContent = content.sections.section3.paragraph3;
-  article.appendChild(paragraph7);
+  article3.appendChild(paragraph7);
   
   //image
   const image3 = document.createElement('img');
   image3.src = content.sections.section3.image.src;
   image3.alt = content.sections.section3.image.alt;
-  article.appendChild(image3);
+  article3.appendChild(image3);
 
   //    containerColumn3.appendChild(article3);
   //    main.appendChild(containerColumn3);
