@@ -781,6 +781,8 @@ function loadSignupContent() {
     setTimeout(setupFormHandler, 0);
 }
 
+
+
 function setupFormHandler() {
     let signUpForm = document.querySelector('form');
     let firstNameInput = document.querySelector('#firstName');
@@ -788,8 +790,12 @@ function setupFormHandler() {
     let emailInput = document.querySelector('#email');
     let commentInput = document.querySelector('#comments');
     let confirmMessage = document.querySelector('#confirmMessage');
+    let thanksMessage = document.querySelector('#thanksImage');
+    let tellThem = document.querySelector('#heyPerson');
+    let benefitP = document.querySelector('#benefits');
 
     if (signUpForm) {
+        thanksMessage.style.display = 'none';
         signUpForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
@@ -812,13 +818,14 @@ function setupFormHandler() {
                 .then((responsedata) => {
                     setTimeout(function() {
                         console.log(responsedata);
-                        confirmMessage.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
+                        tellThem.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
                 received and we will contact you at ${responsedata.email} shortly`;
                     },0);})
-                   // console.log(responsedata);
-                    //confirmMessage.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
-                //received and we will contact you at ${responsedata.email} shortly`;
-                //})
+            signUpForm.style.display = 'none';
+            benefitP.style.display = 'none';
+            thanksMessage.style.display = 'flex';
+
+
 
         });
     }
