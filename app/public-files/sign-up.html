@@ -31,18 +31,17 @@
 
 
 <main>
-    <section>
-        <h1>Join Us</h1>
+    <section id="mainHeading">
+        <h1 id="title"></h1>
 
-        <p>Please enter your details here etc etc</p>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>Text abt joinign us or whatever</p>
+        <p id="headerP"></p>
+
     </section>
 
     <section class="formSection">
-        <form method="post" action="/sign-up" class="signUpForm">
+        <form method="post" action="/sign-up" class="signUpForm" id="signUpForm">
             <fieldset>
-                <legend>Sign Up</legend>
+                <legend id="legendary"></legend>
 
                 <label>
                     <input type="text" name="firstName" placeholder="First Name*" id="firstName" required>
@@ -66,7 +65,7 @@
                 </label>
 
 
-                <p class ="confirmMessage" id ="confirmMessage"> * Required</p>
+                <p class ="confirmMessage" id ="confirmMessage"></p>
 
             </fieldset>
 
@@ -74,13 +73,12 @@
     </section>
 
     <section class="benefits" id ="benefits">
-        <h1>Why you should join:</h1>
-        <p>Interested in signing up? Those who sign up get access to information
-        before anyone else!</p>
+        <h1 id = "benefitHead"></h1>
+        <p id = "benefitPara"></p>
     </section>
 
     <section class="thanksImage" id ="thanksImage">
-        <h1>Thanks!</h1>
+        <h1 id="thanksHead"></h1>
         <img src="assets/images/child-smiling.jpg" alt="Child Smiling">
         <p class ="heyPerson" id="heyPerson"></p>
     </section>

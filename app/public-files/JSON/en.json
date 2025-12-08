@@ -270,18 +270,33 @@
     "page": "sign-up",
     "content": {
       "title": "Join Us",
-      "sections": {
-        "WhyYouShould": {
+      "sections": [
+        {
           "heading": "Join Us",
           "para1": "Interested in staying up to date with our latest news? Join us to receive bi-weekly updates on our progress towards these goals at the UN"
 
         },
-        "SignUpForm": {
+        {
           "legend1": "Sign Up",
           "confirmationMessage": "* Required"
+        },
+
+        {
+          "heading": "Why you should join:",
+          "para1": "Interested in signing up? Those who sign up get access to information before anyone else!"
+        },
+
+        {
+          "heading": "Thanks",
+          "image": {
+            "src": "child-smiling.jpg",
+            "alt": "Child Smiling"
+          },
+          "response": ""
+
         }
 
-      }
+      ]
     }
   },
 

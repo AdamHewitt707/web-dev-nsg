@@ -776,7 +776,20 @@ function loadWaterContent () {
 function loadSignupContent() {
     console.log("Loading Sign Up Content...");
 
-    // Build your page through javascript here
+    const signUpContent = jsonContent.find(item => item.page === 'sign-up');
+
+    const content = signUpContent.content;
+    document.getElementById('title').innerHTML = content.sections[0].heading;
+    document.getElementById('headerP').innerHTML = content.sections[0].para1;
+    document.getElementById('legendary').innerHTML = content.sections[1].legend1;
+    document.getElementById('confirmMessage').innerHTML =content.sections[1].confirmationMessage;
+    document.getElementById('benefitHead').innerHTML = content.sections[2].heading;
+    document.getElementById('benefitPara').innerHTML = content.sections[2].para1;
+    document.getElementById('thanksHead').innerHTML = content.sections[3].heading;
+    document.getElementById('heyPerson').innerHTML = content.sections[3].response;
+
+
+
     
     setTimeout(setupFormHandler, 0);
 }
