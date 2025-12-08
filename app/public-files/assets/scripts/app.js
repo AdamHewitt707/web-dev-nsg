@@ -1181,9 +1181,15 @@ function loadAboutusContent() {
     teamSection.appendChild(teamGrid);
     main.appendChild(teamSection);
 }
+/* ---------- Abou tus page ----------
+Just a quick note on what this does:
+it pulls the About Us stuff out of the json
+and drops it onto the page. Basically wipes
+whatever was in <main> before, then builds up
+each team card (name, job, pic and a lil bio).
+but it means we dont gotta rewrite html later.*/
 
 /* ---------- Aboutus page ---------- */
-
 
 
 
