@@ -775,6 +775,7 @@ function loadEducationContent () {
 
   // ----- article 2 -----
   const article2 = document.createElement('article');
+  article2.className = 'container-half-column';
   //    article2.className = 'column';
 
   //image
@@ -809,6 +810,7 @@ function loadEducationContent () {
 
   // ----- article 3 -----
   const article3 = document.createElement('article');
+  article3.className = 'container-half-column';
   //    article3.className = 'column';
 
   //header
