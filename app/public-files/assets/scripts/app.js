@@ -798,7 +798,6 @@ function loadEducationContent () {
   paragraph4.textContent = content.sections.section2.paragraph2;
   article.appendChild(paragraph4);
 
-  article2.appendChild(columnContainer);
   containerColumn2.appendChild(article2);
   main.appendChild(containerColumn2);
   // ----- end of article2 -----
@@ -837,7 +836,6 @@ function loadEducationContent () {
   image3.alt = content.sections.section3.image.alt;
   article.appendChild(image3);
 
-  article3.appendChild(columnContainer);
   containerColumn3.appendChild(article3);
   main.appendChild(containerColumn3);
   // ----- end of article 3 -----
