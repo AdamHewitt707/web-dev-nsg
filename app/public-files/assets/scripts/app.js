@@ -810,10 +810,15 @@ function setupFormHandler() {
             })
                 .then((response) => response.json())
                 .then((responsedata) => {
-                    console.log(responsedata);
-                    confirmMessage.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
+                    setTimeout(function() {
+                        console.log(responsedata);
+                        confirmMessage.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
                 received and we will contact you at ${responsedata.email} shortly`;
-                })
+                    },0);})
+                   // console.log(responsedata);
+                    //confirmMessage.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
+                //received and we will contact you at ${responsedata.email} shortly`;
+                //})
 
         });
     }
