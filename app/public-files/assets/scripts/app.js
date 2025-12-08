@@ -735,6 +735,9 @@ function loadEducationContent () {
 
   const content = educationContent.content //gets content from content section of json file
 
+  //main grid to store all articles in
+  const mainGrid = document.createElement('div');
+  mainGrid.className = 'maingrid';
 
   // ----- article 1 -----
   const article1 = document.createElement('article');
@@ -742,29 +745,36 @@ function loadEducationContent () {
   //header
   const heading = document.createElement('h1');
   heading.textContent = content.sections.section1.heading;
-  article.appendChild(heading);
+  article1.appendChild(heading);
 
   //paragraph1
   const paragraph1 = document.createElement('p');
   paragraph1.textContent = content.sections.section1.paragraph1;
-  article.appendChild(paragraph1);
+  article1.appendChild(paragraph1);
 
   //image
   const image = document.createElement('img');
   image.src = content.sections.section1.image.src;
   image.alt = content.sections.section1.image.alt;
-  article.appendChild(image);
+  article1.appendChild(image);
 
   //paragraph2
   const paragraph2 = document.createElement('p');
   paragraph2.textContent = content.sections.section1.paragraph2;
-  article.appendChild(paragraph2);
+  article1.appendChild(paragraph2);
 
   main.appendChild(article1);
+  // ----- end of article1 -----
+  
+
+  //column grid for article2
+  const containerColumn = document.createElement('div');
+  conainerColumn.className = 'container-column';
 
 
   // ----- article 2 -----
   const article2 = document.createElement('article');
+  columnArticle.className = 'column';
 
   //image
   const image = document.createElement('img');
@@ -787,8 +797,14 @@ function loadEducationContent () {
   paragraph2.textContent = content.sections.section2.paragraph2;
   article.appendChild(paragraph2);
 
-  main.appendChild(article2);
+  article2.appendChild(columnContainer);
+  containerColumn.appendChild(article2);
+  main.appendChild(containerColumn);
+  // ----- end of article2 -----
 
+  //column grid for article3
+  const containerColumn = document.createElement('div');
+  conainerColumn.className = 'container-column';
 
   // ----- article 3 -----
   const article3 = document.createElement('article');
@@ -819,7 +835,10 @@ function loadEducationContent () {
   image.alt = content.sections.section3.image.alt;
   article.appendChild(image);
 
-  main.appendChild(article3);
+  article2.appendChild(columnContainer);
+  containerColumn.appendChild(article2);
+  main.appendChild(containerColumn);
+  // ----- end of article 3 -----
 
 }
 
