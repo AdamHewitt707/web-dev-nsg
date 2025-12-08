@@ -159,15 +159,15 @@ function initPageContent(page) {
         'index': () => {
             loadIndexContent();
         },
-        'quality-education': () => {
+        'education': () => {
             console.log("Quality eduction page initialization");
             loadEducationContent();
         },
-        'climate-action': () => {
+        'climate': () => {
             console.log("Climate action page initialization");
             loadClimateContent();
         },
-        'clean-water': () => {
+        'water': () => {
             console.log("Clean water and sanitation page initialization");
             loadWaterContent();
         },
