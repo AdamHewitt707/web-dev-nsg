@@ -53,6 +53,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0;
+    padding: 0 10px;
 }
 
 .navbar-footer {
