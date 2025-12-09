@@ -58,7 +58,9 @@ function initPage() {
 
     initPageContent(page); // Process page content based on page name
 
-    // initFooter(); // Process footer content
+    initMobileNav(); // It's just more convenient to load the mobile nav separately ngl
+
+    initFooter(); // Process footer content
 }
 
 /* ---------- Initialize page ---------- */
@@ -75,9 +77,9 @@ function initNav() {
     console.log("Initializing navigation..."); // For debugging purposes
 
     // Find navigation data within the json
-    const navData = jsonContent.find(item => item.navigation);
+    const navContent = jsonContent.find(item => item.navigation);
 
-    const nav = navData.navigation; // Store navigation data only
+    const nav = navContent.navigation; // Store navigation data only
     const header = document.querySelector('header'); // Store header element as variable
 
     // Navbar container
@@ -145,6 +147,210 @@ function initNav() {
 
 /* ---------- Build navbar ---------- */
 
+
+
+
+
+
+/* ---------- Build mobile nav ---------- */
+
+function initMobileNav() {
+    console.log("Initializing mobile navigation...");
+    
+    const navContent = jsonContent.find(item => item.navigation); // Find navigation data within the json
+    
+    const nav = navContent.navigation; // Store navigation data
+    const header = document.querySelector('header');
+    
+    // Hamburger
+    const mobileToggle = document.createElement('button');
+    mobileToggle.className = 'mobile-menu-toggle';
+    mobileToggle.innerHTML = '&#9776;'; // Hamburger icon created with html entity
+    mobileToggle.setAttribute('aria-label', 'Toggle menu');
+    
+    // Mobile nav container
+    const mobileNav = document.createElement('div');
+    mobileNav.className = 'mobile-nav';
+    
+    // Home link
+    const homeLink = document.createElement('a');
+    homeLink.href = nav.home.href;
+    homeLink.className = 'mobile-nav-item';
+    homeLink.textContent = nav.home.text;
+    mobileNav.appendChild(homeLink);
+    
+    // Goals dropdown toggle
+    const goalsToggle = document.createElement('button');
+    goalsToggle.className = 'mobile-nav-item has-dropdown';
+    goalsToggle.textContent = nav.goals.text;
+    goalsToggle.setAttribute('aria-expanded', 'false');
+    
+    // Goals dropdown content
+    const goalsDropdown = document.createElement('div');
+    goalsDropdown.className = 'mobile-dropdown-content';
+    
+    // For each element in dropdown json array create a link
+    nav.goals.dropdown.forEach(item => {
+        const goalLink = document.createElement('a');
+        goalLink.href = item.href;
+        goalLink.textContent = item.text;
+        goalLink.className = 'mobile-goal-link';
+        goalsDropdown.appendChild(goalLink);
+    });
+    
+    // Toggle dropdown on click
+    goalsToggle.addEventListener('click', function(e) {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
+        goalsDropdown.classList.toggle('active');
+    });
+    
+    mobileNav.appendChild(goalsToggle);
+    mobileNav.appendChild(goalsDropdown);
+    
+    // Sign Up link
+    const signUpLink = document.createElement('a');
+    signUpLink.href = nav.signUp.href;
+    signUpLink.className = 'mobile-nav-item';
+    signUpLink.textContent = nav.signUp.text;
+    mobileNav.appendChild(signUpLink);
+    
+    // About Us link
+    const aboutUsLink = document.createElement('a');
+    aboutUsLink.href = nav.aboutUs.href;
+    aboutUsLink.className = 'mobile-nav-item';
+    aboutUsLink.textContent = nav.aboutUs.text;
+    mobileNav.appendChild(aboutUsLink);
+    
+    // Add elements to header
+    header.appendChild(mobileToggle);
+    header.appendChild(mobileNav);
+    
+    mobileToggle.addEventListener('click', function() { // Toggle mobile menu
+        const isMenuOpen = mobileNav.classList.contains('active');
+        
+        if (!isMenuOpen) {
+            // Open menu
+            mobileNav.classList.add('active');
+            mobileToggle.innerHTML = '&times;'; // Change to X
+            mobileToggle.setAttribute('aria-label', 'Close menu');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+            
+            // Ensure dropdown is closed when opening menu
+            goalsToggle.setAttribute('aria-expanded', 'false');
+            goalsDropdown.classList.remove('active');
+        } else {
+            // Close menu
+            mobileNav.classList.remove('active');
+            mobileToggle.innerHTML = '&#9776;'; // Change back to hamburger
+            mobileToggle.setAttribute('aria-label', 'Open menu');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+    });
+}
+
+/* ---------- Build mobile nav ---------- */
+
+
+
+
+
+
+/* ---------- Build footer ---------- */
+
+function initFooter() {
+    console.log("Initializing footer..."); // For debugging purposes
+
+    // Find footer data within the json
+    const footerData = jsonContent.find(item => item.footer);
+    
+    if (!footerData) {
+        console.error("Footer data not found in JSON");
+        return;
+    }
+
+    const footer = footerData.footer; // Store footer data only
+    const footerElement = document.querySelector('footer'); // Store footer element as variable
+
+    // Footer content container
+    const footerContent = document.createElement('div');
+    footerContent.className = 'footer-content';
+
+    // Navbar footer container
+    const navbarFooter = document.createElement('div');
+    navbarFooter.className = 'navbar-footer';
+
+    // Home link
+    const homeLink = document.createElement('a');
+    homeLink.href = footer.links.home.href;
+    homeLink.className = 'footerBtn';
+    homeLink.textContent = footer.links.home.text;
+    navbarFooter.appendChild(homeLink);
+
+    // Clean Water link
+    const waterLink = document.createElement('a');
+    waterLink.href = footer.links.cleanWater.href;
+    waterLink.className = 'footerBtn';
+    waterLink.textContent = footer.links.cleanWater.text;
+    navbarFooter.appendChild(waterLink);
+
+    // Climate Action link
+    const climateLink = document.createElement('a');
+    climateLink.href = footer.links.climateAction.href;
+    climateLink.className = 'footerBtn';
+    climateLink.textContent = footer.links.climateAction.text;
+    navbarFooter.appendChild(climateLink);
+
+    // Quality Education link
+    const educationLink = document.createElement('a');
+    educationLink.href = footer.links.qualityEducation.href;
+    educationLink.className = 'footerBtn';
+    educationLink.textContent = footer.links.qualityEducation.text;
+    navbarFooter.appendChild(educationLink);
+
+    // Sign Up link
+    const signUpLink = document.createElement('a');
+    signUpLink.href = footer.links.signUp.href;
+    signUpLink.className = 'footerBtn';
+    signUpLink.textContent = footer.links.signUp.text;
+    navbarFooter.appendChild(signUpLink);
+
+    // About Us link
+    const aboutUsLink = document.createElement('a');
+    aboutUsLink.href = footer.links.aboutUs.href;
+    aboutUsLink.className = 'footerBtn';
+    aboutUsLink.textContent = footer.links.aboutUs.text;
+    navbarFooter.appendChild(aboutUsLink);
+
+    footerContent.appendChild(navbarFooter);
+
+    // Footer info container
+    const footerInfo = document.createElement('div');
+    footerInfo.className = 'footer-info';
+
+    // Copyright paragraph
+    const copyrightPara = document.createElement('p');
+    copyrightPara.textContent = footer.copyright;
+    footerInfo.appendChild(copyrightPara);
+
+    // Affiliation paragraph
+    const affiliationPara = document.createElement('p');
+    affiliationPara.textContent = footer.affiliation + ' | ' + footer.contact;
+    footerInfo.appendChild(affiliationPara);
+
+    footerContent.appendChild(footerInfo);
+
+    // Clear any existing content and append new content
+    footerElement.innerHTML = '';
+    footerElement.appendChild(footerContent);
+
+    // Add footer styles
+    addFooterStyles();
+
+    console.log("Footer initialized successfully");
+}
+
+/* ---------- Build footer ----------- */
 
 
 
