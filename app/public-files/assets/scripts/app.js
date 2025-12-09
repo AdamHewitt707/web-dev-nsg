@@ -761,7 +761,7 @@ function loadEducationContent () {
   const image1 = document.createElement('img');
   image1.src = content.sections.section1.image.src;
   image1.alt = content.sections.section1.image.alt;
-  //    image1.class = content.sections.section1.image.class;
+  image1.className = 'full-row-image';
   article1.appendChild(image1);
 
   main.appendChild(article1);
@@ -775,6 +775,7 @@ function loadEducationContent () {
   const image2 = document.createElement('img');
   image2.src = content.sections.section2.image.src;
   image2.alt = content.sections.section2.image.alt;
+  image2.className = 'half-column-image';
   article2.appendChild(image2);
 
   //header
@@ -823,6 +824,7 @@ function loadEducationContent () {
   const image3 = document.createElement('img');
   image3.src = content.sections.section3.image.src;
   image3.alt = content.sections.section3.image.alt;
+  image3.className = 'half-column-image';
   article3.appendChild(image3);
 
   mainGrid.appendChild(article3);

@@ -315,14 +315,15 @@
                     "image": {
                         "src": "assets/images/uea.jpg",
                         "alt": "A photo showing UEA's campus accomodation, which is a collection of white concrete buildings, shaped like pyrimids with steps carved into them.",
-                        "class": "display-image-row"
+                        "class": "full-row-image"
                     },
                     "paragraph2": "Additionally, there is a large digital divide within different parts of the world, which can prevent the same quality of education being available to everyone. Digital divide refers to the fact that not everyone has the same access to technology and the internet. This can prevent students from being able to learn as effectively, and deny them opportunities. A lack of funding can also have an impact on the resources that schools are able to use, and create or prevent opportunities for students. It is important that students from all financial backgrounds are able to have equal access to education."
                 },
                 "section2": {
                     "image": {
                         "src": "assets/images/uea.jpg",
-                        "alt": "A photo showing UEA's campus accomodation, which is a collection of white concrete buildings, shaped like pyrimids with steps carved into them."
+                        "alt": "A photo showing UEA's campus accomodation, which is a collection of white concrete buildings, shaped like pyrimids with steps carved into them.",
+                        "class": "half-column-image"
                     },
                     "heading": "How This Impacts Norwich",
                     "paragraph1": "In order to improve equality within education for Norwich, a focus needs to be given to creating financial equality, so that students are not disadvantaged based on their household income. ",
@@ -335,7 +336,8 @@
                     "paragraph3": "https://researchbriefings.files.parliament.uk/documents/CBP-7857/CBP-7857.pdf",
                     "image": {
                         "src": "assets/images/uea.jpg",
-                        "alt": "A photo showing UEA's campus accomodation, which is a collection of white concrete buildings, shaped like pyrimids with steps carved into them."
+                        "alt": "A photo showing UEA's campus accomodation, which is a collection of white concrete buildings, shaped like pyrimids with steps carved into them.",
+                        "class": "half-column-image"
                     }
                 }
             }
