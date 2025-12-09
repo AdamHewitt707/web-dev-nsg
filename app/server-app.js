@@ -30,7 +30,7 @@ app.post('/sign-up', (req, res) => {
     const lastName = req.body.lastName;
     const email = req.body.email;
     const comments = req.body.comments;
-    const userData = fs.readFileSync('/Users/halfmann/WebstormProjects/web-dev-nsg/app/public-files/JSON/users.json');
+    const userData = fs.readFileSync("C:/Users/adamh/Documents/GitHub/web-dev-nsg/app/public-files/JSON/users.json");
     const jsonData = JSON.parse(userData);
     const checkEmail = JSON.stringify(jsonData.email);
     res.json({firstName:firstName, lastName:lastName, email:email, comments:comments});
@@ -46,7 +46,7 @@ app.post('/sign-up', (req, res) => {
             email: email,
             comments: comments,
         });
-        fs.writeFileSync('/Users/halfmann/WebstormProjects/web-dev-nsg/app/public-files/JSON/users.json', JSON.stringify(jsonData));
+        fs.writeFileSync('C:/Users/adamh/Documents/GitHub/web-dev-nsg/app/public-files/JSON/users.json', JSON.stringify(jsonData));
     }
 
 

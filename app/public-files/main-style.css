@@ -472,6 +472,10 @@ footer {
     margin-bottom: 20px;
 }
 
+.display-image-row:nth-child(2) {
+    width: 550px;
+}
+
 .index-link {
     display: block;
     font-family: cabin-regular;
@@ -606,7 +610,7 @@ footer {
     max-width: 1920px;
 }
 
-@media screen and (max-width: 1819px) {
+@media screen and (max-width: 1219px) {
     main {
         max-width: 1560px !important;
         width: 95vw !important;
@@ -723,9 +727,7 @@ footer {
         width: 90%;
         gap: 15px;
     }
-}
 
-@media screen and (max-width: 1819px) {
     .carousel-container {
         height: 45vh;
     }
