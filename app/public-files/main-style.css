@@ -507,18 +507,19 @@ footer {
 .half-column-image {
     /*width: calc(100% - 40px)*/
     height: 350px;
-    margin-left: 20px;
+    margin-left: 7.5%;
     margin-right: 20px;
     margin-bottom: 20px;
-    margin-top: auto;
+    margin-top: 20px;
     border-radius: 10px;
+    
 }
 
 .full-row-image {
     height: 350px;
     margin-left: 20px;
-    margin-right: auto;
-    margin-top: auto;
+    margin-right: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
