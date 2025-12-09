@@ -1,5 +1,7 @@
 /* ---------- Navbar Dropdown function ---------- */
 
+// import {wetag} from "express/lib/utils";
+
 function showGoalsMenu() {
     document.getElementById('myDropdown').classList.toggle('show');
 }
@@ -1318,6 +1320,7 @@ function loadSignupContent() {
     document.getElementById('thanksHead').innerHTML = content.sections[3].heading;
 
    const img1 = document.createElement('img');
+   img1.id = 'tylerPhoto';
    img1.src = content.sections[3].image.src;
    img1.alt = content.sections[3].image.alt;
    document.getElementById('thanksImage').appendChild(img1);
@@ -1591,6 +1594,7 @@ function loadAboutusContent() {
     const tylerPhotoContainer = document.createElement('div');
     tylerPhotoContainer.className = 'photo placeholder';
     const tylerPhoto = document.createElement('img');
+    tylerPhoto.id = 'tylerPhoto';
     tylerPhoto.src = content.team[3].image.src;
     tylerPhoto.alt = content.team[3].image.alt;
     tylerPhoto.className = 'team-photo';
