@@ -166,7 +166,6 @@ function initMobileNav() {
     const mobileToggle = document.createElement('button');
     mobileToggle.className = 'mobile-menu-toggle';
     mobileToggle.innerHTML = '&#9776;'; // Hamburger icon created with html entity
-    mobileToggle.setAttribute('aria-label', 'Toggle menu');
     
     // Mobile nav container
     const mobileNav = document.createElement('div');
@@ -183,7 +182,6 @@ function initMobileNav() {
     const goalsToggle = document.createElement('button');
     goalsToggle.className = 'mobile-nav-item has-dropdown';
     goalsToggle.textContent = nav.goals.text;
-    goalsToggle.setAttribute('aria-expanded', 'false');
     
     // Goals dropdown content
     const goalsDropdown = document.createElement('div');
@@ -200,8 +198,6 @@ function initMobileNav() {
     
     // Toggle dropdown on click
     goalsToggle.addEventListener('click', function(e) {
-        const isExpanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', !isExpanded);
         goalsDropdown.classList.toggle('active');
     });
     
@@ -229,22 +225,13 @@ function initMobileNav() {
     mobileToggle.addEventListener('click', function() { // Toggle mobile menu
         const isMenuOpen = mobileNav.classList.contains('active');
         
-        if (!isMenuOpen) {
-            // Open menu
+        if (!isMenuOpen) { // Open menu
             mobileNav.classList.add('active');
-            mobileToggle.innerHTML = '&times;'; // Change to X
-            mobileToggle.setAttribute('aria-label', 'Close menu');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-            
-            // Ensure dropdown is closed when opening menu
-            goalsToggle.setAttribute('aria-expanded', 'false');
-            goalsDropdown.classList.remove('active');
-        } else {
-            // Close menu
+            mobileToggle.innerHTML = '&times;'; // Change to X symbol
+            goalsDropdown.classList.remove('active'); // Ensure dropdown is closed when opening menu
+        } else { // Close menu
             mobileNav.classList.remove('active');
-            mobileToggle.innerHTML = '&#9776;'; // Change back to hamburger
-            mobileToggle.setAttribute('aria-label', 'Open menu');
-            document.body.style.overflow = ''; // Restore scrolling
+            mobileToggle.innerHTML = '&#9776;'; // Change back to hamburger symbol
         }
     });
 }
@@ -343,9 +330,6 @@ function initFooter() {
     // Clear any existing content and append new content
     footerElement.innerHTML = '';
     footerElement.appendChild(footerContent);
-
-    // Add footer styles
-    addFooterStyles();
 
     console.log("Footer initialized successfully");
 }
