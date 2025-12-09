@@ -1354,25 +1354,29 @@ function setupFormHandler() {
                 email: emailInput.value,
                 comments: commentInput.value
             };
-            const requestHeaders = {
-                'Content-Type': 'application/json',
-            };
 
-            fetch('/sign-up', {
-                method: 'post',
-                headers: requestHeaders,
-                body: JSON.stringify(formBody)
-            })
-                .then((response) => response.json())
-                .then((responsedata) => {
-                    setTimeout(function() {
-                        console.log(responsedata);
-                        tellThem.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
+
+
+                    const requestHeaders = {
+                        'Content-Type': 'application/json',
+                    };
+
+                    fetch('/sign-up', {
+                        method: 'post',
+                        headers: requestHeaders,
+                        body: JSON.stringify(formBody)
+                    })
+                        .then((response) => response.json())
+                        .then((responsedata) => {
+                            setTimeout(function () {
+                                console.log(responsedata);
+                                tellThem.textContent = `Hi ${responsedata.firstName} ${responsedata.lastName} , your comments have been
                 received and we will contact you at ${responsedata.email} shortly.`;
-                    },0);})
-            signUpForm.style.display = 'none';
-            benefitP.style.display = 'none';
-            thanksMessage.style.display = 'flex';
+                            }, 0);
+                        })
+                    signUpForm.style.display = 'none';
+                    benefitP.style.display = 'none';
+                    thanksMessage.style.display = 'flex';
 
 
 
