@@ -647,8 +647,50 @@ footer {
 }
 
 .full-row-image-education {
+    height: 250px;
+    margin-left: 10%; /*may need to change depending on screen size*/
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/*----- water -----*/
+.half-column-image-water {
+    /*width: calc(100% - 40px)*/
+    height: 250px;
+    margin-left: 7.5%; /*may need to change depending on screen size*/
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+.full-row-image-water {
+    height: 250px;
+    margin-left: 7.5%; /*may need to change depending on screen size*/
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/*----- climate -----*/
+.half-column-image-climate {
+    /*width: calc(100% - 40px)*/
+    height: 250px;
+    margin-left: 17.5%; /*may need to change depending on screen size*/
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+.full-row-image-climate {
     height: 300px;
-    margin-left: 20px; /*may need to change depending on screen size*/
+    margin-left: 10%; /*may need to change depending on screen size*/
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
