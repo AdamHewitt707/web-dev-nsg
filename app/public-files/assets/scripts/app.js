@@ -58,7 +58,7 @@ function initPage() {
 
     initPageContent(page); // Process page content based on page name
 
-    initFooter(); // Process footer content
+    // initFooter(); // Process footer content
 }
 
 /* ---------- Initialize page ---------- */
@@ -144,98 +144,6 @@ function initNav() {
 }
 
 /* ---------- Build navbar ---------- */
-
-
-
-
-
-
-/* ---------- Build footer --------- */
-
-function initFooter() {
-    console.log("Initializing footer..."); // For debugging purposes
-
-    const footerData = jsonContent.find(item => item.footer); // Getting footer data from json variable
-    
-
-    const footer = footerData.footer; // Store footer data only
-    const footerElement = document.querySelector('footer'); // Store footer element as variable
-
-    // Footer content container
-    const footerContent = document.createElement('div');
-    footerContent.className = 'footer-content';
-
-    // Navbar footer container
-    const navbarFooter = document.createElement('div');
-    navbarFooter.className = 'navbar-footer';
-
-    // Home link
-    const homeLink = document.createElement('a');
-    homeLink.href = footer.links.home.href;
-    homeLink.className = 'footerBtn';
-    homeLink.textContent = footer.links.home.text;
-    navbarFooter.appendChild(homeLink);
-
-    // Clean Water link
-    const waterLink = document.createElement('a');
-    waterLink.href = footer.links.cleanWater.href;
-    waterLink.className = 'footerBtn';
-    waterLink.textContent = footer.links.cleanWater.text;
-    navbarFooter.appendChild(waterLink);
-
-    // Climate Action link
-    const climateLink = document.createElement('a');
-    climateLink.href = footer.links.climateAction.href;
-    climateLink.className = 'footerBtn';
-    climateLink.textContent = footer.links.climateAction.text;
-    navbarFooter.appendChild(climateLink);
-
-    // Quality Education link
-    const educationLink = document.createElement('a');
-    educationLink.href = footer.links.qualityEducation.href;
-    educationLink.className = 'footerBtn';
-    educationLink.textContent = footer.links.qualityEducation.text;
-    navbarFooter.appendChild(educationLink);
-
-    // Sign Up link
-    const signUpLink = document.createElement('a');
-    signUpLink.href = footer.links.signUp.href;
-    signUpLink.className = 'footerBtn';
-    signUpLink.textContent = footer.links.signUp.text;
-    navbarFooter.appendChild(signUpLink);
-
-    // About Us link
-    const aboutUsLink = document.createElement('a');
-    aboutUsLink.href = footer.links.aboutUs.href;
-    aboutUsLink.className = 'footerBtn';
-    aboutUsLink.textContent = footer.links.aboutUs.text;
-    navbarFooter.appendChild(aboutUsLink);
-
-    footerContent.appendChild(navbarFooter);
-
-    // Footer info container
-    const footerInfo = document.createElement('div');
-    footerInfo.className = 'footer-info';
-
-    // Copyright paragraph
-    const copyrightPara = document.createElement('p');
-    copyrightPara.textContent = footer.copyright + ' | ';
-    footerInfo.appendChild(copyrightPara);
-
-    // Affiliation paragraph
-    const affiliationPara = document.createElement('p');
-    affiliationPara.textContent = footer.affiliation + ' | ' + footer.contact;
-    footerInfo.appendChild(affiliationPara);
-
-    footerContent.appendChild(footerInfo);
-
-    footerElement.innerHTML = '';
-    footerElement.appendChild(footerContent); // Clear any existing content and append new content
-
-    console.log("Footer initialized successfully");
-}
-
-/* ---------- Build footer --------- */
 
 
 
@@ -1118,7 +1026,7 @@ function loadWaterContent () {
   const image1 = document.createElement('img');
   image1.src = content.sections.section1.image.src;
   image1.alt = content.sections.section1.image.alt;
-  image1.className = 'full-row-image';
+  image1.className = 'full-row-image-education';
   smallGrid.appendChild(image1);
 
   article1.appendChild(smallGrid);
@@ -1133,7 +1041,7 @@ function loadWaterContent () {
   const image2 = document.createElement('img');
   image2.src = content.sections.section2.image.src;
   image2.alt = content.sections.section2.image.alt;
-  image2.className = 'half-column-image';
+  image2.className = 'half-column-image-education';
   article2.appendChild(image2);
 
   //header
@@ -1182,7 +1090,7 @@ function loadWaterContent () {
   const image3 = document.createElement('img');
   image3.src = content.sections.section3.image.src;
   image3.alt = content.sections.section3.image.alt;
-  image3.className = 'half-column-image';
+  image3.className = 'half-column-image-education';
   article3.appendChild(image3);
 
   mainGrid.appendChild(article3);

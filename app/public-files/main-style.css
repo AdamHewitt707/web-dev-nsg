@@ -634,8 +634,7 @@ footer {
     gap: 20px;
 }
 
-/*----- education -----*/
-.half-column-image-water {
+.half-column-image {
     /*width: calc(100% - 40px)*/
     height: 350px;
     margin-left: 7.5%; /*may need to change depending on screen size*/
@@ -646,7 +645,7 @@ footer {
     
 }
 
-.full-row-image-water {
+.full-row-image {
     height: 350px;
     margin-left: 50px; /*may need to change depending on screen size*/
     margin-right: 20px;
@@ -654,51 +653,6 @@ footer {
     margin-bottom: 20px;
     border-radius: 10px;
 }
-/*----- education -----*/
-
-/*----- water -----*/
-.half-column-image-water {
-    /*width: calc(100% - 40px)*/
-    height: 350px;
-    margin-left: 7.5%; /*may need to change depending on screen size*/
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    
-}
-
-.full-row-image-water {
-    height: 350px;
-    margin-left: 50px; /*may need to change depending on screen size*/
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-/*----- water -----*/
-
-/*----- climate -----*/
-.half-column-image-climate {
-    /*width: calc(100% - 40px)*/
-    height: 350px;
-    margin-left: 7.5%; /*may need to change depending on screen size*/
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    
-}
-
-.full-row-image-climate {
-    height: 350px;
-    margin-left: 50px; /*may need to change depending on screen size*/
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-/*----- climate -----*/
 
 /*--------------------------------------- martha education/water/climate .CSS ---------------------------------------------*/
 
