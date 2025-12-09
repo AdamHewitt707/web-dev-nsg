@@ -898,7 +898,7 @@ function loadClimateContent () {
   const image1 = document.createElement('img');
   image1.src = content.sections.section1.image.src;
   image1.alt = content.sections.section1.image.alt;
-  image1.className = 'full-row-image';
+  image1.className = 'full-row-image-climate';
   smallGrid.appendChild(image1);
 
   article1.appendChild(smallGrid);
@@ -913,7 +913,7 @@ function loadClimateContent () {
   const image2 = document.createElement('img');
   image2.src = content.sections.section2.image.src;
   image2.alt = content.sections.section2.image.alt;
-  image2.className = 'half-column-image';
+  image2.className = 'half-column-image-climate';
   article2.appendChild(image2);
 
   //header
@@ -962,7 +962,7 @@ function loadClimateContent () {
   const image3 = document.createElement('img');
   image3.src = content.sections.section3.image.src;
   image3.alt = content.sections.section3.image.alt;
-  image3.className = 'half-column-image';
+  image3.className = 'half-column-image-climate';
   article3.appendChild(image3);
 
   mainGrid.appendChild(article3);
@@ -1026,7 +1026,7 @@ function loadWaterContent () {
   const image1 = document.createElement('img');
   image1.src = content.sections.section1.image.src;
   image1.alt = content.sections.section1.image.alt;
-  image1.className = 'full-row-image-education';
+  image1.className = 'full-row-image-water';
   smallGrid.appendChild(image1);
 
   article1.appendChild(smallGrid);
@@ -1041,7 +1041,7 @@ function loadWaterContent () {
   const image2 = document.createElement('img');
   image2.src = content.sections.section2.image.src;
   image2.alt = content.sections.section2.image.alt;
-  image2.className = 'half-column-image-education';
+  image2.className = 'half-column-image-water';
   article2.appendChild(image2);
 
   //header
@@ -1090,7 +1090,7 @@ function loadWaterContent () {
   const image3 = document.createElement('img');
   image3.src = content.sections.section3.image.src;
   image3.alt = content.sections.section3.image.alt;
-  image3.className = 'half-column-image-education';
+  image3.className = 'half-column-image-water';
   article3.appendChild(image3);
 
   mainGrid.appendChild(article3);
