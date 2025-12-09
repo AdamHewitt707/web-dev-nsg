@@ -8,6 +8,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public-files'));
 
 
+app.listen(port, () => {
+    console.log(`Server started on port ${port}`);
+})
+
 app.get('/', (req, res) => {
     // res.send('Welcome to the NodeJS');
     res.sendFile('index.html', (err) => {
@@ -17,9 +21,6 @@ app.get('/', (req, res) => {
     });
 })
 
-app.listen(port, () => {
-    console.log(`Server started on port ${port}`);
-})
 
 app.post('/sign-up', (req, res) => {
     //form processing
