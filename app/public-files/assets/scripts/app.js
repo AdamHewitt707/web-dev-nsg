@@ -856,7 +856,119 @@ function loadEducationContent () {
 function loadClimateContent () {
     console.log("Loading Climate Action Content...")
 
-    // Build your page through javascript here
+    const main = document.querySelector("main");
+  main.innerHTML = ""; //clears the existing HTML
+
+  const climateContent = jsonContent.find(item => item.page === "climate"); //gets and stores data
+
+  const content = climateContent.content //gets content from content section of json file
+
+  //main grid to store articles 2 + 3 in
+  const mainGrid = document.createElement('div');
+  mainGrid.className = 'container-half-column';
+
+  // ----- article 1 -----
+  const article1 = document.createElement('article');
+
+  //header
+  const heading1 = document.createElement('h1');
+  heading1.textContent = content.sections.section1.heading;
+  article1.appendChild(heading1);
+
+  //small grid to store the text and image
+  const smallGrid = document.createElement('div');
+  smallGrid.className = 'container-half-column';
+
+  //smallest grid to store paragraphs 1 + 2
+  const smallestGrid = document.createElement('div');
+
+  //paragraph1
+  const paragraph1 = document.createElement('p');
+  paragraph1.textContent = content.sections.section1.paragraph1;
+  smallestGrid.appendChild(paragraph1);
+  
+ //paragraph2
+  const paragraph2 = document.createElement('p');
+  paragraph2.textContent = content.sections.section1.paragraph2;
+  smallestGrid.appendChild(paragraph2);
+
+  smallGrid.appendChild(smallestGrid);
+
+  //image
+  const image1 = document.createElement('img');
+  image1.src = content.sections.section1.image.src;
+  image1.alt = content.sections.section1.image.alt;
+  image1.className = 'full-row-image';
+  smallGrid.appendChild(image1);
+
+  article1.appendChild(smallGrid);
+  main.appendChild(article1);
+  // ----- end of article1 -----
+  
+
+  // ----- article 2 -----
+  const article2 = document.createElement('article');
+
+  //image
+  const image2 = document.createElement('img');
+  image2.src = content.sections.section2.image.src;
+  image2.alt = content.sections.section2.image.alt;
+  image2.className = 'half-column-image';
+  article2.appendChild(image2);
+
+  //header
+  const heading2 = document.createElement('h1');
+  heading2.textContent = content.sections.section2.heading;
+  article2.appendChild(heading2);
+
+  //paragraph3
+  const paragraph3 = document.createElement('p');
+  paragraph3.textContent = content.sections.section2.paragraph1;
+  article2.appendChild(paragraph3);
+
+  //paragraph4
+  const paragraph4 = document.createElement('p');
+  paragraph4.textContent = content.sections.section2.paragraph2;
+  article2.appendChild(paragraph4);
+
+  mainGrid.appendChild(article2);
+  // ----- end of article2 -----
+
+
+  // ----- article 3 -----
+  const article3 = document.createElement('article');
+
+  //header
+  const heading3 = document.createElement('h1');
+  heading3.textContent = content.sections.section3.heading;
+  article3.appendChild(heading3);
+
+  //paragraph5
+  const paragraph5 = document.createElement('p');
+  paragraph5.textContent = content.sections.section3.paragraph1;
+  article3.appendChild(paragraph5);
+
+  //paragraph6
+  const paragraph6 = document.createElement('p');
+  paragraph6.textContent = content.sections.section3.paragraph2;
+  article3.appendChild(paragraph6);
+
+  //paragraph7
+  const paragraph7 = document.createElement('p');
+  paragraph7.textContent = content.sections.section3.paragraph3;
+  article3.appendChild(paragraph7);
+  
+  //image
+  const image3 = document.createElement('img');
+  image3.src = content.sections.section3.image.src;
+  image3.alt = content.sections.section3.image.alt;
+  image3.className = 'half-column-image';
+  article3.appendChild(image3);
+
+  mainGrid.appendChild(article3);
+
+  main.appendChild(mainGrid);
+  // ----- end of article 3 -----
 
 }
 
@@ -872,7 +984,119 @@ function loadClimateContent () {
 function loadWaterContent () {
     console.log("Loading Clean Water and Sanitation Content...")
 
-    // Build your page through javascript here
+    const main = document.querySelector("main");
+  main.innerHTML = ""; //clears the existing HTML
+
+  const waterContent = jsonContent.find(item => item.page === "water"); //gets and stores data
+
+  const content = waterContent.content //gets content from content section of json file
+
+  //main grid to store articles 2 + 3 in
+  const mainGrid = document.createElement('div');
+  mainGrid.className = 'container-half-column';
+
+  // ----- article 1 -----
+  const article1 = document.createElement('article');
+
+  //header
+  const heading1 = document.createElement('h1');
+  heading1.textContent = content.sections.section1.heading;
+  article1.appendChild(heading1);
+
+  //small grid to store the text and image
+  const smallGrid = document.createElement('div');
+  smallGrid.className = 'container-half-column';
+
+  //smallest grid to store paragraphs 1 + 2
+  const smallestGrid = document.createElement('div');
+
+  //paragraph1
+  const paragraph1 = document.createElement('p');
+  paragraph1.textContent = content.sections.section1.paragraph1;
+  smallestGrid.appendChild(paragraph1);
+  
+ //paragraph2
+  const paragraph2 = document.createElement('p');
+  paragraph2.textContent = content.sections.section1.paragraph2;
+  smallestGrid.appendChild(paragraph2);
+
+  smallGrid.appendChild(smallestGrid);
+
+  //image
+  const image1 = document.createElement('img');
+  image1.src = content.sections.section1.image.src;
+  image1.alt = content.sections.section1.image.alt;
+  image1.className = 'full-row-image';
+  smallGrid.appendChild(image1);
+
+  article1.appendChild(smallGrid);
+  main.appendChild(article1);
+  // ----- end of article1 -----
+  
+
+  // ----- article 2 -----
+  const article2 = document.createElement('article');
+
+  //image
+  const image2 = document.createElement('img');
+  image2.src = content.sections.section2.image.src;
+  image2.alt = content.sections.section2.image.alt;
+  image2.className = 'half-column-image';
+  article2.appendChild(image2);
+
+  //header
+  const heading2 = document.createElement('h1');
+  heading2.textContent = content.sections.section2.heading;
+  article2.appendChild(heading2);
+
+  //paragraph3
+  const paragraph3 = document.createElement('p');
+  paragraph3.textContent = content.sections.section2.paragraph1;
+  article2.appendChild(paragraph3);
+
+  //paragraph4
+  const paragraph4 = document.createElement('p');
+  paragraph4.textContent = content.sections.section2.paragraph2;
+  article2.appendChild(paragraph4);
+
+  mainGrid.appendChild(article2);
+  // ----- end of article2 -----
+
+
+  // ----- article 3 -----
+  const article3 = document.createElement('article');
+
+  //header
+  const heading3 = document.createElement('h1');
+  heading3.textContent = content.sections.section3.heading;
+  article3.appendChild(heading3);
+
+  //paragraph5
+  const paragraph5 = document.createElement('p');
+  paragraph5.textContent = content.sections.section3.paragraph1;
+  article3.appendChild(paragraph5);
+
+  //paragraph6
+  const paragraph6 = document.createElement('p');
+  paragraph6.textContent = content.sections.section3.paragraph2;
+  article3.appendChild(paragraph6);
+
+  //paragraph7
+  const paragraph7 = document.createElement('p');
+  paragraph7.textContent = content.sections.section3.paragraph3;
+  article3.appendChild(paragraph7);
+  
+  //image
+  const image3 = document.createElement('img');
+  image3.src = content.sections.section3.image.src;
+  image3.alt = content.sections.section3.image.alt;
+  image3.className = 'half-column-image';
+  article3.appendChild(image3);
+
+  mainGrid.appendChild(article3);
+
+  main.appendChild(mainGrid);
+  // ----- end of article 3 -----
 
 
 
