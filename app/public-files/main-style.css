@@ -497,7 +497,6 @@ footer {
 
 .row-text {
     display: flex;
-    text-align: top;
 }
 
 .img-filler {
@@ -1004,12 +1003,13 @@ input[type=submit] {
     display: flex;
     padding: 20px;
     width: calc(100% - 40px);
-    h1 {
+
+    #thanksHead {
         text-align: center;
         display: block;
         margin: 0;
     }
-    img {
+    #thanksImage {
         width: 50%;
         float: right;
         padding: 7px;
@@ -1017,7 +1017,7 @@ input[type=submit] {
         display: block;
 
     }
-    p{
+    #heyPerson {
         width: 50%;
         text-align: left;
         float: left;
