@@ -43,21 +43,21 @@
             "title": "Norwich Sustainability Group Home Page",
             "carousel": {
                 "slides": [
-                {
-                    "image": "assets/images/cow.jpg",
-                    "header": "Hello",
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet volutpat ipsum. Pellentesque dapibus dui quis tellus porttitor lobortis."
-                },
-                {
-                    "image": "assets/images/uea-aerial.jpg",
-                    "header": "Welcome",
-                    "text": "Another example text for the second slide. Cras fringilla nisl ut elit condimentum lobortis."
-                },
-                {
-                    "image": "assets/images/nsg_logo.png",
-                    "header": "Join Us",
-                    "text": "Third slide content here. Pellentesque dapibus dui quis tellus porttitor lobortis."
-                }
+                    {
+                        "image": "assets/images/cow.jpg",
+                        "header": "Norwich Leads in Sustainability",
+                        "text": "Join our community-driven initiative making Norwich a model for sustainable urban living through research, education, and action."
+                    },
+                    {
+                        "image": "assets/images/uea-aerial.jpg",
+                        "header": "UEA: Climate Research Powerhouse",
+                        "text": "Partnering with world-leading climate scientists at UEA to translate cutting-edge research into local community solutions."
+                    },
+                    {
+                        "image": "assets/images/norwich_city.jpg",
+                        "header": "Net Zero Norwich by 2030",
+                        "text": "Supporting Norwich City Council's ambitious goal to become carbon neutral through community engagement and practical initiatives."
+                    }
                 ]
             },
             "welcome": {
@@ -74,7 +74,7 @@
                         "href": "climate.html"
                     },
                     "image": {
-                        "src": "assets/images/uea-aerial.jpg",
+                        "src": "assets/images/uea2.jpg",
                         "alt": "UEA campus with environmental science building and research facilities",
                         "class": "display-image-column"
                     }
@@ -88,7 +88,7 @@
                         "href": "climate.html"
                     },
                     "image": {
-                        "src": "assets/images/uea-aerial.jpg",
+                        "src": "assets/images/norwich_city.jpg",
                         "alt": "Norwich cityscape showing sustainable urban development and green infrastructure",
                         "class": "display-image-row"
                     }
@@ -102,7 +102,7 @@
                         "href": "water.html"
                     },
                     "image": {
-                        "src": "assets/images/uea-aerial.jpg",
+                        "src": "assets/images/rivers-of-hope.jpg",
                         "alt": "Clean river in Norfolk with volunteers conducting scientific water testing and monitoring",
                         "class": "display-image-row"
                     }
@@ -116,7 +116,7 @@
                         "href": "climate.html"
                     },
                     "image": {
-                        "src": "assets/images/uea-aerial.jpg",
+                        "src": "assets/images/industry.jpg",
                         "alt": "Scientific climate data visualization showing dramatically rising global CO2 levels and temperature trends",
                         "class": "display-image-row"
                     }
@@ -130,7 +130,7 @@
                         "href": "climate.html"
                     },
                     "image": {
-                        "src": "assets/images/uea-aerial.jpg",
+                        "src": "assets/images/transport.jpg",
                         "alt": "Cyclists, pedestrians, and electric buses sharing sustainable transportation infrastructure in Norwich city center",
                         "class": "display-image-row"
                     }
@@ -144,7 +144,7 @@
                         "href": "water.html"
                     },
                     "image": {
-                        "src": "assets/images/uea-aerial.jpg",
+                        "src": "assets/images/river.jpg",
                         "alt": "Diverse community volunteers actively cleaning riverbank pollution and restoring habitat in Norfolk waterway",
                         "class": "display-image-column"
                     }
@@ -158,7 +158,7 @@
                         "href": "education.html"
                     },
                     "image": {
-                        "src": "assets/images/uea-aerial.jpg",
+                        "src": "assets/images/protest.jpg",
                         "alt": "Vibrant community garden in Norwich with diverse volunteers of all ages engaged in sustainable urban agriculture",
                         "class": "img-filler"
                     }
@@ -172,7 +172,7 @@
                         "href": "sign-up.html"
                     },
                     "image": {
-                        "src": "assets/images/uea-aerial.jpg",
+                        "src": "assets/images/join-us.jpg",
                         "alt": "Diverse group of Norwich residents engaging in community sustainability event with educational displays and activities",
                         "class": "img-signup"
                     }
