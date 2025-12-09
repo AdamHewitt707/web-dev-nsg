@@ -497,7 +497,6 @@ footer {
 
 .row-text {
     display: flex;
-
 }
 
 .img-filler {
@@ -1004,15 +1003,13 @@ input[type=submit] {
     display: flex;
     padding: 20px;
     width: calc(100% - 40px);
-}
 
     #thanksHead {
         text-align: center;
         display: block;
         margin: 0;
     }
-
-    #tylerPhoto {
+    #thanksImage {
         width: 50%;
         float: right;
         padding: 7px;
@@ -1020,7 +1017,6 @@ input[type=submit] {
         display: block;
 
     }
-
     #heyPerson {
         width: 50%;
         text-align: left;
@@ -1030,6 +1026,6 @@ input[type=submit] {
 
     }
 
-
+}
 
 /*---------------------------------------Tyler sign-up .CSS ---------------------------------------------------------------*/
