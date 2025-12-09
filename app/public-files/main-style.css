@@ -638,8 +638,8 @@ footer {
 .half-column-image-education {
     /*width: calc(100% - 40px)*/
     height: 250px;
-    margin-left: 7.5%; /*may need to change depending on screen size*/
-    margin-right: 20px;
+    margin-left: 10%; /*may need to change depending on screen size*/
+    margin-right: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: 10px;
@@ -647,8 +647,8 @@ footer {
 }
 
 .full-row-image-education {
-    height: 250px;
-    margin-left: 50px; /*may need to change depending on screen size*/
+    height: 300px;
+    margin-left: 20px; /*may need to change depending on screen size*/
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
