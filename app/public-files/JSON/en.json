@@ -380,12 +380,35 @@
 
     {
         "footer": {
-            "home": "Home",
-            "cleanWater": "Clean water & Sanitation",
-            "climateAction": "Climate Action",
-            "qualityEducation": "Quality Education",
-            "signUp": "Sign up",
-            "aboutUs": "About us"
+            "links": {
+                "home": {
+                    "text": "Home",
+                    "href": "index.html"
+                },
+                "cleanWater": {
+                    "text": "Clean Water & Sanitation",
+                    "href": "water.html"
+                },
+                "climateAction": {
+                    "text": "Climate Action",
+                    "href": "climate.html"
+                },
+                "qualityEducation": {
+                    "text": "Quality Education",
+                    "href": "education.html"
+                },
+                "signUp": {
+                    "text": "Sign Up",
+                    "href": "sign-up.html"
+                },
+                "aboutUs": {
+                    "text": "About Us",
+                    "href": "about-us.html"
+                }
+            },
+            "copyright": "© 2024 Norwich Sustainability Group",
+            "affiliation": "Affiliated with University of East Anglia",
+            "contact": "contact@norwichsustainability.org"
         }
     }
 ]

@@ -150,6 +150,7 @@ footer {
     font-family: cabin-regular;
     text-align: center;
     margin: 20px;
+    margin-top: 0;
     font-weight: 700;
 }
 
@@ -230,6 +231,32 @@ footer {
     margin: auto;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer-info {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: cabin-regular;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.navbar-footer {
+    margin-top: 20px;
+}
+
 /*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/
 
 .separator {
@@ -255,7 +282,6 @@ footer {
     grid-template-rows: auto auto;
     row-gap: 20px;
     max-height: 100%;
-    /* overflow: auto; */
 }
 
 .column-two {
@@ -272,14 +298,6 @@ footer {
     display: flex;
     flex-direction: row;
 }
-
-/* .row:nth-child(0) {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: 20px;
-    height: 100%;
-} */
 
 .column {
     margin: auto;
@@ -310,7 +328,6 @@ footer {
 }
 
 .img-container-row {
-    /* width: 100%; */
     height: 350px;
     overflow: hidden;
     margin-left: 20px;
@@ -320,17 +337,6 @@ footer {
     border-radius: 10px;
     justify-content: center;
 }
-
-/* .img-container-column {
-    width: 50%;
-    height: 350px;
-    overflow: hidden;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-top: auto;
-    border-radius: 10px;
-} */
 
 .display-image-column {
     width: calc(100% - 40px);
@@ -409,7 +415,6 @@ footer {
     margin-bottom: 20px;
     border-radius: 10px;
 }
-
 
 .carousel-container {
     width: 100vw;
@@ -492,6 +497,131 @@ footer {
     min-width: 1560px;
     width: 80vw;
     max-width: 1920px;
+}
+
+@media screen and (max-width: 1819px) {
+    main {
+        max-width: 1560px !important;
+        width: 95vw !important;
+        min-width: 600px !important;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    article {
+        padding-bottom: 20px;
+    }
+
+    .container-column,
+    .container-column-two {
+        display: block; 
+        grid-template-columns: 1fr; 
+        gap: 0;
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container-row {
+        display: block; 
+        grid-template-rows: none;
+        width: 100%;
+        row-gap: 0;
+    }
+    
+    .column, .row, .column-two, .row-two {
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+        display: block !important;
+    }
+
+    .row-div {
+        display: block !important; 
+        grid-template-columns: 1fr;
+    }
+    
+    .row, .row-two {
+        flex-direction: column !important;
+    }
+    
+    .maingrid {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .column-container {
+        display: block;
+        grid-template-rows: none;
+    }
+    
+    .display-image-column,
+    .display-image-row,
+    .img-filler,
+    .img-signup {
+        width: calc(100% - 40px) !important;
+        height: 50vw;
+    }
+    
+    .display-image-row:nth-child(even) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .signup {
+        display: block !important;
+        grid-template-columns: 1fr;
+    }
+    
+    .carousel-container {
+        height: 60vh;
+    }
+    
+    .carousel-prev {
+        right: 85%;
+        height: 70px;
+    }
+    
+    .carousel-next {
+        left: 85%;
+        height: 70px;
+    }
+    
+    .carousel-text {
+        height: 150px;
+        top: calc(100% - 150px);
+    }
+    
+    .carousel-header,
+    .carousel-p {
+        min-width: auto;
+        width: 90vw;
+    }
+    
+    .index-link {
+        width: 160px;
+        font-size: 18px;
+    }
+
+     .navbar-footer {
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 1819px) {
+    .carousel-container {
+        height: 45vh;
+    }
 }
 
 /*--------------------------------------- Adam index .CSS -------------------------------------------------------------*/
